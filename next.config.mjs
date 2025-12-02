@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: '/stocks',
-  basePath: '/stocks',
+  assetPrefix: '/fyers',
+  basePath: '/fyers',
   images: {
     domains: ["assets.fyers.in"],
   },
