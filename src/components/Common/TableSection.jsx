@@ -5,7 +5,6 @@ export default function TableSection({ data = contactData }) {
     <div className="px-4 md:px-[80px]">
       <div className="w-full overflow-x-auto border-l border-r mb-[32px] border-[#C8C8CC]">
         <table className="w-full border-collapse">
-
           <thead>
             <tr className="w-full border-t border-b border-[#C8C8CC]">
               {data.headers.map((header, index) => (
