@@ -1,4 +1,4 @@
-name: Deploy Next.js App (Docker)
+name: Deploy Next.js App
 
 on:
   push:
@@ -10,28 +10,31 @@ jobs:
     runs-on: self-hosted
 
     steps:
+
+     
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Build Docker image
-        run: |
-          docker build -t fyers-next-app:latest .
+    
+      - name: Install dependencies
+        run: npm install
 
-      - name: Stop existing container if running
-        run: |
-          if [ "$(docker ps -q -f name=fyers-next-container)" ]; then
-            docker stop fyers-next-container
-          fi
-          if [ "$(docker ps -aq -f name=fyers-next-container)" ]; then
-            docker rm fyers-next-container
-          fi
+     
+      - name: Build project
+        run: npm run build
 
-      - name: Run new container
+     
+      - name: Sync project files to server app directory
         run: |
-          docker run -d \
-            --name fyers-next-container \
-            -p 4001:4001 \
-            fyers-next-app:latest
+          rsync -av --delete ./ /home/deploy/fyers/new_next/
 
-      - name: Show running containers
-        run: docker ps
+    
+      - name: Restart PM2
+        run: |
+          cd /home/deploy/fyers/new_next
+          pm2 reload ecosystem.config.js --only fyers-next || pm2 start ecosystem.config.js --only fyers-next
+          pm2 save
+
+
+      - name: PM2 status
+        run: pm2 list
