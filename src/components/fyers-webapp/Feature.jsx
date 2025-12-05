@@ -184,7 +184,7 @@ export default function Feature({
   return (
     <div className="flex flex-col gap-[28px]">
       <div className="border-t md:border-y border-[#C5C6CA]">
-        <div className="bg-[#FFFFFF] px-5 md:px-20">
+        <div className="bg-[#FFFFFF] px-5 md:px-10 lg:px-20">
           {/* Mobile Layout */}
           <div className="md:hidden relative">
             <div className="absolute left-1/2 -translate-x-1/2 w-screen border-b border-[#C5C6CA] bottom-[48px]" />

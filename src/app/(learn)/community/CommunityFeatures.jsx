@@ -9,11 +9,14 @@ export default function CommunityFeatures({ features }) {
         <Image src={Women} alt="" fill className="object-cover" />
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-between items-start content-start self-stretch flex-wrap">
-        <div className="flex flex-col items-start w-full lg:flex-grow lg:flex-shrink-0 lg:basis-0 border-l border-r lg:border-r-0 border-[#C8C8CC]">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 justify-between items-start content-start self-stretch">
+        <div className="flex flex-col items-start w-full border-l border-r lg:border-r-0 border-[#C8C8CC] lg:h-[737px]">
           {features.map((feature, index) => (
-            <div key={index} className={`p-[24px] w-full ${index === 0 ? "" : "border-t border-[#C8C8CC]"}`}>
-              <p className="font-manrope text-[20px] font-semibold leading-[26px] -tracking-[0.32px] text-[#131319]">
+            <div
+              key={index}
+              className={`p-[24px] w-full flex-1 flex items-center ${index === 0 ? "" : "border-t border-[#C8C8CC]"}`}
+            >
+              <p className="md:max-w-[592px] font-manrope text-[20px] font-semibold leading-[26px] -tracking-[0.32px] text-[#131319]">
                 {feature}
               </p>
             </div>
@@ -21,7 +24,7 @@ export default function CommunityFeatures({ features }) {
         </div>
 
         {/* Desktop: Image on the right */}
-        <div className="hidden lg:flex items-center justify-center relative w-[640px] self-stretch">
+        <div className="hidden lg:flex items-center justify-center lg:h-[737px] relative w-full self-stretch">
           <Image src={Women} alt="" fill className="object-cover" />
         </div>
       </div>

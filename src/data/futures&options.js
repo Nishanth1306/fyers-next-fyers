@@ -88,7 +88,7 @@ export const features = [
 ];
 
 export const extraFeatures = {
-  minHeightDesktop: "min-h-[128px]",
+  minHeightDesktop: "lg:min-h-[128px]",
   mobileImageHeight: "min-h-[544px]",
   features: [
     {

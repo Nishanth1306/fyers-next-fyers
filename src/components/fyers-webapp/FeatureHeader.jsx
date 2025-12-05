@@ -1,6 +1,6 @@
 export default function FeatureHeader({ subtitle, title, description }) {
   return (
-    <section className="pb-[12px] pt-[40px] md:py-[72px] px-4 md:px-20  flex flex-col gap-[12px]">
+    <section className="pb-[12px] pt-[40px] md:py-[72px] px-4 md:px-10 lg:px-20  flex flex-col gap-[12px]">
       {subtitle && (
         <p className="font-manrope font-normal text-[#070708] text-[12px] leading-[16px] md:text-[16px] md:leading-[24px] tracking-[0px] md:-tracking-[0.18px]">
           {subtitle}

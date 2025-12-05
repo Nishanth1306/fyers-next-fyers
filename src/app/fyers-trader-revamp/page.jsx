@@ -57,8 +57,8 @@ export default function FyersTraderPage() {
         </section>
 
         <section className="py-[40px] flex flex-col gap-[20px] md:gap-[40px] bg-[#131319]">
-          <div className="px-5 md:px-[128px] flex flex-col gap-[20px] md:gap-[32px] text-left md:text-center items-start md:items-center">
-            <h3 className="max-w-[630px] font-plus-jakarta font-semibold text-[#F0F0FA] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+          <div className="px-5 md:px-[40px] lg:px-[128px] flex flex-col gap-[20px] md:gap-[32px] text-left md:text-center items-start md:items-center">
+            <h3 className="lg:max-w-[630px] font-plus-jakarta font-semibold text-[#F0F0FA] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Empowering traders with cutting-edge technology
             </h3>
             {/* <p className="font-manrope font-normal text-[#676768] text-[14px] md:text-[20px] leading-[22px] md:leading-[26px] -tracking-[0.16px] md:-tracking-[0.32px] max-w-[700px]">
@@ -79,7 +79,7 @@ export default function FyersTraderPage() {
           </div>
 
           <div className="md:border-y border-[#666666] w-full">
-            <div className="px-4 md:px-20 flex flex-row">
+            <div className="px-4 md:px-10 lg:px-20 flex flex-row">
               {stats.map(({ value, label }) => (
                 <Stats key={label} value={value} label={label} />
               ))}
@@ -88,7 +88,7 @@ export default function FyersTraderPage() {
         </section>
 
         <section className="pt-[24px] md:pt-[64px] flex flex-col gap-[20px] md:gap-[24px]">
-          <div className="px-4 md:px-20">
+          <div className="px-4 md:px-10 lg:px-20">
             <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               What's special about FYERS Trader?
             </h3>
@@ -97,7 +97,7 @@ export default function FyersTraderPage() {
         </section>
 
         <section className="py-[24px] md:py-[64px] flex flex-col gap-[20px] md:gap-[24px]">
-          <div className="px-4 md:px-20">
+          <div className="px-4 md:px-10 lg:px-20">
             <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               What else do we offer?
             </h3>

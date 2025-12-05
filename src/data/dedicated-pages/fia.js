@@ -15,7 +15,7 @@ export const features1 = {
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/fia-end-to-end-market-intelligence.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[15%] lg:object-center",
       featureTitle: "End-to-End Market Intelligence",
       featureDescription: "Screen, analyse and research in a single chat.",
     },
@@ -39,7 +39,7 @@ export const features1 = {
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/fia-portfolio-intelligence.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[15%] lg:object-center",
       featureTitle: "Portfolio Intelligence",
       featureDescription:
         "Get insights on your stocks, mutual funds and positions - connected directly to market data.",

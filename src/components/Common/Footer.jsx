@@ -1,8 +1,7 @@
 import {
   appDownloads,
-  disclaimers,
   footerLinks,
-  socialLinks,
+  oldSocialLinks,
 } from "@/data/footerLinks";
 
 export default function Footer() {
@@ -56,7 +55,7 @@ export default function Footer() {
                 )
               )}
               <div className="flex gap-2 mt-9.5 mb-12">
-                {socialLinks.map((s, i) => (
+                {oldSocialLinks.map((s, i) => (
                   <a
                     key={i}
                     href={s.href}

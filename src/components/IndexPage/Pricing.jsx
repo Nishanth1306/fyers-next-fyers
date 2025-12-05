@@ -67,10 +67,10 @@ const pricingDetails = [
 const Pricing = () => {
   return (
     <div className="py-[24px] lg:py-[72px]">
-      <div className="flex flex-col px-4 md:px-20">
+      <div className="flex flex-col px-4 md:px-[40px] lg:px-20">
         <div className="text-[16px] md:text-[20px] font-semibold leading-[24px] mb-2 text-[#676768]">Pricing</div>
         <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-          <div className=" font-plus-jakarta text-[40px] leading-[52px] md:max-w-[714px] mb-6 tracking-[0.54px] lg:text-[64px] font-bold md:font-[600] sm:leading-[72px]">
+          <div className="font-plus-jakarta text-[40px] leading-[52px] md:max-w-[500px] lg:max-w-[714px] mb-6 tracking-[0.54px] lg:text-[64px] font-bold md:font-[600] md:leading-[60px] lg:leading-[72px]">
             Transparent and low cost pricing
           </div>
           <a
@@ -89,7 +89,7 @@ const Pricing = () => {
           </a>
         </div>
       </div>
-      <div className="border-t border-b border-[#C8C8CC] md:px-20 flex flex-col-reverse md:flex-row">
+      <div className="border-t border-b border-[#C8C8CC] md:px-[40px] lg:px-20 flex flex-col-reverse md:flex-row">
         <div className="px-4 md:px-0 w-full">
           {pricingDetails.map((detail, idx) => (
             <div

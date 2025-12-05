@@ -4,7 +4,7 @@ import parser from "html-react-parser";
 
 export default function AboutHighlightSection({
   className,
-  dynamicGrid = "px-4 md:px-20  grid grid-cols-1 md:grid-cols-[2.6fr_1.4fr] items-center",
+  dynamicGrid = "px-4 md:px-10 lg:px-20  grid grid-cols-1 md:grid-cols-[2.6fr_1.4fr] items-center",
   aboutShortTitle,
   aboutTitle,
   aboutTitleClassName,
@@ -24,7 +24,7 @@ export default function AboutHighlightSection({
   return (
     <section className={`bg-[#131319] border-t-[0.5px] border-[#C8C8CC] ${className}`}>
       <div className={`${dynamicGrid}`}>
-        <div className={`flex flex-col ${dynamicGaps} pt-[40px] md:py-[64px]`}>
+        <div className={`flex flex-col ${dynamicGaps} pt-[40px] md:py-[36px] lg:py-[64px]`}>
           {aboutShortTitle && (
             <h2 className="text-[#F0F0FA] font-plus-jakarta font-semibold text-[20px] leading-[24px] tracking-[0px]">
               {aboutShortTitle}
@@ -33,7 +33,7 @@ export default function AboutHighlightSection({
           <h2
             className={`${
               aboutTitleClassName ??
-              "font-semibold font-plus-jakarta text-[36px] leading-[40px] md:text-[64px] md:leading-[72px] text-[#F0F0FA] -tracking-[-0.35px] md:-tracking-[0.8px]"
+              "font-semibold font-plus-jakarta text-[36px] leading-[40px] md:text-[42px] lg:text-[64px] md:leading-[72px] text-[#F0F0FA] -tracking-[-0.35px] md:-tracking-[0.8px]"
             }`}
           >
             {parser(aboutTitle)}
@@ -72,7 +72,7 @@ export default function AboutHighlightSection({
           )}
         </div>
 
-        <div className={`relative w-full h-[290px] md:${imageContainerStyles}`}>
+        <div className={`relative w-full h-[190px] md:${imageContainerStyles}`}>
           <Image
             unoptimized
             src={imageSrc}

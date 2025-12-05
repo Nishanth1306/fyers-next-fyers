@@ -5,7 +5,6 @@ import { features, features2 } from "@/data/fyers-api";
 import Features from "@/components/Common/Features";
 import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";
-import OneButton from "/public/images/Fyers-ONE.svg";
 import DownloadBlueImage from "/public/images/download-blue.svg";
 
 export default function FyersApiPage() {
@@ -47,12 +46,13 @@ export default function FyersApiPage() {
           linkText="Sign up"
           linkHref="https://signup.fyers.in/"
           align="left"
+          descWidth="md:max-w-[70%] lg:max-w-full"
           // contentWidth="md:max-w-[1400px]"
         />
 
         {/* Section 1 - Get access to all */}
         <section className="flex flex-col gap-[20px] md:gap-[32px] py-[24px] md:py-[64px]">
-          <div className="px-4 md:px-20">
+          <div className="px-4 md:px-10 lg:px-20">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Get access to all
             </h2>
@@ -66,7 +66,7 @@ export default function FyersApiPage() {
 
         {/* Section 3 - Loved by */}
         <section className="flex flex-col gap-[20px] md:gap-[32px] py-[24px] md:py-[64px]">
-          <div className="px-4 md:px-20">
+          <div className="px-4 md:px-10 lg:px-20">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               FYERS API is loved by
             </h2>

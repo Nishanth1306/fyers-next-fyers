@@ -1,8 +1,8 @@
 import PageIntro from "@/components/Common/PageIntro";
-import BackgroundImage from "/public/images/learn/community/community-bk.png";
-import MobileBackgroundImage from "/public/images/learn/community/community-mobile-bk.png";
 import NavBar from "@/components/IndexPage/NavBar";
 import Feature1 from "/public/images/futures-options/feature-1.svg";
+import Feature2 from "/public/images/futures-options/feature-12.svg";
+import Feature3 from "/public/images/futures-options/feature-13.svg";
 import FeatureLayout from "@/components/futures&options/FeatureLayout";
 import FyersCTA from "@/components/Common/FyersCTA";
 import Footer from "@/components/IndexPage/Footer";
@@ -11,6 +11,9 @@ import { extraFeatures1, extraFeatures2 } from "@/data/learn/community";
 import CommunityFeatures from "./CommunityFeatures";
 import Button from "@/components/Common/Button";
 import FyersNextIcon from "/public/images/learn/community/fyers-next-icon.svg";
+import NextButton from "/public/images/fyers-next.svg";
+import Telegram from "/public/images/learn/community/telegram.svg";
+import Reddit from "/public/images/learn/community/reddit.svg";
 
 export const features = [
   {
@@ -21,25 +24,25 @@ export const features = [
     href: "https://www.whatsapp.com/channel/0029VbAZuqLICVffp9nfth2g",
   },
   {
-    iconSrc: Feature1,
+    iconSrc: Telegram,
     iconAlt: "stock fill",
     title: "Join on Telegram",
     description: "Rich experience in the financial markets.",
     href: "https://t.me/s/fyersofficial",
   },
   {
-    iconSrc: Feature1,
+    iconSrc: Reddit,
     iconAlt: "icon",
     title: "Follow on Reddit",
     description: "We believe that education should be free.",
     href: "https://www.reddit.com/r/FYERS/",
   },
   {
-    iconSrc: Feature1,
+    iconSrc: Reddit,
     iconAlt: "icon",
     title: "Follow on Quora",
     description: "We believe that education should be free.",
-    href: "https://linktr.ee/fyerscommunity#511595882",
+    href: "https://www.quora.com/profile/FYERS-1",
   },
 ];
 
@@ -54,16 +57,22 @@ export default function CommunityPage() {
     <main>
       <NavBar />
       <PageIntro
-        imageSrc={"https://res.cloudinary.com/dzuiidto8/image/upload/v1764658596/community-bk_xzgdu8.png"}
-        mobileImageSrc={"https://res.cloudinary.com/dzuiidto8/image/upload/v1764658714/community-mobile-bk_thdts8.png"}
+        imageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/community-bk.webp"}
+        mobileImageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/community-mobile-bk.webp"}
         greeting="Community"
         title="FYERS Community: Where like-minded people come together"
         description="Connect, share and grow with like-minded traders in the FYERS community. Insights, discussions and support in one place."
         buttons={[
           {
+            imageSrc: NextButton,
+            invert: true,
             text: "Sign Up",
-            className: "py-[8px] md:py-[12px] px-[24px] bg-[#182BFF] text-[#F2F4FB]",
+            className: "py-[8px] md:py-[12px] px-[24px] bg-[#182BFF] text-[#F2F4FB] gap-[4px]",
             href: "https://signup.fyers.in/",
+            imageSrc: FyersNextIcon,
+            imageHeight: 18,
+            imageWidth: 18,
+            invert: true,
           },
         ]}
         linkPrefix="Not a FYERS User?"
@@ -140,7 +149,7 @@ export default function CommunityPage() {
               </h3>
             </div>
             <div className="flex flex-col items-start gap-[32px] self-stretch">
-              <p className="text-[#C8C8CC] font-manrope text-[14px] lg:text-[20px] font-normal leading-[22px] lg:leading-[26px] -tracking-[0.16px] lg:-tracking-[0.32px]">
+              <p className="md:max-w-[650px] text-[#C8C8CC] font-manrope text-[14px] lg:text-[20px] font-normal leading-[22px] lg:leading-[26px] -tracking-[0.16px] lg:-tracking-[0.32px]">
                 Joining the FYERS Community means being part of a focused, practical and collaborative space. Built to
                 help you trade smarter and invest better.
               </p>
@@ -152,6 +161,8 @@ export default function CommunityPage() {
             className="px-[12px] py-[8px] lg:p-[12px] bg-[#182BFF] text-[#F0F0FA] gap-[4px]"
             imageSrc={FyersNextIcon}
             imageAlt="Fyers Next Icon"
+            imageHeight={18}
+            imageWidth={18}
             invert
             isLink
             href="https://signup.fyers.in/"

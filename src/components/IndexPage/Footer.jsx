@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="flex py-6 px-4 sm:p-16 flex-col items-start bg-[#131319]">
+    <footer className="flex py-6 px-4 md:p-[40px] lg:p-16 flex-col items-start bg-[#131319]">
       <div className="mx-auto">
         <div className="w-full fy-ftop flex flex-wrap lg:flex-nowrap justify-between items-center p-2 lg:p-0">
           <div className="text-white inline-flex items-center text-[14px] leading-[32px] font-semibold">

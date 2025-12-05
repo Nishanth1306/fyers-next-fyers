@@ -13,7 +13,7 @@ export default function Achievement({ text }) {
       </div>
 
       {/* Text */}
-      <h2 className="font-semibold font-plus-jakarta text-[#F5FD09] text-[20px] md:text-[64px] lg:text-[56px] leading-[24px] md:leading-[72px] tracking-[0px] md:-tracking-[0.8px] text-left">
+      <h2 className="font-semibold font-plus-jakarta text-[#F5FD09] text-[20px] md:text-[36px] lg:text-[56px] leading-[24px] md:leading-[48px] lg:leading-[72px] tracking-[0px] md:-tracking-[0.8px] text-left">
         {text}
       </h2>
     </div>

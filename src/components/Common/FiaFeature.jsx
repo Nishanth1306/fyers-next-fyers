@@ -2,11 +2,10 @@ import Image from "next/image";
 
 const FiaFeature = ({ features }) => {
   return (
-    <div className="border-y border-[#C8C8CC]">
-      <div className="px-[20px] md:px-[80px] flex flex-col md:flex-row justify-center">
-
+    <div className="w-full border-y border-[#C8C8CC]">
+      <div className="px-[20px] md:px-10 lg:px-[80px] flex flex-col md:flex-row justify-center">
         {/* Left Image */}
-        <div className="relative w-full h-[209px] md:flex-1 md:h-[509px] flex-shrink-0 border-b md:border-b-0 md:border-r border-[#C8C8CC]">
+        <div className="relative w-full h-[209px] md:h-[310px] md:flex-1 lg:h-[509px] flex-shrink-0 border-b md:border-b-0 md:border-r border-[#C8C8CC]">
           <Image
             src="https://assets.fyers.in/Marcom_Avatar/Images/fia-f2.webp"
             fill
@@ -16,14 +15,15 @@ const FiaFeature = ({ features }) => {
         </div>
 
         {/* Right Text */}
-        <div className="w-full md:w-[418px] flex-shrink-0
+        <div
+          className="w-full md:w-[418px] flex-shrink-0
           border-l border-r border-b last:border-b-0 border-[#C8C8CC]
           grid md:grid-rows-3"
         >
           {features.features.map((feature, index) => (
             <div
               key={feature.featureTitle}
-              className={`px-[16px] py-[20px] md:p-[24px] border-b border-[#C8C8CC]
+              className={`px-[16px] py-[20px] md:p-[10px] lg:p-[24px] border-b border-[#C8C8CC]
                 flex flex-col justify-center
                 ${index === features.features.length - 1 ? "border-b-0" : ""}
               `}
@@ -47,7 +47,6 @@ const FiaFeature = ({ features }) => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

@@ -14,7 +14,8 @@ export default function contactUs() {
     <main>
       <NavBar />
       <PageIntro
-        imageSrc="/images/contact-us/contact-us.png"
+        imageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/contact-bk.webp"}
+        mobileImageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/contact-mobile-bk.webp"}
         greeting="Contact us"
         title="We are here for you"
         description="From feedback to queries - we are here to help."
@@ -25,9 +26,10 @@ export default function contactUs() {
             href: "https://signup.fyers.in/",
           },
         ]}
-        linkPrefix={"Are You A Stock Market Fanatic?"}
-        linkText={"View Openings"}
-        linkHref={"https://signup.fyers.in/"}
+        signUpOpen
+        linkPrefix={"Are you a Stock Market Fanatic?"}
+        linkText={"View open roles"}
+        linkHref={"https://recruit.fyers.in/jobs/Careers"}
         align="left"
         contentWidth="md:w-[742px]"
         descWidth="md:w-[280px]"
@@ -35,9 +37,9 @@ export default function contactUs() {
 
       <SupportCardsSection />
 
-      <div className="py-[32px] flex flex-col gap-[32px]">
-        <h1 className="px-4 md:px-[80px] font-plus-jakarta font-semibold text-[64px] leading-[72px] -tracking-[0.8px]">
-          Escalation Matrix
+      <div className="py-[32px] flex flex-col gap-[24px] md:gap-[32px]">
+        <h1 className="px-[20px] md:px-[80px] font-plus-jakarta font-semibold text-[36px] md:text-[64px] leading-[40px] md:leading-[72px] -tracking-[0.8px]">
+          Escalation matrix
         </h1>
 
         <ContactTable contactData={contactData} />
@@ -46,7 +48,7 @@ export default function contactUs() {
       <div className="px-4 md:px-[80px]">
         <div className="bg-black p-[32px] mb-[32px]">
           <div className="font-plus-jakarta text-[36px] font-semibold items-start text-[#F5FF0A] gap-[32px]">
-            <h1>Important Note</h1>
+            <h1>Important note</h1>
           </div>
           <div className="text-[#F0F0FA] font-manrope text-[18px] overflow-hidden">
             <h1>
@@ -66,10 +68,12 @@ export default function contactUs() {
         </div>
       </div>
 
-      <ContactTable contactData={contactData2} />
+      <div className="pb-[24px]">
+        <ContactTable contactData={contactData2} />
+      </div>
 
-      <section className="px-4 md:px-[80px] pt-[64px] pb-[32px] flex flex-col gap-[32px]">
-        <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[64px]">Our Coordinates</h1>
+      <section className="px-4 md:px-[80px] pt-[12px] md:pt-[64px] pb-[12px] md:pb-[32px] flex flex-col gap-[24px] md:gap-[32px]">
+        <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[64px] leading-[40px]">Our coordinates</h1>
 
         <div className="">
           <h1 className="font-plus-jakarta text-[24px] font-semibold">Address</h1>
@@ -78,8 +82,28 @@ export default function contactUs() {
           </h1>
         </div>
 
-        <div>
-          <Image src="/images/contact-us/map.png" alt="Contact Us Map" width={1800} height={420} />
+        <div className="hidden md:block w-full overflow-hidden">
+          <div className="h-[420px] w-full relative">
+            <Image
+              src="/images/contact-us/map.png"
+              alt="Contact Us Map"
+              fill
+              className="object-cover object-left"
+              sizes="100vw"
+            />
+          </div>
+        </div>
+
+        <div className="block md:hidden w-full overflow-hidden">
+          <div className="h-[420px] w-full relative">
+            <Image
+              src="/images/media/maps-mobile.png"
+              alt="Contact Us Map"
+              fill
+              className="object-cover object-left"
+              sizes="100vw"
+            />
+          </div>
         </div>
       </section>
 

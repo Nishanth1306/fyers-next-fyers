@@ -8,25 +8,25 @@ export const feature = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/scalp-f1-three-chart-layout.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "Three-Chart Layout",
       featureDescription: "Spot, CE & PE charts side by side with real-time P&L all in one view.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/scalp-f1-advanced-customisation.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "Advanced Customisation",
       featureDescription: "Add indicators and customise widgets to display 50-Market Depth and option chain.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/scalp-f1-quick-trade.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "Quick Trade Mode",
       featureDescription: "One-click chart orders with keyboard shortcuts for fast execution.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/scalp-f1-smart-risk-tools.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "Smart Risk Tools",
       featureDescription: "Alerts, partial exits & single-click square-off.",
     },

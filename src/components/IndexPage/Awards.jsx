@@ -1,10 +1,9 @@
 import Image from "next/image";
-import BestBroker from "/public/images/fy-bestview.svg";
 
 const Awards = () => {
   return (
-    <div className="fy-awards mx-[16px] lg:mx-auto">
-      <div className="bg-[#131319] p-6 lg:mx-[72px] md:px-[72px] md:py-[32px] items-center  border border-[#979798]">
+    <div className="fy-awards mx-[16px] md:mx-auto">
+      <div className="bg-[#131319] p-6 lg:mx-[72px] md:px-[40px] lg:px-[72px] md:py-[32px] items-center  border border-[#979798]">
         <div className="flex items-center justify-between">
           <div className="w-full sm:w-auto text-center lg:text-left">
             <div className="justify-center lg:justify-start">

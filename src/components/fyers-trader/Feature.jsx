@@ -21,7 +21,7 @@ function FeatureInfo({
   return (
     <div
       onClick={onClick}
-      className={`cursor-pointer p-[16px] min-h-[128px] flex flex-col justify-center gap-[8px] hover:bg-[#F2F4FB] transition-colors relative ${
+      className={`cursor-pointer p-[16px] lg:min-h-[128px] flex flex-col justify-center gap-[8px] hover:bg-[#F2F4FB] transition-colors relative ${
         isActive
           ? "bg-[#F2F4FB] before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-1/2 before:h-[4px] before:bg-[#182BFF] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-1/2 after:h-[4px] after:bg-[#FFF]"
           : ""

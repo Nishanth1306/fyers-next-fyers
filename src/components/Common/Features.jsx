@@ -29,7 +29,7 @@ export default function Features({
               rowIndex > 0 ? "mt-6 md:mt-8" : ""
             }`}
           >
-            <div className="px-[72px] flex justify-center">
+            <div className="md:px-[40px] lg:px-[72px] flex justify-center">
               <div
                 className={`w-full ${
                   featuresPerRow === 2
@@ -47,7 +47,7 @@ export default function Features({
                       description={feature.description}
                       mobileImageHeight={`h-[190px]`}
                       imageHeight={
-                        row.length === 2 ? "md:h-[422px]" : row.length === 3 ? "md:h-[300px]" : "md:h-[422px]"
+                        row.length === 2 ? "lg:h-[422px]" : row.length === 3 ? "lg:h-[300px]" : "lg:h-[422px]"
                       }
                       textHeight={feature.textHeight}
                     />

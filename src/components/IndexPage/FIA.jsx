@@ -6,8 +6,8 @@ const FIA = async () => {
 
   return (
     <>
-      <div className="fy-fia bg-[#131319] pt-[24px] px-[16px] pb-[24px] md:pb-[0] md:px-20 lg:py-[72px]">
-        <div className="container mx-auto">
+      <div className="fy-fia bg-[#131319] pt-[24px] px-[16px] pb-[24px] md:pb-[0] md:px-[40px] lg:px-[80px] lg:py-[72px]">
+        <div className="">
           <div className="text-[14px] md:text-[20px] pb-4 font-semibold leading-[24px] tracking-[1.2px] uppercase text-[#676768]">
             AI
           </div>
@@ -17,8 +17,8 @@ const FIA = async () => {
           <p className="text-white pb-4 text-[20px] font-semibold leading-[32px] tracking-[-0.2px]">
             Real-time market intelligence. From India’s first AI trading analyst.
           </p>
-          <div className="flex justify-between items-end flex-wrap lg:flex-nowrap">
-            <div className="text-[14px] lg:text-[18px] text-[#CACACA] max-w-[80%]">
+          <div className="flex justify-between items-end flex-wrap lg:flex-nowrap md:gap-[24px] lg:gap-0 md:pb-[24px] lg:pb-0">
+            <div className="text-[14px] lg:text-[18px] text-[#CACACA] max-w-[80%] md:max-w-[70%] lg:max-w-[80%]">
               <p>
                 FIA is a complete AI-powered assistant. It monitors markets in real-time, spots patterns, analyses news and builds tailored screeners for stocks, F&O and commodities. FIA also analyses your portfolio with precision. Go beyond surface-level data with powerful insights built for pro-traders and investors, just like you.
               </p>

@@ -23,7 +23,7 @@ const NavBar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="bg-[#182BFF] md:px-20 relative">
+    <nav className="bg-[#182BFF] md:px-10 lg:px-20 relative">
       <div className="flex flex-row justify-between h-[72px] p-[16px_24px] md:py-[24px] md:px-[0]">
         <div className="flex items-center">
           <a href="/" aria-label="fyers-logo">
@@ -132,13 +132,13 @@ const NavBar = () => {
       {isOpen && (
         <div
           id="mobile-menu"
-          className="text-[18px] gap-4 font-medium items-center absolute w-full left-0 flex-col flex bg-[#F0F0FA] text-center py-[72px] min-h-[100vh] xl:hidden z-3"
+          className="text-[18px] gap-4 font-medium items-center absolute w-full left-0 flex-col flex bg-[#101010] text-center py-[72px] min-h-[100vh] xl:hidden z-3"
         >
           {mobileNavBarLinks.map((item, index) => (
             <Link href={item["redirect-url"]} key={index}>
               <div className="">
                 <div className="flex items-center justify-between text-[18px] p-3 uppercase text-white no-underline gap-[4px]">
-                  <div className="font-[500] px-[4px] cursor-pointer leading-[24px] tracking-[-0.24px] font-manrope not-italic text-[#131319]">
+                  <div className="font-[500] px-[4px] cursor-pointer leading-[24px] tracking-[-0.24px] font-manrope not-italic text-[#F0F0FA]">
                     {item.name}
                   </div>
                   {item.arrowPresent && (
@@ -163,19 +163,19 @@ const NavBar = () => {
           ))}
           {userData.userLoggedIn ? (
             <>
-              <div className="flex w-[40%] my-0 mx-auto bg-white p-3 py-[8px] gap-1 text-[14px] items-center justify-center " onClick={logoutUser}>
-                <img
-                  src="https://assets.fyers.in/images/global-header/icon-logout.svg"
-                  alt="logout-svg"
-                />
-                <span className="text-black font-medium text-center  text-[14px]">Logout</span>
-              </div>
+            <div className="flex w-[40%] my-0 mx-auto bg-white p-3 py-[8px] gap-1 text-[14px] items-center justify-center " onClick={logoutUser}>
+              <img
+                src="https://assets.fyers.in/images/global-header/icon-logout.svg"
+                alt="logout-svg"
+              />
+              <span className="text-black font-medium text-center  text-[14px]">Logout</span>
+            </div>
             </>
           ) : (
             <>
               <a
                 href="https://login.fyers.in/?cb=https://fyers.in/web"
-                className="flex w-8/12 my-0 mx-auto items-center justify-center bg-[#182BFF] gap-1 text-[16px] text-[#F2F4FB] p-3 font-medium text-center "
+                className="flex w-8/12 my-0 mx-auto items-center justify-center bg-[#182BFF] gap-1 text-[14px] text-[#F2F4FB] p-3 font-medium text-center "
               >
                 Login
                 <svg
@@ -193,11 +193,20 @@ const NavBar = () => {
               </a>
               <a
                 href="https://signup.fyers.in/"
-                className="flex w-8/12 my-0 mx-auto font-manrope mb-4 items-center justify-center text-[16px] gap-1 text-[#182BFF] border border-[#182BFF] p-3 bg-[#E0EBFF] font-medium text-center"
+                className="flex w-8/12 my-0 mx-auto mb-4 items-center justify-center text-[14px] gap-1 text-[black]  p-3 bg-[#F5FD09] font-medium text-center"
               >
                 Sign Up
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12.0009 17C15.6633 17 18.8659 18.5751 20.608 20.9247L18.766 21.796C17.3482 20.1157 14.8483 19 12.0009 19C9.15346 19 6.6535 20.1157 5.23577 21.796L3.39453 20.9238C5.13673 18.5747 8.33894 17 12.0009 17ZM12.0009 2C14.7623 2 17.0009 4.23858 17.0009 7V10C17.0009 12.6888 14.8786 14.8818 12.2178 14.9954L12.0009 15C9.23945 15 7.00087 12.7614 7.00087 10V7C7.00087 4.31125 9.12318 2.11818 11.784 2.00462L12.0009 2ZM12.0009 4C10.4032 4 9.09721 5.24892 9.00596 6.82373L9.00087 7V10C9.00087 11.6569 10.344 13 12.0009 13C13.5986 13 14.9045 11.7511 14.9958 10.1763L15.0009 10V7C15.0009 5.34315 13.6577 4 12.0009 4Z" fill="#182BFF" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12.0009 17C15.6633 17 18.8659 18.5751 20.608 20.9247L18.766 21.796C17.3482 20.1157 14.8483 19 12.0009 19C9.15346 19 6.6535 20.1157 5.23577 21.796L3.39453 20.9238C5.13673 18.5747 8.33894 17 12.0009 17ZM12.0009 2C14.7623 2 17.0009 4.23858 17.0009 7V10C17.0009 12.6888 14.8786 14.8818 12.2178 14.9954L12.0009 15C9.23945 15 7.00087 12.7614 7.00087 10V7C7.00087 4.31125 9.12318 2.11818 11.784 2.00462L12.0009 2ZM12.0009 4C10.4032 4 9.09721 5.24892 9.00596 6.82373L9.00087 7V10C9.00087 11.6569 10.344 13 12.0009 13C13.5986 13 14.9045 11.7511 14.9958 10.1763L15.0009 10V7C15.0009 5.34315 13.6577 4 12.0009 4Z"
+                    fill="#131319"
+                  />
                 </svg>
               </a>
             </>

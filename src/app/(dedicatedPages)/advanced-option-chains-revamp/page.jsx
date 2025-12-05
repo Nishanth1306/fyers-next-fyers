@@ -37,9 +37,9 @@ export default function AdvancedOptionChains() {
           contentWidth="md:max-w-[80%] lg:max-w-[90%]"
         />
 
-        <AboutHighlightSection 
+        <AboutHighlightSection
           aboutTitle="Decode options <br /> strategies like a pro"
-          aboutTitleClassName="font-semibold font-plus-jakarta text-[24px] leading-[32px] md:text-[64px] md:leading-[72px] text-[#F0F0FA] -tracking-[-0.1px] md:-tracking-[0.8px]"
+          aboutTitleClassName="hide-br-mobile font-semibold font-plus-jakarta text-[24px] leading-[32px] md:text-[48px] lg:text-[64px] md:leading-[52px] lg:leading-[72px] text-[#F0F0FA] -tracking-[-0.1px] md:-tracking-[0.8px]"
           aboutDesc="Get strike-wise data, implied volatility, OI build-ups and <br /> strategy analysis. Designed for serious F&O traders."
           imageSrc="https://assets.fyers.in/Marcom_Avatar/Images/adv-option-chain-banner.webp"
           imageAlt="A woman using a laptop"
@@ -47,15 +47,15 @@ export default function AdvancedOptionChains() {
           imageStyles="w-full h-auto md:h-[361px] md:w-[542px] object-cover"
         />
 
-        <div className="flex flex-col gap-[24px] md:gap-[28px] pt-[40px] md:pt-[64px]">
-          <h3 className="px-4 md:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+        <div className="flex flex-col gap-[24px] md:gap-[26px] lg:gap-[28px] pt-[40px] md:pt-[52px] lg:pt-[64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
             Why Choose FYERS?
           </h3>
           <Feature feature={feature1} />
         </div>
 
-        <div className="flex flex-col gap-[24px] md:gap-[28px] py-[40px] md:py-[64px]">
-          <h3 className="px-4 md:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+        <div className="flex flex-col gap-[24px] md:gap-[26px] lg:gap-[28px] py-[40px] md:py-[52px] lg:py-[64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
             What’s More
           </h3>
           <Feature feature={feature2} isThreeCols />

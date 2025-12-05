@@ -107,8 +107,8 @@ export default function ShoolOfStocks() {
     <main>
       <NavBar />
       <PageIntro
-        imageSrc={"https://res.cloudinary.com/dzuiidto8/image/upload/v1764658732/sos-bk_ihu1bp.png"}
-        mobileImageSrc={"https://res.cloudinary.com/dzuiidto8/image/upload/v1764658741/sos-mobile-bk_hlyqa1.png"}
+        imageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/sos-bk.webp"}
+        mobileImageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/sos-mobile-bk.webp"}
         title="Learn trading and investing from the inside out"
         description="School of Stocks is a free online stock market learning portal showcasing lessons with in-depth coverage."
         buttons={[
@@ -153,7 +153,7 @@ export default function ShoolOfStocks() {
       </section>
 
       <section>
-        <div className="pt-[40px] pb-[24px] px-[20px] lg:px-[80px] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[12px] lg:gap-0 self-stretch">
+        <div className="pt-[20px] md:pt-[40px] pb-[20px] px-[20px] lg:px-[80px] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[12px] lg:gap-0 self-stretch">
           <h1 className="w-fit font-plus-jakarta text-[24px] lg:text-[48px] font-semibold leading-[32px] lg:leading-[56px] -tracking-[0.1px] lg:-tracking-[0.64px]">
             Modules
           </h1>
@@ -161,17 +161,19 @@ export default function ShoolOfStocks() {
           <SosModulesSearch />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 border-y border-[#C8C8CC] mb-32">
-          {extraFeatures.map((feature, index) => (
-            <div
-              key={index}
-              className={`px-[20px] lg:px-0 ${index % 2 !== 0 ? "lg:pr-[80px]" : "lg:pl-[80px]"} ${
-                index !== extraFeatures.length - 1 ? "border-b border-[#C8C8CC]" : ""
-              }`}
-            >
-              <SosFeature feature={feature} index={index} />
-            </div>
-          ))}
+        <div className="px-[20px] md:px-[0px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 border-y border-[#C8C8CC] mb-[20px] md:mb-32">
+            {extraFeatures.map((feature, index) => (
+              <div
+                key={index}
+                className={`lg:px-0 ${index % 2 !== 0 ? "lg:pr-[80px]" : "lg:pl-[80px]"} ${
+                  index !== extraFeatures.length - 1 ? "border-b border-[#C8C8CC]" : ""
+                }`}
+              >
+                <SosFeature feature={feature} index={index} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

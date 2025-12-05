@@ -40,7 +40,7 @@ export default function AdvancedChartsPage() {
 
         <AboutHighlightSection
           aboutTitle="Trade with clarity, <br /> not noise"
-          aboutTitleClassName="font-semibold font-plus-jakarta text-[24px] leading-[32px] md:text-[64px] md:leading-[72px] text-[#F0F0FA] -tracking-[-0.1px] md:-tracking-[0.8px]"
+          aboutTitleClassName="hide-br-mobile font-semibold font-plus-jakarta text-[24px] leading-[32px] md:text-[48px] lg:text-[64px] md:leading-[52px] lg:leading-[72px] text-[#F0F0FA] -tracking-[-0.1px] md:-tracking-[0.8px]"
           aboutDesc="Track markets in real-time with advanced charting, seconds-level precision and seamless <br /> execution. Built for pro traders who demand depth and speed."
           imageSrc="https://assets.fyers.in/Marcom_Avatar/Images/advanced-charts-advanced-charts-banner.webp"
           imageAlt="A woman using a laptop"
@@ -48,8 +48,8 @@ export default function AdvancedChartsPage() {
           imageStyles="w-full h-auto md:h-[361px] md:w-[542px] object-cover"
         />
 
-        <div className="flex flex-col gap-[24px] md:gap-[28px] pt-[40px] md:pt-[64px]">
-          <h3 className="px-4 md:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+        <div className="flex flex-col gap-[24px] md:gap-[24px] lg:gap-[28px] pt-[40px] md:pt-[52px] lg:pt-[64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
             Why choose FYERS?
           </h3>
           <Feature feature={features1} />

@@ -17,14 +17,14 @@ const Carousel = ({ slide, lastSlide }) => {
               {slide.name}
             </h2>
           </div>
-          <p className="text-[12px] md:text-[14px] leading-[16px] md:leading-[22px] text-[#020536] mt-2 md:max-w-[420px]">
+          <p className="text-[12px] md:text-[14px] leading-[16px] md:leading-[19px] lg:leading-[22px] text-[#020536] mt-2 md:max-w-[420px]">
             {slide.description}
           </p>
         </div>
         {slide.button_present && (
           <a
             href={slide.redirection}
-            className="flex items-center self-end bg-[#E0EBFF] py-1.5 px-2 text-[#182BFF] text-[14px] w-fit border border-[#182BFF]"
+            className="ml-2 flex items-center self-end whitespace-nowrap bg-[#E0EBFF] py-1.5 px-2 text-[#182BFF] text-[14px] w-fit border border-[#182BFF]"
           >
             {slide.button_text}
             <span className="mx-1">

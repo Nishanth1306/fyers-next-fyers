@@ -51,102 +51,102 @@ export const products = [
 
 export const features1 = {
   mobileImageHeight: "min-h-[596px]",
-  minHeightDesktop: "min-h-[128px]",
+  minHeightDesktop: "lg:min-h-[128px]",
   features: [
     {
       featureTitle: "Trade Directly From Charts",
       featureDescription: "Drag & drop to place, modify and cancel orders from the charts.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-trade-directly-from-charts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
     {
       featureTitle: "Quick Trade",
       featureDescription:
         "Execute orders seamlessly with predefined position, stop-loss and target based on your preferences.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-qt.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-right lg:object-center",
     },
     {
       featureTitle: "FIA",
       featureDescription: "Create screeners and analyse markets on the go with charts.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-fia.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-right lg:object-center",
     },
     {
       featureTitle: "Unlimited Watchlists",
       featureDescription:
         "Custom and predefined watchlists for F&O stocks, indices and more. Add up to 250+ symbols per watchlist.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-unlimited-watchlists.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-right lg:object-center",
     },
     {
       featureTitle: "Price Ladder Trading",
       featureDescription: "Visualise price action & trade by observing bid/offers on this real-time ticker.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-price-ladder.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-right lg:object-center",
     },
     {
       featureTitle: "Advanced Charts",
       featureDescription: "Latest Trading View charts with 100+ chart indicators including FYERS exclusive indicators.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-advanced-charts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
     {
       featureTitle: "25+ Years of EOD Data",
       featureDescription: "Historical EOD data of 25+ years and 5+ years of intraday charts.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-24-years-of-eod-data.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
     {
       featureTitle: "Events & Corporate Actions",
       featureDescription: "Track significant events, corporate actions, dividends, bonuses, and splits.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f1-events-&-corporate-actions.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
   ],
 };
 
 export const features2 = {
   mobileImageHeight: "min-h-[471.6px]",
-  minHeightDesktop: "min-h-[128px]",
+  minHeightDesktop: "lg:min-h-[128px]",
   features: [
     {
       featureTitle: "25+ Predefined Watchlists",
       featureDescription: "Ready-made watchlists save valuable time.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f2-25-pre-defined-watchlists.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-right lg:object-center",
     },
     {
       featureTitle: "Quick Order Placement",
       featureDescription: "Fast order placement with 4+ ways to minimise order placement time.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f2-quick-order-placement.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
     {
       featureTitle: "Real-time Option Chain",
       featureDescription: "Configurable option chain settings with inbuilt order placement features.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f2-real-time-option-chain.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
     {
       featureTitle: "Saved Charts",
       featureDescription:
         "Save your technical analysis on charts for future reference or share it with your peers to discuss.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f2-saved-charts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
     {
       featureTitle: "Multi-Chart Setups",
       featureDescription: "View up to 8 charts on a single screen with 20+ preference settings.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f2-multi-chart-setup.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
     {
       featureTitle: "Bulk Square-Off",
       featureDescription:
         "Exit multiple or all positions in your portfolio at one go to reduce risk or deal with panic situations.",
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trader-f2-bulk-square-off.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
     },
   ],
 };

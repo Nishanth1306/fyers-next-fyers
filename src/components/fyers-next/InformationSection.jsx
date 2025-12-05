@@ -10,7 +10,7 @@ export default function InfoSection() {
       {/* Total Layout Container */}
       <div className="flex flex-col gap-[40px] py-[40px] pb-[20px] md:pb-[40px] h-auto">
         {/* Text Layout (Heading + Description) */}
-        <div className="flex flex-col items-center gap-[24px] px-[20px] md:px-[128px] h-auto">
+        <div className="flex flex-col items-center gap-[24px] px-[20px] lg:px-[128px] h-auto">
           {/* Heading */}
           <h2 className="font-plus-jakarta text-[36px] md:text-[48px] font-semibold leading-[40px] md:leading-[56px] tracking-[-0.35px] md:tracking-[-0.64px] text-[#F0F0FA] text-start md:text-center">
             Trade faster with FYERS Next.
@@ -25,7 +25,7 @@ export default function InfoSection() {
 
       {/* Border Box Section (full 90vw with top, bottom, left, right) */}
       <div className="md:border-y border-[#666666]">
-        <div className="px-[20px] md:px-[80px]">
+        <div className="px-[20px] md:px-[40px] lg:px-[80px]">
           <div className="flex flex-row h-full border-x border-y md:border-y-0 border-[#666666]">
             {features.map((item, i) => (
               <div
@@ -34,7 +34,7 @@ export default function InfoSection() {
                 p-[12px] md:p-[32px] 
                 ${i !== 0 ? "border-l border-[#666666]" : ""}`}
               >
-                <span className="font-plus-jakarta text-[14px] md:text-[36px] font-[600] leading-[16px] md:leading-[26px] tracking-[-0.08px] md:tracking-[-0.35px] text-[#F5FF0A]">
+                <span className="font-plus-jakarta text-[14px] md:text-[26px] lg:text-[36px] font-[600] leading-[16px] md:leading-[26px] tracking-[-0.08px] md:tracking-[-0.35px] text-[#F5FF0A]">
                   {item.text}
                 </span>
               </div>

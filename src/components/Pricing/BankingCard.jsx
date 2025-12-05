@@ -7,15 +7,15 @@ import ArrowIcon from "/public/images/arrow-top-right-corner.svg";
 
 export default function BankingCard() {
   return (
-    <div className="relative w-full py-[20px] md:py-[72px] flex flex-col gap-[20px] overflow-x-hidden">
+    <div className="relative w-full py-[20px] lg:py-[72px] flex flex-col gap-[20px] overflow-x-hidden">
       {/* Header Section */}
-      <div className="px-[24px] md:px-[80px] text-left md:justify-between items-start ">
+      <div className="px-[24px] md:px-[40px] lg:px-[80px] text-left md:justify-between items-start ">
         <h2 className="font-plus-jakarta font-semibold text-[16px] md:text-[20px] leading-[24px] text-[#666666]">
           Best-in-class pricing
         </h2>
 
         <div className="flex flex-col md:pb-[72px] md:flex-row md:justify-between items-start md:items-end gap-[24px] mt-[8px] md:mt-[16px]">
-          <h2 className="font-plus-jakarta font-semibold text-[40px] md:text-[64px] leading-[52px] md:leading-[72px] tracking-[-0.54px] md:tracking-[-0.8px] text-[#070708]">
+          <h2 className="font-plus-jakarta font-semibold md:max-w-[70%] lg:max-w-full text-[40px] md:text-[52px] lg:text-[64px] leading-[52px] md:leading-[72px] tracking-[-0.54px] md:tracking-[-0.8px] text-[#070708]">
             Lowest charges. Great Service.
           </h2>
 
@@ -34,7 +34,7 @@ export default function BankingCard() {
         </div>
       </div>
 
-      <div className="flex flex-col md:hidden w-full px-[24px] gap-[24px]">
+      <div className="flex flex-col lg:hidden w-full px-[24px] gap-[24px]">
         <div className="w-full border border-[#C8C8CC] overflow-hidden">
           <div className="flex items-center gap-[12px] p-[12px] border-b border-[#C8C8CC]">
             <p className="font-plus-jakarta font-semibold text-[#182BFF] text-[24px] leading-[32px] tracking-[-0.5px]">
@@ -65,7 +65,7 @@ export default function BankingCard() {
       </div>
 
       <div className="relative w-full border-t border-b border-[#C8C8CC] flex justify-center  md:mt-0">
-        <div className="w-full px-[24px] md:px-[80px]">
+        <div className="w-full px-[24px] md:px-[40px] lg:px-[80px]">
           <div className="w-full border-l border-r border-[#C8C8CC]">
             <div className="flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-1/2 order-1 md:order-2 border-b md:border-0 border-[#C8C8CC] relative h-[380px] md:h-auto">
@@ -79,7 +79,7 @@ export default function BankingCard() {
               </div>
 
               <div className="w-full md:w-1/2 flex flex-col order-2 md:order-1 md:border-r border-[#C8C8CC]">
-                <div className="hidden md:flex md:flex-col">
+                <div className="hidden lg:flex md:flex-col">
                   <div className="flex items-center gap-[32px] p-[24px] border-b border-[#C8C8CC]">
                     <p className="font-plus-jakarta font-semibold text-[#182BFF] text-[80px] leading-[88px] tracking-[-0.96px]">
                       ₹0

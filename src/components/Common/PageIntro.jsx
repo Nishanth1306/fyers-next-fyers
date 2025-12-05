@@ -39,7 +39,7 @@ export default function PageIntro({
 
       {/* Content */}
       <div
-        className={`relative z-2 px-4 w-full md:px-20 py-8 md:pt-24 items-start text-left 
+        className={`relative z-2 px-4 w-full md:px-[40px] lg:px-20 py-8 md:pt-24 items-start text-left 
           ${isLeft ? `md:items-start md:text-left ${contentWidth}` : "md:items-center md:text-center"}`}
       >
         <div
@@ -52,7 +52,7 @@ export default function PageIntro({
               {greeting}
             </p>
           )}
-          <h1 className="font-plus-jakarta md:w-[85%] font-[600] text-[#F2F4FB] text-[40px] md:text-[80px] leading-[52px] md:leading-[88px] -tracking-[0.54px] md:-tracking-[0.96px]">
+          <h1 className="font-plus-jakarta hide-br-mobile lg:w-[85%] font-[600] text-[#F2F4FB] text-[40px] md:text-[64px] lg:text-[80px] leading-[52px] md:leading-[72px] lg:leading-[88px] -tracking-[0.54px] md:-tracking-[0.96px]">
             {parser(title)}
           </h1>
           <p

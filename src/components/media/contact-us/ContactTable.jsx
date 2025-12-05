@@ -15,11 +15,11 @@ export default function ContactTable({ contactData }) {
               <div
                 key={header.label}
                 style={{ width: `${100 / contactData.headers.length}%` }}
-                className={`flex h-[112px] p-[24px] items-center gap-[8px] border-l border-[#C8C8CC] ${
+                className={`flex h-[64px] md:h-[112px] p-[24px] items-center gap-[8px] border-l border-[#C8C8CC] ${
                   index === contactData.headers.length - 1 ? "border-r" : ""
                 }`}
               >
-                <p className="font-plus-jakarta text-[22px] font-semibold leading-[32px] -tracking-[0.32px]">
+                <p className="font-plus-jakarta text-[16px] md:text-[22px] font-semibold leading-[24px] md:leading-[32px] -tracking-[0.32px]">
                   {header.label}
                 </p>
               </div>
@@ -36,7 +36,7 @@ export default function ContactTable({ contactData }) {
                   <div
                     key={colIndex}
                     style={{ width: `${100 / contactData.headers.length}%` }}
-                    className={`flex p-[24px] items-start gap-[8px] border-l border-[#C8C8CC] ${
+                    className={`flex p-[24px] items-center gap-[8px] border-l border-[#C8C8CC] ${
                       colIndex === contactData.headers.length - 1 ? "border-r" : ""
                     }`}
                   >
