@@ -27,7 +27,7 @@ export default function IndexHomePage() {
       "Advanced tools to help you unlock the next level of precision, insight and performance.  One platform to rule the markets.",
     bannerScroll: [
       {
-        name: "Futures and Options",
+        name: "Futures Test",
         image: (
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
             <path
