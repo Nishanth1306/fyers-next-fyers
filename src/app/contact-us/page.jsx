@@ -7,6 +7,7 @@ import { contactData2 } from "@/data/contact-us";
 import Image from "next/image";
 import FyersCTA from "@/components/Common/FyersCTA";
 import Footer from "@/components/IndexPage/Footer";
+import ContactTable from "@/components/media/contact-us/ContactTable";
 
 export default function contactUs() {
   return (
@@ -34,13 +35,13 @@ export default function contactUs() {
 
       <SupportCardsSection />
 
-      <div className="px-4 md:px-[80px]">
-        <div className="font-plus-jakarta font-semibold text-[36px] pb-[24px] md:text-[64px]">
-          <h1>Escalation Matrix</h1>
-        </div>
-      </div>
+      <div className="py-[32px] flex flex-col gap-[32px]">
+        <h1 className="px-4 md:px-[80px] font-plus-jakarta font-semibold text-[64px] leading-[72px] -tracking-[0.8px]">
+          Escalation Matrix
+        </h1>
 
-      <TableSection data={contactData} />
+        <ContactTable contactData={contactData} />
+      </div>
 
       <div className="px-4 md:px-[80px]">
         <div className="bg-black p-[32px] mb-[32px]">
@@ -55,21 +56,8 @@ export default function contactUs() {
             </h1>
           </div>
 
-
-          {/* <div className="text-[#F0F0FA] font-manrope text-[14px] font-normal leading-[22px] tracking-[-0.16px] self-stretch overflow-hidden">
-            <h1>
-              In absence of a response/complaint not addressed to your satisfaction, you may lodge a complaint with SEBI
-              at https://scores.sebi.gov.in/ or Exchange at https://investorhelpline.nseindia.com/NICEPLUS
-              Please quote your Service Ticket/Complaint Ref No. while raising your complaint at SEBI SCORES/Exchange portal.
-            </h1>
-          </div> */}
-
-
-          <div className="text-[#F0F0FA] pt-[30px] font-manrope">
-            <h1 className="text-[#F0F0FA] font-manrope text-[14px] font-bold leading-[22px] tracking-[-0.16px]">
-              SMART ORDER
-            </h1>
-
+          <div className="text-[#F0F0FA] font-manrope mt-4">
+            <h1 className="font-bold">SMART ORDER</h1>
             <h1>
               In accordance with SEBI circular dated July 31, 2023, w.e.f August 16, 2023, all disputes against Trading
               Members shall be filed on the ODR Portal. For link to ODR portal is https://smartodr.in/login
@@ -78,23 +66,20 @@ export default function contactUs() {
         </div>
       </div>
 
-      <TableSection data={contactData2} />
+      <ContactTable contactData={contactData2} />
 
-      <section className="px-4 md:px-[80px]">
-        <div className="">
-          <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[64px]">Our Coordinates</h1>
-        </div>
+      <section className="px-4 md:px-[80px] pt-[64px] pb-[32px] flex flex-col gap-[32px]">
+        <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[64px]">Our Coordinates</h1>
+
         <div className="">
           <h1 className="font-plus-jakarta text-[24px] font-semibold">Address</h1>
-          <h1 className="font-manrope text-[18px]">
+          <h1 className="font-manrope text-[18px] max-w-[480px]">
             901 and 902, 9th Floor, A Wing, Brigade Magnum, Amruthahalli, Kodigehalli Gate, Hebbal, Bengaluru - 560092
           </h1>
         </div>
-      </section>
 
-      <section className="px-4 md:px-[80px] pb-[32px]">
         <div>
-          <Image src="/fyers/images/contact-us/map.png" alt="Contact Us Map" width={1800} height={420} />
+          <Image src="/images/contact-us/map.png" alt="Contact Us Map" width={1800} height={420} />
         </div>
       </section>
 
