@@ -73,6 +73,33 @@
   @media (min-width: 768px) {
     .single-row > div:nth-child(3n) {
       grid-column: span 2;
+      margin-inline: 40px;
+      border-inline: 1px solid #c8c8cc;
+    }
+    .single-row > div:nth-child(1) {
+      margin-left: 40px;
+      border-inline: 1px solid #c8c8cc;
+      border-bottom: 1px solid #c8c8cc;
+    }
+    .single-row > div:nth-child(4) {
+      margin-left: 40px;
+      border-inline: 1px solid #c8c8cc;
+      border-top: 1px solid #c8c8cc;
+    }
+    .single-row > div:nth-child(2) {
+      margin-right: 40px;
+      border-right: 1px solid #c8c8cc;
+      border-bottom: 1px solid #c8c8cc;
+    }
+    .single-row > div:nth-child(5) {
+      margin-right: 40px;
+      border-right: 1px solid #c8c8cc;
+      border-top: 1px solid #c8c8cc;
+    }
+  }
+  @media (min-width: 1240px) {
+    .single-row > div:nth-child(3n) {
+      grid-column: span 2;
       margin-inline: 72px;
       border-inline: 1px solid #c8c8cc;
     }
@@ -133,7 +160,7 @@
 }
 
 @layer utilities {
-  @media (max-width: 767px) {
+  @media (max-width: 1240px) {
     .hide-br-mobile br {
       display: none;
     }

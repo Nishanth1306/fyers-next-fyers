@@ -22,8 +22,8 @@ const Articles = async ({ articles }) => {
           </a>
         </div>
       </div>
-      <div className="fy-acwrapper border-t border-[#C8C8CC] px-4 lg:px-0">
-        <div className="flex flex-wrap lg:flex-nowrap md:px-[72px]">
+      <div className="fy-acwrapper border-t border-[#C8C8CC] px-4 md:px-0">
+        <div className="flex flex-wrap lg:flex-nowrap md:px-[40px] lg:px-[72px]">
           {articles.map((value, idx) => (
             <div
               className={`fy-acard border-l border-r border-b border-[#C8C8CC] flex py-10 md:py-6 px-6 w-full
@@ -46,7 +46,7 @@ const Articles = async ({ articles }) => {
                     </p>
                   </div>
                   {value.additional_image && (
-                    <a href="" className="mt-2 md:mt-0">
+                    <a href="" className="mt-2 lg:mt-0">
                       <Image
                         className="w-[150px] h-[47px] object-cover"
                         width={150}
@@ -59,7 +59,7 @@ const Articles = async ({ articles }) => {
                   )}
                   <a
                     href={value.button_redirection}
-                    className="inline-flex items-center bg-[#E0EBFF] mt-6 md:mt-0 py-1.5 px-2 font-medium text-[12px] text-[#182BFF] w-fit border border-[#182BFF]"
+                    className="inline-flex items-center bg-[#E0EBFF] mt-6 lg:mt-0 py-1.5 px-2 font-medium text-[12px] text-[#182BFF] w-fit border border-[#182BFF]"
                   >
                     {value.button_text}
                     <span className="px-1">{parse(`${value.button_icon}`)}</span>

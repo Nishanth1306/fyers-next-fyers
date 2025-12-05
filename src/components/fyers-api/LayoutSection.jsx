@@ -1,5 +1,4 @@
 import Image from "next/image";
-import HomeSvg from "/public/images/fyers-api/home.svg";
 import Cloud from "/public/images/fyers-api/cloud-line.svg"
 import GitPullRequest from "/public/images/fyers-api/git-pull-request-line.svg";
 import Shield from "/public/images/fyers-api/shield-keyhole-line.svg";
@@ -7,10 +6,10 @@ import ShoppingCart from "/public/images/fyers-api/shopping-cart-2-line.svg";
 
 export default function FyersAPISection() {
   return (
-    <div className="w-full md:h-[400px] lg:h-[430px] mx-auto bg-[#131319] px-5 md:px-[80px] py-8 md:py-16">
+    <div className="w-full md:h-[400px] lg:h-[430px] mx-auto bg-[#131319] px-5 md:px-[40px] lg:px-[80px] py-8 lg:py-16">
       <div className="flex flex-col md:flex-row gap-8 md:gap-[60px] items-start md:h-[272px]">
         {/* Left Section - Image */}
-        <div className="w-full md:w-[402px] h-auto md:h-[272px] md:flex-shrink-0">
+        <div className="w-full md:w-[250px] lg:w-[402px] h-auto md:h-[272px] md:flex-shrink-0">
           <Image
             src="https://assets.fyers.in/Marcom_Avatar/Images/fyers-api-banner.webp"
             width={402}
@@ -22,7 +21,7 @@ export default function FyersAPISection() {
 
         <div className="w-full md:w-full md:h-[272px] flex flex-col gap-6 md:gap-8">
           <div className="w-full md:h-[94px] flex flex-col gap-3 text-left md:text-left">
-            <h2 className="text-white font-plus-jakarta text-[40px] lg:text-[32px] md:text-[48px] font-bold leading-tight">
+            <h2 className="text-white font-plus-jakarta text-[40px] lg:text-[32px] md:text-[32px] font-bold leading-tight md:leading-[36px]">
               Why choose FYERS API?
             </h2>
             <p className="text-[#C8C8CC] font-manrope text-[20px] text-left leading-[24px] md:leading-[26px]">

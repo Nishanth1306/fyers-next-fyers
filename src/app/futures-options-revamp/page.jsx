@@ -3,7 +3,7 @@ import PageIntro from "@/components/Common/PageIntro";
 import CardSection from "@/components/futures&options/CardSection";
 import FeatureSection from "@/components/futures&options/Features";
 import Footer from "@/components/IndexPage/Footer";
-import NavBar from "@/components/IndexPage/NavBar"; 
+import NavBar from "@/components/IndexPage/NavBar";
 
 export default function FuturesOptionsPage() {
   return (

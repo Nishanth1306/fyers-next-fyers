@@ -11,9 +11,9 @@ const CrossPlatform = async () => {
         <div className="font-plus text-[14px] lg:text-[20px] mb-2 font-semibold leading-[24px] tracking-[1.2px] text-[#666]">
           Cross-device trading that follows you
         </div>
-        <h2 className="font-plus-jakarta font-bold mb-6 text-white text-[40px] lg:text-[64px] leading-[52px] sm:leading-[72px] tracking-[ -0.8px ]">
+        <h2 className="font-plus-jakarta font-bold mb-6 text-white text-[40px] lg:text-[64px] leading-[52px] lg:leading-[72px] tracking-[ -0.8px ]">
           Trade anywhere.
-          <br /> Stay synced everywhere.
+          <br className="hidden md:block" /> Stay synced everywhere.
         </h2>
         <div className="flex flex-wrap lg:flex-nowrap items-end justify-between">
           <div className="text-[14px] leading-[26px] font-normal lg:text-[18px] tracking-[-0.16px] text-[#C8C8CC] max-w-[610.5px]">

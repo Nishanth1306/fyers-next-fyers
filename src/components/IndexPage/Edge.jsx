@@ -16,7 +16,7 @@ const Edge = ({ products }) => {
   }, []);
   return (
     <div className="mt-[36px] mb-6 md:mt-0 md:py-[72px] ">
-      <div className="px-[16px] pt-[48px] md:pt-[0] md:px-[80px]">
+      <div className="px-[16px] pt-[48px] md:pt-[0] md:px-[40px] lg:px-[80px]">
         <div className="font-plus not-italic text-[14px] md:text-[20px] font-semibold leading-[24px] uppercase text-[#676768]">
           TRADE LIKE A PRO WITH
         </div>
@@ -27,7 +27,7 @@ const Edge = ({ products }) => {
           <div className="text-[14px] md:text-[18px] leading-[22px] tracking-[-0.16px] text-[#383839] max-w-[628px]">
             Unlock smarter, faster and more informed trading with <b>FYERS Exclusive features</b>. Built to give you a real advantage in every market move.
           </div>
-          <div className="mt-[4rem] md:m-0">
+          <div className="mt-[4rem] lg:m-0">
             <a
               href={link}
               className="text-[16px] text-[white] font-medium bg-[#182BFF] py-1.5 px-3.5 md:py-2 items-center flex "

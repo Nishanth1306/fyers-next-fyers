@@ -63,7 +63,7 @@ export default function PeakingCarousel({
         onTouchStart={() => autoplay.current.stop()}
         onTouchEnd={() => autoplay.current.play()}
       >
-        <div className="pl-4 md:pl-[80px]">
+        <div className="pl-4 md:pl-[40px] lg:pl-[80px]">
           {/* Carousel */}
           <div
             className={`overflow-hidden mx-auto ml-4 md:ml-0`}

@@ -5,14 +5,14 @@ const Security = () => {
         {/* <div className="text-[16px] md:text-[20px] font-semibold leading-[24px] tracking-[1.2px] uppercase text-[#676768]">
           DATA
         </div> */}
-        <div className=" font-plus text-white text-[40px] leading-[52px] lg:text-[72px] font-bold sm:leading-[80px]">
+        <div className=" font-plus text-white text-[40px] leading-[52px] lg:text-[72px] font-bold lg:leading-[80px]">
           Your money is safe at <span className="text-[#F5FF0A]">FYERS.</span>{" "}
 
           ISO-certified security <br className="hidden md:block"/>
           for peace of mind.
         </div>
         <p className="text-[14px] lg:text-lg text-[#C5C6CA] max-w-[620px]">
-          We take your data and trades seriously. <br />FYERS is ISO 27001:2013
+          We take your data and trades seriously. <br />FYERS is ISO 27001:2022
           certified with 2FA, encrypted data handling, session monitoring & a
           dedicated fraud-prevention team.
         </p>

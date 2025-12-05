@@ -22,7 +22,7 @@ export const features = {
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/pledge-f1-pledge-portal.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[25%] lg:object-center",
       featureTitle: "Zero Interest",
       featureDescription: "No interest charged by FYERS on the pledged margin.",
     },

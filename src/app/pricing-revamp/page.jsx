@@ -31,8 +31,8 @@ export default function Pricing() {
         linkText="Login"
         linkHref="https://login.fyers.in/?cb=https://fyers.in/web"
         align="left"
-        contentWidth="max-w-[80%] md:max-w-[50%] lg:max-w-[80%]"
-        descWidth="md:max-w-[80%]"
+        contentWidth="max-w-[80%] md:max-w-[70%] lg:max-w-[80%]"
+        descWidth="lg:max-w-[80%]"
       />
 
       <BankingCard />
@@ -59,7 +59,7 @@ export default function Pricing() {
 
       <AboutHighlightSection
         className="border-b border-b-[#666666]"
-        dynamicGrid="px-4 md:px-20  grid grid-cols-1 md:grid-cols-[2.3fr_1.8fr] md:gap-[16px] items-center"
+        dynamicGrid="px-4 md:px-10 lg:px-20  grid grid-cols-1 md:grid-cols-[2.3fr_1.8fr] md:gap-[16px] items-center"
         aboutShortTitle="Limited period offer"
         aboutTitle="Get free AMC for life"
         aboutDesc="No hidden charges!"
@@ -67,7 +67,7 @@ export default function Pricing() {
         imageAlt="Growth"
         imageContainerStyles="h-full mt-[24px] md:mt-0"
         showButton={true}
-        dynamicGaps="gap-[18px]"
+        dynamicGaps="md:gap-[10px] lg:gap-[18px]"
         buttonText="Sign up Now"
         buttonImage={{
           src: ArrowRight,

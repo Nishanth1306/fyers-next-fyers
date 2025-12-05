@@ -51,7 +51,7 @@ export default function TradingViewPage() {
         </section>
 
         <section className="flex flex-col gap-[20px] md:gap-[24px] pt-[24px] md:pt-[64px]">
-          <div className="px-4 md:px-20">
+          <div className="px-4 md:px-10 lg:px-20">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Benefits you’ll enjoy
             </h2>
@@ -61,7 +61,7 @@ export default function TradingViewPage() {
         </section>
 
         <div className="flex flex-col gap-[24px] md:gap-[28px] py-[40px] md:py-[64px]">
-          <div className="px-4 md:px-20  flex flex-col gap-[8px] md:gap-[12px]">
+          <div className="px-4 md:px-10 lg:px-20  flex flex-col gap-[8px] md:gap-[12px]">
             <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               FYERS, TradingView & You
             </h3>

@@ -17,7 +17,7 @@ export default function TimelineSlot({ year, events, image }) {
   return (
     <>
       <div
-        className="relative px-20 border-t border-t-[#C5C6CA] hidden md:grid grid-cols-[1fr_3fr] items-center group"
+        className="relative md:px-[40px] lg:px-20 border-t border-t-[#C5C6CA] hidden md:grid grid-cols-[1fr_3fr] items-center group"
         // onMouseMove={handleMouseMove}
         // onMouseEnter={() => setIsHovered(true)}
         // onMouseLeave={() => setIsHovered(false)}
@@ -60,20 +60,20 @@ export default function TimelineSlot({ year, events, image }) {
         </div>
       </div>
 
-      <div className="block md:hidden px-4 md:px-20">
-        <div className="space-y-2">
+      <div className="block md:hidden px-4 md:px-10 lg:px-20">
+        <div className="space-y-2 flex flex-col items-center">
           <p className="font-plus-jakarta font-semibold text-[12px] leading-[16px] tracking-[0.8px] uppercase">
             {year}
           </p>
 
           <div className="relative w-full md:min-w-[380px] min-h-[206px]">
-            <Image unoptimized src={image} alt="timeline" width={380} height={206} className="object-fit" />
+            <Image unoptimized src={image} alt="timeline" width={380} height={206} className="object-fit mx-auto" />
           </div>
         </div>
 
         {events.map((event, idx) => (
           <div key={idx} className="py-[16px] gap-[8px]">
-            <h3 className="font-semibold font-plus-jakarta text-[14px] leading-[20px] tracking-[0.8px] text-[#666666]">
+            <h3 className="font-semibold text-center font-plus-jakarta text-[14px] leading-[20px] tracking-[0.8px] text-[#666666]">
               {event}
             </h3>
           </div>

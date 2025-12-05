@@ -36,25 +36,25 @@ export const extraFeatures = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trading-view-f1-leading-charts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "The World’s Leading Сharts",
       featureDescription: "Do trades with cutting-edge drawing tools and a wide range of indicators.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trading-view-f1-leading-charts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "Low Cost and Transparent",
       featureDescription: "Zero brokerage equity delivery and max ₹20 across all other segments.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trading-view-f1-screeners.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "Stock Screener",
       featureDescription: "Discover stocks to trade based on your search criteria.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/trading-view-f1-alerts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "object-cover lg:object-fit md:object-left lg:object-center",
       featureTitle: "Unmissable Trading Alerts",
       featureDescription: "You will get notified about potentially valuable trades. You won't miss it.",
     },

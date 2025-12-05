@@ -6,38 +6,38 @@ export const features1 = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/advanced-charts-second-charts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover md:object-left lg:object-fit lg:object-center",
       featureTitle: "Seconds Charts",
       featureDescription: "Analyse market moves in 5-second intervals for unmatched precision.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/advanced-charts-adv-chart-with-25-years.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover md:object-left lg:object-fit lg:object-center",
       featureTitle: "25+ Years of Data",
       featureDescription: "Study long-term patterns with historical charts and indicators.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/advanced-charts-multi-chart.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover md:object-right lg:object-fit lg:object-center",
       featureTitle: "Multi-Chart Layouts",
       featureDescription: "Track up to 8 charts simultaneously for a complete view.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/advanced-charts-trade-from-charts.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover md:object-left lg:object-fit lg:object-center",
       featureTitle: "Trade From Charts",
       featureDescription: "Spot an opportunity and act instantly without leaving the chart.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/advanced-charts-volume-candles-indication.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover md:object-left lg:object-fit lg:object-center",
       featureTitle: "Volume Candles & Indicators",
       featureDescription:
         "Understand market sentiment with advanced visuals and 100+ indicators including FYERS exclusive indicators.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/advanced-charts-50-md.webp",
-      featureImageStyles: "object-fit",
+      featureImageStyles: "md:object-cover md:object-right lg:object-fit lg:object-center",
       featureTitle: "50-Market Depth",
       featureDescription: "Spot market liquidity with a deeper view for sharper decisions.",
     },

@@ -19,7 +19,7 @@ export default function Banner() {
       <div className="px-5 md:px-20 flex flex-col items-center gap-[20px] md:gap-[32px]">
         <div className="flex flex-col gap-[16px] items-center">
         <div className="flex flex-col gap-[8px] w-full">
-          <h2 className="font-plus-jakarta font-bold text-[24px] md:text-[64px] lg:text-[48px] leading-[32px] md:leading-[72px] -tracking-[0.1px] md:-tracking-[0.2px] text-center text-[#F0F0FA] md:whitespace-nowrap">
+          <h2 className="font-plus-jakarta font-bold text-[24px] md:text-[40px] lg:text-[48px] leading-[32px] md:leading-[72px] -tracking-[0.1px] md:-tracking-[0.2px] text-center text-[#F0F0FA] md:whitespace-nowrap">
             FYERS Intelligence - Now on ChatGPT
           </h2>
 

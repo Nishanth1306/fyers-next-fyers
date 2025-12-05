@@ -197,6 +197,15 @@ export const socialLinks = [
   // },
 ]
 
+export const oldSocialLinks = [
+  { href: "https://twitter.com/fyers1", icon: "https://assets.fyers.in/images/website/twitter-new-Icon.svg", alt: "twitter" },
+  { href: "https://www.facebook.com/fyers1", icon: "https://assets.fyers.in/images/website/icon-facebook.svg", alt: "facebook" },
+  { href: "https://www.youtube.com/channel/UCCOTK4jjJp97YUFfPzKAfbA", icon: "https://assets.fyers.in/images/website/icon-youtube.svg", alt: "youtube" },
+  { href: "https://www.linkedin.com/company/fyers-securities-pvt-ltd", icon: "https://assets.fyers.in/images/website/icon-linkedin.svg", alt: "linkedIn" },
+  { href: "https://www.instagram.com/fyers_official/", icon: "https://assets.fyers.in/images/website/icon-instagram.svg", alt: "instagram" },
+  { href: "https://t.me/fyersofficial", icon: "https://assets.fyers.in/images/website/icon-telegram.svg", alt: "telegram" }
+];
+
 
 export const disclaimers = [
   "Investment in securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI. Issued in the interest of the investors.",

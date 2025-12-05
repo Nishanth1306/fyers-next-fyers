@@ -5,7 +5,7 @@ const Certificates = () => {
   return (
     <div className="fy-certificates">
       <div className="mb-6 md:mb-18">
-        <div className="fy-certificate-wrapper border-b border-[#C8C8CC]  px-4 md:px-18 flex flex-wrap lg:flex-nowrap">
+        <div className="fy-certificate-wrapper border-b border-[#C8C8CC]  px-4 md:px-[40px] lg:px-18 flex flex-wrap lg:flex-nowrap">
           <div className="flex py-6 px-4 md:px-6 gap-4 border-x-1 border-t border-[#C8C8CC] w-full justify-center">
             <div className="flex">
               <Image src={carrerImage} alt="carrer image" />

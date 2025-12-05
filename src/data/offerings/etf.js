@@ -36,7 +36,7 @@ export const features = [
 
 export const extraFeatures = {
   mobileImageHeight: "min-h-[440px]",
-  minHeightDesktop: "min-h-[128px]",
+  minHeightDesktop: "lg:min-h-[128px]",
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/etf-smart-sips.webp",

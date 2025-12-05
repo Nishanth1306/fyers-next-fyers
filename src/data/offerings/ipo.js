@@ -28,38 +28,38 @@ export const extraFeatures = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/ipo-f1-discover.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Discover",
       featureDescription:
         "Easily navigate among upcoming IPOs, open IPOs, recently listed and market anticipated IPOs.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/ipo-f1-insights.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "IPO Insights",
       featureDescription: "Comprehensive coverage on a company's business with strengths and weaknesses.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/ipo-f1-pre-apply.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Pre-Apply",
       featureDescription: "Apply even before the IPO begins.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/ipo-f1-seamless-execution.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Seamless Execution",
       featureDescription: "Hassle-free UPI investment options.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/ipo-f1-trackin.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Easy Tracking",
       featureDescription: "Seamlessly track status of your open applications till allotment.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/ipo-f1-performance-analysis.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Performance Analysis",
       featureDescription: "Analyse past performance and track recently listed IPOs.",
     },

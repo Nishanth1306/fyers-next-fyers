@@ -59,39 +59,39 @@ export const featuresForInvestors = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/stocks-f2-smart-sip.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Smart SIP",
       featureDescription: "Automate disciplined investing with daily, weekly or monthly investments in stocks.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/stocks-f2-fundamental-analysis.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Fundamental Analysis",
       featureDescription:
         "Analyse companies in-depth with 25+ years of financial data and ratios. Quick decision making based on SWOT analysis, stock scores, peer comparisons and more.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/stocks-f2-screeners.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "Screeners",
       featureDescription:
         "Find the right stocks with customisable filters across fundamentals, valuation, growth and more.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/stocks-f2-advanced-charts-with-25-years-of-data.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-right",
       featureTitle: "Advanced Charts with 25+ Years Data",
       featureDescription: "Analyse long-term trends with historical charts and indicators.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/stocks-f2-mtf-investor.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "MTF (Margin Trading Facility)",
       featureDescription: "Buy more with less capital using margin-backed investing.",
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/stocks-f2-fia.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-[30%] lg:object-center",
       featureTitle: "FIA (FYERS Intelligent Assistant)",
       featureDescription: "Get AI-powered insights, queries, screeners and analysis on demand.",
     },

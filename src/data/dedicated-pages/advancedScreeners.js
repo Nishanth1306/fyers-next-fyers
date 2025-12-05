@@ -3,7 +3,7 @@ export const feature1 = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/adv-screeners-180-pre-built.webp",
-      featureImageStyles: "object-cover",
+      featureImageStyles: "object-cover md:object-left lg:object-center",
       featureTitle: "180+ Pre-Built Screeners",
       featureDescription: "Ready-to-use filters for every trading style and market condition.",
     },
@@ -60,7 +60,7 @@ export const feature2 = {
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/adv-screeners-quick-actions.webp",
-      featureImageStyles: "object-cover md:object-fit ",
+      featureImageStyles: "object-cover md:object-fit md:object-left lg:object-center",
       featureTitle: "Quick Actions",
       featureDescription: "Buy and sell directly from screeners.",
     },

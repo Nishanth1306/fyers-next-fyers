@@ -9,7 +9,7 @@ export default function Feature({
   mobileImageHeight = "h-[190px]",
   mobileTextHeight = "min-h-[140px]",
   isFirstInMobileRow = false,
-  alignIncompleteRow
+  alignIncompleteRow,
 }) {
   return (
     <div
@@ -18,13 +18,17 @@ export default function Feature({
       }`}
     >
       {/* Top icon block - fixed height */}
-      <div className={`relative w-full ${mobileImageHeight} ${ alignIncompleteRow ? "md:h-[300px]" : imageHeight} bg-[#F0F0FA]`}>
+      <div
+        className={`relative w-full ${mobileImageHeight} ${
+          alignIncompleteRow ? "md:h-[300px]" : imageHeight
+        } bg-[#F0F0FA]`}
+      >
         <Image unoptimized src={imageSrc} alt="icon image" fill />
       </div>
 
       {/* Bottom text block - flexible height with minimum */}
       <div className={`w-full p-[16px] flex flex-col gap-[8px] flex-grow `}>
-        <p className="font-semibold text-[20px] sm:text-[24px] lg:text-[36px] text-[#020202] leading-[26px] md:leading-[40px] -tracking-[0.32px] md:-tracking-[0.35px] font-plus-jakarta">
+        <p className="font-semibold text-[20px] sm:text-[24px] lg:text-[36px] text-[#020202] leading-[26px] md:leading-[32px] lg:leading-[40px] -tracking-[0.32px] md:-tracking-[0.35px] font-plus-jakarta">
           {heading}
         </p>
 
