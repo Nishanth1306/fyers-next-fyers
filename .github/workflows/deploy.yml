@@ -13,13 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Build Docker image
       - name: Build Docker image
+        working-directory: new_next
         run: |
-          cd fyers-next-fyers
           docker build -t next-app:latest .
 
-      # Stop and remove existing container
+
       - name: Stop existing container if running
         run: |
           if [ "$(docker ps -q -f name=next-app-container)" ]; then
@@ -29,7 +28,6 @@ jobs:
             docker rm next-app-container
           fi
 
-      # Run new container
       - name: Run new container
         run: |
           docker run -d \
@@ -37,6 +35,5 @@ jobs:
             -p 4001:4001 \
             next-app:latest
 
-      # Show running containers
       - name: Docker ps
         run: docker ps
