@@ -22,7 +22,7 @@ export const supportData = {
             email: "partner-support@fyers.in"
         },
         {
-            icon: "headphones",
+            icon: "lock",
             title: "Support",
             hours: "(Mon–Fri: 8:30 AM – 11:55 PM)",
             subHours: "(Sat: 8:30 AM – 5:30 PM)",
@@ -37,14 +37,14 @@ export const supportData = {
             email: "api-support@fyers.in"
         },
         {
-            icon: "lock",
+            icon: "filetext",
             title: "Account Freezing",
             hours: "(9:00 AM – 6:00 PM)",
             phone: "080-473 49 053",
             email: "stoptrade@fyers.in"
         },
         {
-            icon: "headphones",
+            icon: "filetext",
             title: "NRI Support",
             hours: "(8:30 AM – 5:30 PM)",
             phone: "080-600 01 111",

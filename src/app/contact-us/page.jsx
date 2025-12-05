@@ -14,11 +14,12 @@ export default function contactUs() {
       <NavBar />
       <PageIntro
         imageSrc="/images/contact-us/contact-us.png"
+        greeting="Contact us"
         title="We are here for you"
         description="From feedback to queries - we are here to help."
         buttons={[
           {
-            text: "Join Us",
+            text: "Sign up",
             className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] md:py-[12px] px-[24px]",
             href: "https://signup.fyers.in/",
           },
@@ -27,12 +28,14 @@ export default function contactUs() {
         linkText={"View Openings"}
         linkHref={"https://signup.fyers.in/"}
         align="left"
+        contentWidth="md:w-[742px]"
+        descWidth="md:w-[280px]"
       />
 
-      {/* <SupportCardsSection /> */}
+      <SupportCardsSection />
 
       <div className="px-4 md:px-[80px]">
-        <div className="font-plus-jakarta font-semibold text-[64px] my-[32px]">
+        <div className="font-plus-jakarta font-semibold text-[36px] pb-[24px] md:text-[64px]">
           <h1>Escalation Matrix</h1>
         </div>
       </div>
@@ -44,7 +47,7 @@ export default function contactUs() {
           <div className="font-plus-jakarta text-[36px] font-semibold items-start text-[#F5FF0A] gap-[32px]">
             <h1>Important Note</h1>
           </div>
-          <div className="text-[#F0F0FA] font-manrope text-[18px]">
+          <div className="text-[#F0F0FA] font-manrope text-[18px] overflow-hidden">
             <h1>
               In absence of a response/complaint not addressed to your satisfaction, you may lodge a complaint with SEBI
               at https://scores.sebi.gov.in/ or Exchange at https://investorhelpline.nseindia.com/NICEPLUS Please quote
@@ -52,8 +55,21 @@ export default function contactUs() {
             </h1>
           </div>
 
-          <div className="text-[#F0F0FA] font-manrope">
-            <h1>SMART ORDER</h1>
+
+          {/* <div className="text-[#F0F0FA] font-manrope text-[14px] font-normal leading-[22px] tracking-[-0.16px] self-stretch overflow-hidden">
+            <h1>
+              In absence of a response/complaint not addressed to your satisfaction, you may lodge a complaint with SEBI
+              at https://scores.sebi.gov.in/ or Exchange at https://investorhelpline.nseindia.com/NICEPLUS
+              Please quote your Service Ticket/Complaint Ref No. while raising your complaint at SEBI SCORES/Exchange portal.
+            </h1>
+          </div> */}
+
+
+          <div className="text-[#F0F0FA] pt-[30px] font-manrope">
+            <h1 className="text-[#F0F0FA] font-manrope text-[14px] font-bold leading-[22px] tracking-[-0.16px]">
+              SMART ORDER
+            </h1>
+
             <h1>
               In accordance with SEBI circular dated July 31, 2023, w.e.f August 16, 2023, all disputes against Trading
               Members shall be filed on the ODR Portal. For link to ODR portal is https://smartodr.in/login
@@ -65,10 +81,10 @@ export default function contactUs() {
       <TableSection data={contactData2} />
 
       <section className="px-4 md:px-[80px]">
-        <div className="pt-[32px]">
-          <h1 className="font-plus-jakarta font-semibold text-[64px]">Our Coordinates</h1>
+        <div className="">
+          <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[64px]">Our Coordinates</h1>
         </div>
-        <div className="py-[32px]">
+        <div className="">
           <h1 className="font-plus-jakarta text-[24px] font-semibold">Address</h1>
           <h1 className="font-manrope text-[18px]">
             901 and 902, 9th Floor, A Wing, Brigade Magnum, Amruthahalli, Kodigehalli Gate, Hebbal, Bengaluru - 560092
@@ -78,7 +94,7 @@ export default function contactUs() {
 
       <section className="px-4 md:px-[80px] pb-[32px]">
         <div>
-          <Image src="/images/contact-us/map.png" alt="Contact Us Map" width={1200} height={420} />
+          <Image src="/images/contact-us/map.png" alt="Contact Us Map" width={1800} height={420} />
         </div>
       </section>
 
