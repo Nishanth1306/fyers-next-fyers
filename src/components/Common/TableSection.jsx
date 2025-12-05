@@ -13,7 +13,7 @@ export default function TableSection({ data = contactData }) {
                   key={index}
                   className="font-plus-jakarta text-[22px] text-left p-[24px] font-semibold text-sm text-gray-900 border-r border-[#C8C8CC] last:border-r-0"
                 >
-                  <div className="flex items-center gap-2">{header.label}</div>
+                  <div className="flex items-center gap-2 whitespace-nowrap">{header.label}</div>
                 </th>
               ))}
             </tr>
@@ -22,19 +22,19 @@ export default function TableSection({ data = contactData }) {
           <tbody>
             {data.rows.map((row, rowIndex) => (
               <tr key={rowIndex} className="w-[full] border-b border-gray-200">
-                <td className="p-[24px] border-r border-gray-200 align-top">
-                  <div className="font-manrope font-medium text-[16px] border-[#C8C8CC] text-gray-900">{row.details}</div>
+                <td className="p-[24px] border-r border-gray-200 ">
+                  <div className="font-manrope font-medium text-[16px] border-[#C8C8CC] text-gray-900 whitespace-nowrap">{row.details}</div>
                 </td>
-                <td className="font-manrope p-[24px] border-r border-[#C8C8CC] align-top text-[16px] text-gray-900">{row.contactPerson}</td>
-                <td className="font-manrope p-[24px] border-r border-[#C8C8CC] align-top text-[16px] text-gray-900">{row.email}</td>
+                <td className="font-manrope p-[24px] border-r border-[#C8C8CC] text-[16px] text-gray-900 whitespace-nowrap">{row.contactPerson}</td>
+                <td className="font-manrope p-[24px] border-r border-[#C8C8CC] text-[16px] text-gray-900">{row.email}</td>
                 {row.address && (
-                  <td className="font-manrope p-[24px] border-r border-[#C8C8CC] align-top text-[16px] text-gray-900 max-w-xs">
+                  <td className="font-manrope p-[24px] border-r border-[#C8C8CC] text-[16px] text-gray-900 max-w-xs">
                     {row.address}
                   </td>
                 )}
-                <td className="font-manrope p-[24px] border-r border-[#C8C8CC] align-top text-[16px] text-gray-900">{row.contactNo}</td>
+                <td className="font-manrope p-[24px] border-r border-[#C8C8CC] text-[16px] text-gray-900">{row.contactNo}</td>
                 {row.workingHours && (
-                  <td className="font-manrope p-[24px] align-top text-[16px] text-gray-900">{row.workingHours}</td>
+                  <td className="font-manrope p-[24px] text-[16px] text-gray-900">{row.workingHours}</td>
                 )}
               </tr>
             ))}

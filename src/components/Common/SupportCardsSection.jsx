@@ -7,12 +7,12 @@ export const SupportCardsSection = ({ data = supportData }) => {
   const secondRowCards = data.cards.slice(3, 7);
 
   return (
-    <div className="w-full bg-white/40 backdrop-blur-sm pt-[64px] bt-[32px] mb-[32px]">
+    <div className="w-full bg-white/40 backdrop-blur-sm md:pt-[64px]  pt-[24px] bt-[32px] mb-[12px]">
   
 
   
       <div className="px-5 md:px-[80px] flex items-center gap-[32px] mb-6">
-        <h1 className="font-plus-jakarta text-[64px] font-semi-bold text-[#131319]">{data.title}</h1>
+        <h1 className="font-plus-jakarta md:text-[64px] text-[36px] font-semi-bold text-[#131319]">{data.title}</h1>
       </div>
 
 
