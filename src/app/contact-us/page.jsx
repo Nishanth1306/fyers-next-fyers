@@ -20,7 +20,7 @@ export default function contactUs() {
           {
             text: "Join Us",
             className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] md:py-[12px] px-[24px]",
-            href: "https://login.fyers.in/?cb=https://fyers.in/web",
+            href: "https://signup.fyers.in/",
           },
         ]}
         linkPrefix={"Are You A Stock Market Fanatic?"}
