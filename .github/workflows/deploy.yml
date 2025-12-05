@@ -16,24 +16,25 @@ jobs:
       - name: Build Docker image
         working-directory: ./new_next
         run: |
-          docker build -t next-app:latest .
+          docker build -t fyers-next-app:latest .
 
 
-      - name: Stop existing container if running
+      - name: Stop existing container
         run: |
-          if [ "$(docker ps -q -f name=next-app-container)" ]; then
-            docker stop next-app-container
+          if [ "$(docker ps -q -f name=fyers-next-container)" ]; then
+            docker stop fyers-next-container
           fi
-          if [ "$(docker ps -aq -f name=next-app-container)" ]; then
-            docker rm next-app-container
+          if [ "$(docker ps -aq -f name=fyers-next-container)" ]; then
+            docker rm fyers-next-container
           fi
 
       - name: Run new container
         run: |
           docker run -d \
-            --name next-app-container \
+            --name fyers-next-container \
             -p 4001:4001 \
-            next-app:latest
+            -v /home/deploy/fyers/new_next:/app \
+            fyers-next-app:latest
 
       - name: Docker ps
         run: docker ps
