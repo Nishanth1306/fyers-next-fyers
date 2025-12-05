@@ -94,7 +94,7 @@ export default function contactUs() {
 
       <section className="px-4 md:px-[80px] pb-[32px]">
         <div>
-          <Image src="/images/contact-us/map.png" alt="Contact Us Map" width={1800} height={420} />
+          <Image src="/fyers/images/contact-us/map.png" alt="Contact Us Map" width={1800} height={420} />
         </div>
       </section>
 
