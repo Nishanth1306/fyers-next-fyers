@@ -7,6 +7,7 @@ import Image from "next/image";
 import FyersCTA from "@/components/Common/FyersCTA";
 import Footer from "@/components/IndexPage/Footer";
 import ContactTable from "@/components/media/contact-us/ContactTable";
+import Map from "@/components/contact-us/Map";
 
 export default function contactUs() {
   return (
@@ -71,43 +72,20 @@ export default function contactUs() {
         <ContactTable contactData={contactData2} />
       </div>
 
-      <section className="px-4 md:px-10 lg:px-[80px] pt-[12px] md:pt-[36px] lg:pt-[64px] pb-[12px] md:pb-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
-        <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px]">
+      <section className="pt-[12px] md:pt-[36px] lg:pt-[64px] pb-[12px] md:pb-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
+        <h1 className="font-plus-jakarta px-4 md:px-10 lg:px-[80px] font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px]">
           Our coordinates
         </h1>
 
-        <div className="">
+        <div className="px-4 md:px-10 lg:px-[80px]">
           <h1 className="font-plus-jakarta text-[24px] font-semibold">Address</h1>
           <h1 className="font-manrope text-[18px] max-w-[480px]">
             901 and 902, 9th Floor, A Wing, Brigade Magnum, Amruthahalli, Kodigehalli Gate, Hebbal, Bengaluru - 560092
           </h1>
         </div>
 
-        <div className="hidden md:block w-full overflow-hidden">
-          <div className="h-[420px] w-full relative">
-            <Image
-              unoptimized
-              src="https://assets.fyers.in/Marcom_Avatar/Images/maps.webp"
-              alt="Contact Us Map"
-              fill
-              className="object-cover object-left"
-              sizes="100vw"
-            />
-          </div>
-        </div>
+        <Map />
 
-        <div className="block md:hidden w-full overflow-hidden">
-          <div className="h-[420px] w-full relative">
-            <Image
-              unoptimized
-              src="https://assets.fyers.in/Marcom_Avatar/Images/maps-mobile.webp"
-              alt="Contact Us Map"
-              fill
-              className="object-cover object-left"
-              sizes="100vw"
-            />
-          </div>
-        </div>
       </section>
 
       <FyersCTA />
