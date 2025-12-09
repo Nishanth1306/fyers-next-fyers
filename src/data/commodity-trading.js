@@ -1,14 +1,14 @@
-import Feature1 from "/public/images/futures-options/feature-1.svg";
-import Feature2 from "/public/images/futures-options/feature-2.svg";
-import Feature3 from "/public/images/futures-options/feature-3.svg";
-import Feature4 from "/public/images/futures-options/feature-4.svg";
-import Feature5 from "/public/images/futures-options/feature-5.svg";
-import Feature6 from "/public/images/futures-options/feature-6.svg";
-import Feature7 from "/public/images/futures-options/feature-7.svg";
-import Feature8 from "/public/images/futures-options/feature-8.svg";
-import Feature9 from "/public/images/futures-options/feature-9.svg";
-import Feature10 from "/public/images/futures-options/feature-10.svg";
-import Feature11 from "/public/images/futures-options/feature-11.svg";
+import Feature1 from "@/assets/images/futures-options/feature-1.svg";
+import Feature2 from "@/assets/images/futures-options/feature-2.svg";
+import Feature3 from "@/assets/images/futures-options/feature-3.svg";
+import Feature4 from "@/assets/images/futures-options/feature-4.svg";
+import Feature5 from "@/assets/images/futures-options/feature-5.svg";
+import Feature6 from "@/assets/images/futures-options/feature-6.svg";
+import Feature7 from "@/assets/images/futures-options/feature-7.svg";
+import Feature8 from "@/assets/images/futures-options/feature-8.svg";
+import Feature9 from "@/assets/images/futures-options/feature-9.svg";
+import Feature10 from "@/assets/images/futures-options/feature-10.svg";
+import Feature11 from "@/assets/images/futures-options/feature-11.svg";
 
 export const features = [
   {

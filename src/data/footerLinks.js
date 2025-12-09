@@ -108,7 +108,7 @@ export const socialLinks = [
     ),
   },
   {
-    href: "https://tr.ee/KB8Xf4i7dv",
+    href: "https://www.quora.com/profile/FYERS-1",
     alt: "Quora",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="none">

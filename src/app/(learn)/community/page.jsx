@@ -1,19 +1,17 @@
 import PageIntro from "@/components/Common/PageIntro";
 import NavBar from "@/components/IndexPage/NavBar";
-import Feature1 from "/public/images/futures-options/feature-1.svg";
-import Feature2 from "/public/images/futures-options/feature-12.svg";
-import Feature3 from "/public/images/futures-options/feature-13.svg";
+import Feature1 from "@/assets/images/futures-options/feature-1.svg";
 import FeatureLayout from "@/components/futures&options/FeatureLayout";
 import FyersCTA from "@/components/Common/FyersCTA";
 import Footer from "@/components/IndexPage/Footer";
 import Features from "@/components/Common/Features";
 import { extraFeatures1, extraFeatures2 } from "@/data/learn/community";
-import CommunityFeatures from "./CommunityFeatures";
 import Button from "@/components/Common/Button";
-import FyersNextIcon from "/public/images/learn/community/fyers-next-icon.svg";
-import NextButton from "/public/images/fyers-next.svg";
-import Telegram from "/public/images/learn/community/telegram.svg";
-import Reddit from "/public/images/learn/community/reddit.svg";
+import FyersNextIcon from "@/assets/images/learn/community/fyers-next-icon.svg";
+import NextButton from "@/assets/images/fyers-next.svg";
+import Telegram from "@/assets/images/learn/community/telegram.svg";
+import Reddit from "@/assets/images/learn/community/reddit.svg";
+import CommunityFeatures from "@/components/learn/community/CommunityFeatures";
 
 export const features = [
   {
@@ -79,8 +77,8 @@ export default function CommunityPage() {
         linkText="Sign up"
         linkHref="https://signup.fyers.in/"
         align="left"
-        contentWidth="lg:w-[1112px]"
-        descWidth="lg:w-[421px]"
+        contentWidth="md:w-[700px] lg:w-[1112px]"
+        descWidth="md:w-[421px]"
       />
 
       <section className="relative">
@@ -105,7 +103,7 @@ export default function CommunityPage() {
         </div>
 
         {/* Desktop: Grid layout */}
-        <div className="hidden md:block px-4 md:px-20">
+        <div className="hidden md:block px-4 md:px-10 lg:px-20">
           <div className="grid grid-cols-4 divide-y">
             {features.map(({ iconSrc, iconAlt, title, description, href }, index) => (
               <FeatureLayout
@@ -115,7 +113,9 @@ export default function CommunityPage() {
                 title={title}
                 isLastInRow={(index + 1) % 4 === 0}
                 href={href}
-                className="p-4 flex flex-row items-center gap-4 border-[#C5C6CA] max-md:border-r max-md:first:border-l md:border-l"
+                className="p-4 flex flex-row items-center gap-2 border-[#C5C6CA] max-md:border-r max-md:first:border-l md:border-l"
+                titleClassName="font-manrope md:font-plus-jakarta font-medium md:font-semibold text-[16px] md:text-[18px] lg:text-[24px] leading-[20px] lg:leading-[32px] -tracking-[0.18px] md:-tracking-[0.1px] break-words"
+                iconClassName="md:-[25px] lg:h-[35px] md:w-[25px] lg:w-[35px] object-contain flex-shrink-0"
               />
             ))}
           </div>
@@ -125,23 +125,23 @@ export default function CommunityPage() {
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#C5C6CA]" />
       </section>
 
-      <section className="flex flex-col items-start gap-[24px] lg:gap-[32px] py-[24px] lg:py-[64px]">
-        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] lg:px-[80px]">
+      <section className="flex flex-col items-start gap-[24px] lg:gap-[32px] py-[24px] md:py-[48px] lg:py-[64px]">
+        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] md:px-[40px] lg:px-[80px]">
           Why join FYERS Community?
         </h2>
 
         <Features features={extraFeatures1} featuresPerRow={3} mobileFeaturesPerRow={1} />
       </section>
 
-      <section className="flex flex-col items-start gap-[24px] lg:gap-[32px] py-[32px]">
-        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] lg:px-[80px]">
+      <section className="flex flex-col items-start gap-[24px] lg:gap-[32px] py-[24px] lg:py-[32px]">
+        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] md:px-[40px] lg:px-[80px]">
           What's in it for members?
         </h2>
         <CommunityFeatures features={extraFeatures2} />
       </section>
 
       <section className="flex py-[40px] flex-col items-center gap-[40px] self-stretch border-t border-[#666666] bg-[#131319]">
-        <div className="flex flex-col lg:flex-row px-[20px] lg:px-[80px] justify-center items-start gap-[24px] self-stretch">
+        <div className="flex flex-col lg:flex-row px-[20px] md:px-10 lg:px-[80px] justify-center items-start gap-[24px] self-stretch">
           <div className="flex flex-col items-start gap-[24px] flex-grow flex-shrink-0 basis-0">
             <div className="flex flex-col items-start gap-[8px] self-stretch">
               <h3 className="text-[#F0F0FA] font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px]">
@@ -169,12 +169,12 @@ export default function CommunityPage() {
           />
         </div>
 
-        <div className="flex px-[20px] lg:px-[80px] items-start gap-[32px] self-stretch border-y border-[#666666]">
+        <div className="flex px-[20px] md:px-10 lg:px-[80px] items-start gap-[32px] self-stretch border-y border-[#666666]">
           <div className="flex flex-col lg:flex-row items-center flex-grow shrink-0 basis-0 border-r border-[#666666]">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`flex p-[12px] lg:p-[32px] flex-col justify-center items-center flex-[1_0_0] self-stretch border-l border-[#666666] ${
+                className={`flex p-[12px] lg:p-[32px] flex-col justify-center items-start lg:items-center flex-[1_0_0] self-stretch border-l border-[#666666] ${
                   index !== stats.length - 1 ? "border-b borde-[#666666]" : ""
                 }`}
               >

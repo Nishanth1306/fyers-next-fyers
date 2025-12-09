@@ -1,5 +1,5 @@
 import React from "react";
-import { AccountIcon, TradeOnCall, PartnerSupport, CustomerSupport, ApiSupport } from "../../../public/icons/icon";
+import { AccountIcon, TradeOnCall, PartnerSupport, CustomerSupport, ApiSupport } from "../../data/contact-us.js"
 
 const iconMap = {
   clock: AccountIcon,
@@ -17,8 +17,8 @@ export const SupportCard = ({ card, isLast }) => {
 
   return (
     <div
-      className={`px-5 py-4 md:p-6 border-b border-l border-r ${
-        isLast ? "md:border-r" : "md:border-r-0"
+      className={`px-5 py-4 md:p-6 border-l border-b border-r ${
+        isLast ? "lg:border-r" : "lg:border-r-0"
       } border-[#C8C8CC] flex flex-row items-start gap-2 md:gap-[8px]`}
     >
       {/* Icon */}

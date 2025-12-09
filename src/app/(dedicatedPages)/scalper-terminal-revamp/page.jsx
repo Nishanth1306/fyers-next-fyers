@@ -6,7 +6,7 @@ import { feature, extraFeatures } from "@/data/dedicated-pages/scalperTerminal";
 import FeatureSection from "@/components/ commodity-trading/Feature";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
-import ScalperTerminalImage from "/public/images/Group2.svg";
+// import ScalperTerminalImage from "@/assets/images/Group2.svg";
 
 export default function ScalperTerminalPage() {
   return (

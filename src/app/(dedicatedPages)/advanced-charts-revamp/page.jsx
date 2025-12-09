@@ -5,7 +5,7 @@ import Feature from "@/components/fyers-webapp/Feature";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import { features1, features2 } from "@/data/dedicated-pages/advancedCharts";
-import AdvanceChartsImage from "/public/images/advanced-charts/bar-chart-fill.svg";
+import AdvanceChartsImage from "@/assets/images/advanced-charts/bar-chart-fill.svg";
 import ColumnFeaturesSection from "@/components/Common/ColumnFeaturesSection";
 
 export default function AdvancedChartsPage() {

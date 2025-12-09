@@ -5,7 +5,7 @@ import { extraFeatures, features } from "@/data/offerings/ipo";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import FyersCTA from "@/components/Common/FyersCTA";
-import DownloadBlueImage from "/public/images/download-blue.svg";
+import DownloadBlueImage from "@/assets/images/download-blue.svg";
 
 const IPOPage = () => {
   return (

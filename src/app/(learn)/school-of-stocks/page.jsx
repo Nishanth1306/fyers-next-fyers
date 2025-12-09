@@ -1,14 +1,14 @@
 import PageIntro from "@/components/Common/PageIntro";
 import NavBar from "@/components/IndexPage/NavBar";
 import FyersCTA from "@/components/Common/FyersCTA";
-import Feature1 from "/public/images/learn/school-of-stocks/stock-line.svg";
-import Feature2 from "/public/images/learn/school-of-stocks/e-bike-2-line.svg";
-import Feature3 from "/public/images/learn/school-of-stocks/secure-payment-fill.svg";
+import Feature1 from "@/assets/images/learn/school-of-stocks/stock-line.svg";
+import Feature2 from "@/assets/images/learn/school-of-stocks/e-bike-2-line.svg";
+import Feature3 from "@/assets/images/learn/school-of-stocks/secure-payment-fill.svg";
 
 import Image from "next/image";
-import SosFeature from "./SosFeature";
 import Footer from "@/components/IndexPage/Footer";
-import SosModulesSearch from "./SosModulesSearch";
+import SosModulesSearch from "@/components/learn/school-of-stocks/SosModulesSearch";
+import SosFeature from "@/components/learn/school-of-stocks/SosFeature";
 
 export const features = [
   {
@@ -122,7 +122,7 @@ export default function ShoolOfStocks() {
         linkText="Sign up"
         linkHref="https://signup.fyers.in/"
         align="left"
-        contentWidth="lg:w-[946px]"
+        contentWidth="md:w-[700px] lg:w-[946px]"
         descWidth="lg:w-[610px]"
       />
 
@@ -153,8 +153,8 @@ export default function ShoolOfStocks() {
       </section>
 
       <section>
-        <div className="pt-[20px] md:pt-[40px] pb-[20px] px-[20px] lg:px-[80px] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[12px] lg:gap-0 self-stretch">
-          <h1 className="w-fit font-plus-jakarta text-[24px] lg:text-[48px] font-semibold leading-[32px] lg:leading-[56px] -tracking-[0.1px] lg:-tracking-[0.64px]">
+        <div className="pt-[20px] md:pt-[40px] pb-[20px] px-[20px] lg:px-[80px] flex flex-col md:flex-row items-start md:items-center justify-between gap-[12px] lg:gap-0 self-stretch">
+          <h1 className="w-fit font-plus-jakarta text-[24px] md:text-[36px] lg:text-[48px] font-semibold leading-[32px] lg:leading-[56px] -tracking-[0.1px] lg:-tracking-[0.64px]">
             Modules
           </h1>
 
@@ -162,11 +162,11 @@ export default function ShoolOfStocks() {
         </div>
 
         <div className="px-[20px] md:px-[0px]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 border-y border-[#C8C8CC] mb-[20px] md:mb-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 border-y border-[#C8C8CC] mb-[20px] md:mb-[40px] lg:mb-32">
             {extraFeatures.map((feature, index) => (
               <div
                 key={index}
-                className={`lg:px-0 ${index % 2 !== 0 ? "lg:pr-[80px]" : "lg:pl-[80px]"} ${
+                className={`md:px-0 ${index % 2 !== 0 ? "md:pr-[20px] lg:pr-[80px]" : "md:pl-[20px] lg:pl-[80px]"} ${
                   index !== extraFeatures.length - 1 ? "border-b border-[#C8C8CC]" : ""
                 }`}
               >

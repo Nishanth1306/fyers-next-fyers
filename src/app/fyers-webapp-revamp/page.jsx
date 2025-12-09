@@ -11,7 +11,7 @@ import {
 } from "@/data/fyers-webapp";
 import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";
-import DownloadBlueImage from "/public/images/download-blue.svg";
+import DownloadBlueImage from "@/assets/images/download-blue.svg";
 
 export default function FyersWebApp() {
   return (
@@ -75,14 +75,14 @@ export default function FyersWebApp() {
         />
 
         <div className="flex flex-col gap-[24px] md:gap-[48px]">
-          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px] custom-container mx-auto">
             Discovery & Analysis
           </h3>
           <Feature feature={featuresForTraders1} />
         </div>
 
         <div className="flex flex-col gap-[24px] md:gap-[48px] pt-[72px]">
-          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px] custom-container mx-auto">
             Execute & Track
           </h3>
           <Feature feature={featuresForTraders2} invert isTwoCols />
@@ -95,14 +95,14 @@ export default function FyersWebApp() {
         />
 
         <div className="flex flex-col gap-[24px] md:gap-[48px]">
-          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px] custom-container mx-auto">
             Discovery & Analysis
           </h3>
           <Feature feature={featuresForInvestors1} />
         </div>
 
         <div className="flex flex-col gap-[24px] md:gap-[48px] pt-[72px] pb-[64px]">
-          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px] custom-container mx-auto">
             Execute & Track
           </h3>
           <Feature feature={featuresForInvestors2} />

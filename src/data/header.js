@@ -1,4 +1,4 @@
-import UpcomingImage from "/public/images/upcoming-image.png";
+import UpcomingImage from "@/assets/images/upcoming-image.png";
 export const navBarLinks = {
   Products: {
     LHS: {

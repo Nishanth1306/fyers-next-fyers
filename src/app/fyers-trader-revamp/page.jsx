@@ -6,9 +6,9 @@ import { features, features1, features2, stats } from "@/data/fyers-trader";
 import Features from "@/components/Common/Features";
 import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";
-import TraderButton from "/public/images/Trader-white.svg";
+import TraderButton from "@/assets/images/Trader-white.svg";
 import Feature from "@/components/fyers-webapp/Feature";
-import DownloadBlueImage from "/public/images/download-blue.svg";
+import DownloadBlueImage from "@/assets/images/download-blue.svg";
 
 export default function FyersTraderPage() {
   return (

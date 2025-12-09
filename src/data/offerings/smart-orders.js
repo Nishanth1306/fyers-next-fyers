@@ -1,9 +1,9 @@
-import Feature1 from "/public/images/smart-orders/arrow-up-double-fill.svg";
-import Feature2 from "/public/images/smart-orders/user-heart-line.svg";
-import Feature3 from "/public/images/smart-orders/shield-star-line.svg"
-import Feature4 from "/public/images/smart-orders/smartphone-line.svg"
-import Feature5 from "/public/images/smart-orders/line-chart-fill.svg"
-import Feature6 from "/public/images/smart-orders/arrow-up-down-line.svg"
+import Feature1 from "@/assets/images/smart-orders/arrow-up-double-fill.svg";
+import Feature2 from "@/assets/images/smart-orders/user-heart-line.svg";
+import Feature3 from "@/assets/images/smart-orders/shield-star-line.svg"
+import Feature4 from "@/assets/images/smart-orders/smartphone-line.svg"
+import Feature5 from "@/assets/images/smart-orders/line-chart-fill.svg"
+import Feature6 from "@/assets/images/smart-orders/arrow-up-down-line.svg"
 
 
 

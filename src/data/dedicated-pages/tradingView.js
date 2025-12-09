@@ -1,10 +1,10 @@
-import Feature1 from "/public/images/trading-view/list-check-3.svg"
-import Feature2 from "/public/images/trading-view/stock-line.svg"
-import Feature3 from "/public/images/trading-view/arrow-up-down-line.svg"
-import Feature4 from "/public/images/trading-view/profile-line.svg"
-import Feature5 from "/public/images/trading-view/line-chart-line.svg"
-import Feature6 from "/public/images/trading-view/p2p-line.svg"
-import Feature7 from "/public/images/trading-view/feedback-line.svg"
+import Feature1 from "@/assets/images/trading-view/list-check-3.svg"
+import Feature2 from "@/assets/images/trading-view/stock-line.svg"
+import Feature3 from "@/assets/images/trading-view/arrow-up-down-line.svg"
+import Feature4 from "@/assets/images/trading-view/profile-line.svg"
+import Feature5 from "@/assets/images/trading-view/line-chart-line.svg"
+import Feature6 from "@/assets/images/trading-view/p2p-line.svg"
+import Feature7 from "@/assets/images/trading-view/feedback-line.svg"
 
 
 export const features = [

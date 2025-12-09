@@ -5,7 +5,7 @@ import InfoSection from "@/components/fyers-next/InformationSection";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import { extraFeatures, features } from "@/data/fyers-next";
-import NextButton from "/public/images/fyers-next.svg";
+import NextButton from "@/assets/images/fyers-next.svg";
 import FeatureSection from "@/components/ commodity-trading/Feature";
 
 export default function FyersNextPage() {
@@ -18,16 +18,7 @@ export default function FyersNextPage() {
         title="Reliability that powers <br /> every trade"
         description="Stable & robust trading platform for faster execution."
         buttons={[
-          {
-            imageSrc: NextButton,
-            text: "Sign Up",
-            className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] px-[12px] md:p-[12px]",
-            invert: true,
-            imageHeight: 20,
-            imageWidth: 20,
-            href: "https://signup.fyers.in/",
-          },
-          {
+           {
             // imageSrc: NextButton,
             text: "Access Platform",
             className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] px-[12px] md:p-[12px]",
@@ -36,6 +27,15 @@ export default function FyersNextPage() {
             imageWidth: 20,
             href: "https://workdrive.zohopublic.in/writer/open/j5tr6d4f6ac2b433a4031a8543f883d28030b",
           },
+          {
+            imageSrc: NextButton,
+            text: "Sign Up",
+            className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] px-[12px] md:p-[12px]",
+            invert: true,
+            imageHeight: 20,
+            imageWidth: 20,
+            href: "https://signup.fyers.in/",
+          }
         ]}
         linkPrefix="Not a FYERS User?"
         linkText="Sign up"

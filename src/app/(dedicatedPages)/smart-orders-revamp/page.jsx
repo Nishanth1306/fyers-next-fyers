@@ -4,7 +4,7 @@ import PageIntro from "@/components/Common/PageIntro";
 import Feature from "@/components/fyers-webapp/Feature";
 import { feature } from "@/data/dedicated-pages/smartOrders";
 import FeatureSection from "@/components/ commodity-trading/Feature";
-import SmartOrderImages from "/public/images/Group2.svg";
+import SmartOrderImages from "@/assets/images/Group2.svg";
 import { extraFeatures } from "@/data/offerings/smart-orders";
 import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";

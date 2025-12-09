@@ -1,7 +1,7 @@
 "use client";
 
 import SectionHeader from "../Common/SectionHeader";
-import ArrowRightTopImage from "/public/images/Pricing/arrow-right-up-line.svg"
+import ArrowRightTopImage from "@/assets/images/Pricing/arrow-right-up-line.svg"
 
 export default function OfferBanner() {
   return (

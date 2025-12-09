@@ -5,7 +5,7 @@ const Charts = async () => {
   const isMobile = await detectDeviceServer(headers);
   return (
     <div className="fy-charts pb-[64px]">
-      <div className="container mx-auto p-[24px_16px] lg:p-[64px_0]">
+      <div className="custom-container mx-auto p-[24px_16px] lg:p-[64px_0]">
         <div className="font-plus text-[14px] lg:text-[20px] font-semibold leading-[24px] tracking-[1.2px] uppercase text-[#676768]">
           Growth & Learning
         </div>

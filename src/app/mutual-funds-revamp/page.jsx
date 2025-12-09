@@ -5,8 +5,8 @@ import { extraFeatures, features } from "@/data/offerings/mutual-funds";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import FyersCTA from "@/components/Common/FyersCTA";
-import MutualFunds from "/public/images/shake-hands-fill.svg";
-import DownloadBlueImage from "/public/images/download-blue.svg";
+import MutualFunds from "@/assets/images/shake-hands-fill.svg";
+import DownloadBlueImage from "@/assets/images/download-blue.svg";
 
 const MutualFundsPage = () => {
   return (

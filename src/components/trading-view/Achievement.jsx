@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TradingViewImage from "/public/images/Trading-view-yellow.svg"
+import TradingViewImage from "@/assets/images/Trading-view-yellow.svg"
 
 export default function Achievement({ text }) {
   return (

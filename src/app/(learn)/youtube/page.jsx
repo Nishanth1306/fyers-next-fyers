@@ -1,14 +1,15 @@
 import PageIntro from "@/components/Common/PageIntro";
-import YoutubePageintro from "/public/images/learn/youtube/youtube-pageintro.png";
-import YoutubePageintroMobile from "/public/images/learn/youtube/youtube-pageintro-mobile.png";
+import YoutubePageintro from "@/assets/images/learn/youtube/youtube-pageintro.png";
+import YoutubePageintroMobile from "@/assets/images/learn/youtube/youtube-pageintro-mobile.png";
 import Video from "@/components/learn/youtube/Video";
-import HouseOfTrading from "/public/images/learn/youtube/house-of-trading.png";
-import Analysis from "/public/images/learn/youtube/analysis.png";
-import FyersProduct from "/public/images/learn/youtube/fyers-product.png";
+import HouseOfTrading from "@/assets/images/learn/youtube/house-of-trading.png";
+import Analysis from "@/assets/images/learn/youtube/analysis.png";
+import FyersProduct from "@/assets/images/learn/youtube/fyers-product.png";
 import FyersCTA from "@/components/Common/FyersCTA";
 import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";
 import Button from "@/components/Common/Button";
+import signUpImage from "@/assets/images/learn/youtube/youtube-fill.svg"
 const videos = [
   {
     title: "House of Trading",
@@ -51,7 +52,7 @@ export default function YoutubePage() {
           {
             text: "Sign Up",
             className: "py-[8px] md:py-[12px] px-[24px] bg-[#182BFF] text-[#F2F4FB]",
-            imageSrc: "/images/learn/youtube/youtube-fill.svg",
+            imageSrc: signUpImage,
             imageAlt: "Youtube Icon",
             imageHeight: 18,
             imageWidth: 18,
@@ -59,14 +60,16 @@ export default function YoutubePage() {
             href: "https://signup.fyers.in/",
           },
         ]}
-        descWidth="max-w-[450px]"
         linkPrefix="Not a FYERS User?"
         linkText="Sign up"
         linkHref="https://signup.fyers.in/"
         align="left"
-        contentWidth="md:w-[942px]"
+        contentWidth="md:w-[700px] lg:w-[942px]"
+        descWidth="max-w-[450px]"
       />
-      <section className="px-[20px] md:px-[72px] py-[20px] md:py-[64px]">
+
+
+      <section className="px-[20px] lg:px-[64px] md:px-[72px] py-[20px] md:py-[64px]">
         <div className="flex flex-col gap-[24px] md:gap-[48px] items-start">
           <div className="flex flex-col gap-[24px] md:gap-[32px]">
             <h3 className="text-[#070708] text-[36px] md:text-[64px] font-plus-jakarta font-semibold leading-[40px] md:leading-[72px] -tracking-[0.35px] md:-tracking-[0.8px]">
@@ -92,16 +95,16 @@ export default function YoutubePage() {
           </div>
         </div>
       </section>
-      <section className="sm:px-[24px] sm:py-[24px] py-[24px]">
+      <section className="sm:px-[24px] sm:py-[24px] py-[24px] bg-[linear-gradient(292deg,rgba(246,247,249,0)_8.15%,#DEDEDE_41.43%)]">
         <div className="items-center justify-center">
-          <div className="flex flex-col   items-center justify-center">
-            <h3 className="text-[#070708] text-[24px] md:text-[64px] font-plus-jakarta text-center  font-semibold leading-[40px] md:leading-[72px] -tracking-[0.35px] md:-tracking-[0.8px]">
+          <div className="flex flex-col items-center justify-center">
+            <h3 className="text-[#070708] text-[24px] md:text-[64px] font-plus-jakarta text-center font-semibold leading-[40px] md:leading-[72px] -tracking-[0.35px] md:-tracking-[0.8px]">
               FYERS School of Stocks
             </h3>
+
             <div className="md:py-[40px] pt-[16px]">
               <Button
                 text="Learn More"
-                // imageSrc="/images/arrow-right.svg"
                 imageAlt=""
                 imageWidth={17}
                 imageHeight={17}
@@ -112,6 +115,7 @@ export default function YoutubePage() {
           </div>
         </div>
       </section>
+
       <FyersCTA />
       <Footer />
     </main>

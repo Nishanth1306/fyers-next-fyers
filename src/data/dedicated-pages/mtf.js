@@ -1,7 +1,7 @@
-import Feature1 from "/public/images/mtf/arrow-up-line.svg";
-import Feature2 from "/public/images/mtf/stock-line.svg";
-import Feature3 from "/public/images/mtf/bank-card-line.svg";
-import Feature4 from "/public/images/mtf/cash-line.svg";
+import Feature1 from "@/assets/images/mtf/arrow-up-line.svg";
+import Feature2 from "@/assets/images/mtf/stock-line.svg";
+import Feature3 from "@/assets/images/mtf/bank-card-line.svg";
+import Feature4 from "@/assets/images/mtf/cash-line.svg";
 
 export const feature = {
   mobileImageHeight: "min-h-[344px]",

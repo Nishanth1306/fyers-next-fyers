@@ -12,7 +12,7 @@ import Footer from "@/components/IndexPage/Footer";
 import FyersCTA from "@/components/Common/FyersCTA";
 import Pricing from "@/components/IndexPage/Pricing";
 import Faqs from "@/components/IndexPage/Faqs";
-import GuardianImage from "/public/images/press-g.svg";
+import GuardianImage from "@/assets/images/press-g.svg";
 import QuizFold from "@/components/IndexPage/QuizFold";
 
 export default function IndexHomePage() {

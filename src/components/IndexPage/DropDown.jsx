@@ -15,7 +15,7 @@ export default function DropDown() {
             <Link 
               key={idx} 
               href={navBarLinks[tab].redirectUrl}
-              className="text-[16px] font-manrope md:text-[18px] md:leading-[24px] md:tracking-[-0.24px] font-medium md:font-semibold text-[#F2F4FB] hover:text-white transition-colors duration-200 cursor-pointer whitespace-nowrap py-1 px-0.5"
+              className="flex items-center text-[16px] font-manrope md:text-[18px] md:leading-[24px] md:tracking-[-0.24px] font-medium md:font-semibold text-[#F2F4FB] hover:text-white transition-colors duration-200 cursor-pointer whitespace-nowrap py-1 px-0.5"
             >
               {tab}
             </Link>
@@ -61,7 +61,7 @@ function DropDownTab({ tab, activeTab, setActiveTab, setTimeoutId, timeoutId }) 
 
 function TabLabel({ tab, isActive }) {
   return (
-    <div className="flex items-center gap-2 py-1 px-0.5">
+    <div className="flex items-center lg:min-h-[75px] gap-2 py-1 px-0.5">
       <span className="text-[16px] font-manrope md:text-[18px] md:leading-[24px] md:tracking-[-0.24px] font-medium md:font-semibold text-[#F2F4FB] hover:text-white transition-colors duration-200 cursor-pointer whitespace-nowrap">
         {tab}
       </span>

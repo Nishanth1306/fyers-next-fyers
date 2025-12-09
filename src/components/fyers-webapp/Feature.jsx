@@ -23,7 +23,7 @@ function FeatureInfo({
   return (
     <div
       onClick={onClick}
-      className={`cursor-pointer p-[16px] ${minHeightDesktop} flex flex-col justify-center gap-[8px] md:gap-[8px] hover:bg-[#F2F4FB] transition-colors relative ${
+      className={`cursor-pointer flex-1 p-[16px] ${minHeightDesktop} flex flex-col justify-center gap-[8px] md:gap-[8px] hover:bg-[#F2F4FB] transition-colors relative ${
         isActive
           ? "bg-[#F2F4FB] before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-1/2 before:h-[4px] before:bg-[#182BFF] after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-1/2 after:h-[4px] after:bg-[#FFF]"
           : ""
@@ -117,15 +117,11 @@ function MobileFeatureCarousel({ features, mobileImageHeight }) {
           }  flex items-center justify-center bg-[#131319] overflow-hidden border-x border-b border-[#C5C6CA]`}
         >
           {features[currentIndex].featureImage && (
-            <Image
+            <img
               key={features[currentIndex].featureImage}
-              unoptimized
               src={features[currentIndex].featureImage}
               alt="image"
-              fill
-              className={`bg-[#E5E5E5] ${features[currentIndex].featureImageStyles ?? "object-cover"}`}
-              sizes="100vw"
-              priority
+              className={`bg-[#E5E5E5] h-full ${features[currentIndex].featureImageStyles ?? "object-cover"}`}
             />
           )}
         </div>
@@ -184,7 +180,7 @@ export default function Feature({
   return (
     <div className="flex flex-col gap-[28px]">
       <div className="border-t md:border-y border-[#C5C6CA]">
-        <div className="bg-[#FFFFFF] px-5 md:px-10 lg:px-20">
+        <div className="bg-[#FFFFFF] px-5 md:px-10 lg:px-20 custom-container mx-auto">
           {/* Mobile Layout */}
           <div className="md:hidden relative">
             <div className="absolute left-1/2 -translate-x-1/2 w-screen border-b border-[#C5C6CA] bottom-[48px]" />
@@ -199,12 +195,10 @@ export default function Feature({
               {/* Image Row */}
               <div className="relative w-full min-h-[610px] bg-[#131319] flex items-center justify-center overflow-hidden">
                 {feature.features[activeIndex].featureImage && (
-                  <Image
-                    unoptimized
+                <img
                     src={feature.features[activeIndex].featureImage}
                     alt="feature image"
-                    fill
-                    className={`bg-[#E5E5E5] ${
+                    className={`bg-[#E5E5E5] h-full${
                       feature.features[activeIndex].featureImageStyles ?? "object-cover"
                     } object-top`}
                   />
@@ -235,12 +229,10 @@ export default function Feature({
               {/* Image Row */}
               <div className="relative w-full min-h-[610px] bg-[#131319] flex items-center justify-center overflow-hidden">
                 {feature.features[activeIndex].featureImage && (
-                  <Image
-                    unoptimized
+                  <img
                     src={feature.features[activeIndex].featureImage}
                     alt="feature image"
-                    fill
-                    className={`bg-[#E5E5E5] ${
+                    className={`bg-[#E5E5E5] h-full${
                       feature.features[activeIndex].featureImageStyles ?? "object-cover"
                     } object-top`}
                   />
@@ -274,12 +266,10 @@ export default function Feature({
                   {/* Image */}
                   <div className="relative w-full flex items-center justify-center bg-white overflow-hidden">
                     {feature.features[activeIndex].featureImage && (
-                      <Image
-                        unoptimized
+                      <img
                         src={feature.features[activeIndex].featureImage}
                         alt="feature image"
-                        fill
-                        className={`bg-[#E5E5E5] ${feature.features[activeIndex].featureImageStyles ?? "object-cover"}`}
+                        className={`bg-[#E5E5E5] h-full ${feature.features[activeIndex].featureImageStyles ?? "object-cover"}`}
                       />
                     )}
                   </div>
@@ -327,12 +317,10 @@ export default function Feature({
 
                   {/* Image */}
                   <div className="relative w-full flex items-center justify-center bg-white overflow-hidden">
-                    <Image
-                      unoptimized
+                    <img
                       src={feature.features[activeIndex].featureImage}
                       alt="feature image"
-                      fill
-                      className={`bg-[#E5E5E5] ${feature.features[activeIndex].featureImageStyles ?? "object-cover"}`}
+                      className={`bg-[#E5E5E5] h-full ${feature.features[activeIndex].featureImageStyles ?? "object-cover"}`}
                     />
                   </div>
                 </>

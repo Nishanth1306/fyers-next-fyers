@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Cloud from "/public/images/fyers-api/cloud-line.svg"
-import GitPullRequest from "/public/images/fyers-api/git-pull-request-line.svg";
-import Shield from "/public/images/fyers-api/shield-keyhole-line.svg";
-import ShoppingCart from "/public/images/fyers-api/shopping-cart-2-line.svg";
+import Cloud from "@/assets/images/fyers-api/cloud-line.svg"
+import GitPullRequest from "@/assets/images/fyers-api/git-pull-request-line.svg";
+import Shield from "@/assets/images/fyers-api/shield-keyhole-line.svg";
+import ShoppingCart from "@/assets/images/fyers-api/shopping-cart-2-line.svg";
 
 export default function FyersAPISection() {
   return (
