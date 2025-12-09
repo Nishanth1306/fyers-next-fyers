@@ -39,7 +39,7 @@ export default function AboutUsPage() {
           // aboutDesc="Our mission is to empower new-age traders & investors with the best-in-class technology and platforms."
           imageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/about-us-woman.webp"}
           imageAlt="Women using a mobile phone"
-          imageContainerStyles="min-w-[540px] md:min-h-[340px]"
+          imageContainerStyles="min-w-[540px] md:min-h-full"
           imageStyles="w-full h-auto md:h-[361px] md:w-[542px] object-cover"
         />
 

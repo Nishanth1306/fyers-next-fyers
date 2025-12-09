@@ -3,7 +3,7 @@ export const feature1 = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/adv-screeners-180-pre-built.webp",
-      featureImageStyles: "object-cover md:object-left lg:object-center",
+      featureImageStyles: "object-cover object-left md:object-left lg:object-center",
       featureTitle: "180+ Pre-Built Screeners",
       featureDescription: "Ready-to-use filters for every trading style and market condition.",
     },

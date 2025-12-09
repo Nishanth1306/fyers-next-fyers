@@ -18,10 +18,10 @@ export default function FyersNextPage() {
         title="Reliability that powers <br /> every trade"
         description="Stable & robust trading platform for faster execution."
         buttons={[
-           {
+          {
             // imageSrc: NextButton,
             text: "Access Platform",
-            className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] px-[12px] md:p-[12px]",
+            className:"hidden md:block bg-[#B8CEFF] text-[#182BFF] border border-[#182BFF] py-[6px] px-[10px] md:p-[12px] cursor-pointer",
             invert: true,
             imageHeight: 20,
             imageWidth: 20,

@@ -116,12 +116,17 @@ function MobileFeatureCarousel({ features, mobileImageHeight }) {
             mobileImageHeight ? mobileImageHeight : "min-h-[250px]"
           }  flex items-center justify-center bg-[#131319] overflow-hidden border-x border-b border-[#C5C6CA]`}
         >
+          {/* updated to Image cause set mobileImageHeight and fill the image  */}
           {features[currentIndex].featureImage && (
-            <img
+            <Image
               key={features[currentIndex].featureImage}
+              unoptimized
               src={features[currentIndex].featureImage}
               alt="image"
-              className={`bg-[#E5E5E5] h-full ${features[currentIndex].featureImageStyles ?? "object-cover"}`}
+              fill
+              className={`bg-[#E5E5E5] ${features[currentIndex].featureImageStyles ?? "object-cover"}`}
+              sizes="100vw"
+              priority
             />
           )}
         </div>

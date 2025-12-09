@@ -7,9 +7,9 @@ export default function MiddleSection() {
       <div className="pt-6 md:pt-10 pb-6 md:pb-10 flex flex-col gap-6 md:gap-8 overflow-hidden">
         <div className="px-4 md:px-20  pt-6 md:pt-10 pb-6 md:pb-10 flex flex-col gap-6 md:gap-8 overflow-hidden">
           <div>
-            <h1 className="font-plus-jakarta font-semibold text-[32px] md:text-[64px] leading-[38px] md:leading-[72px] tracking-[-0.4px] md:tracking-[-0.8px] text-black">
+            <h2 className="font-plus-jakarta font-semibold text-[32px] md:text-[64px] leading-[38px] md:leading-[72px] tracking-[-0.4px] md:tracking-[-0.8px] text-black">
               Why Choose FYERS API?
-            </h1>
+            </h2>
             <p className="font-plus-jakarta text-sm md:text-base mt-2 text-gray-600">
               A snapshot of some incredible features we have to offer you.
             </p>
