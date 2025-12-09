@@ -109,7 +109,7 @@ const Pricing = () => {
           width={427}
           height={452}
           alt="pricing-logo"
-          className="px-4 md:px-0"
+          className="px-4 md:px-0 w-full"
         />
       </div>
     </div>
