@@ -8,14 +8,13 @@ import { useState } from "react";
 import OtpInput from "./OtpInput";
 import Link from "next/link";
 
-
 const phoneUtil = PhoneNumberUtil.getInstance();
 
 export default function Banner({ seo }) {
   const userData = useUser();
 
   const [phone, setPhone] = useState("");
-  const [country , setCountry] = useState("");
+  const [country, setCountry] = useState("");
   const [error, setError] = useState("");
   const [captchaToken, setCaptchaToken] = useState("");
   const [otpScreen, setOtpScreen] = useState(false);
@@ -86,8 +85,7 @@ export default function Banner({ seo }) {
               Trade Now, <br className="hidden md:block" /> Pay Later with MTF
             </h1>
             <p className="text-lg pb-2 md:pb-4 text-gray-600 md:text-start">
-              Use extra margin to buy and hold stocks without paying the full
-              amount upfront.
+              Use extra margin to buy and hold stocks without paying the full amount upfront.
             </p>
 
             <div className="flex md:items-center gap-4 md:gap-2 items-start ml-3 md:m-0 flex-col sm:flex-row md:w-fit">
@@ -98,11 +96,7 @@ export default function Banner({ seo }) {
                       <label htmlFor="phone" className="sr-only">
                         Phone Number
                       </label>
-                      <PhoneInputWithFlags
-                        value={phone}
-                        error={error}
-                        onChange={handlePhoneChange}
-                      />
+                      <PhoneInputWithFlags value={phone} error={error} onChange={handlePhoneChange} />
                       <button
                         onClick={handleGetStartedClick}
                         className="bg-[#436af5] text-white px-4 py-2 hover:bg-[#3657c8] transition w-full md:w-fit self-center md:self-start"
@@ -113,24 +107,21 @@ export default function Banner({ seo }) {
                   ) : !verified ? (
                     <OtpInput phone={phone} onVerify={handleVerifyOtp} />
                   ) : (
-                    <div className="text-green-500 font-bold">
-                      OTP Verified! You can proceed further.
-                    </div>
+                    <div className="text-green-500 font-bold">OTP Verified! You can proceed further.</div>
                   )}
                 </>
               )}
-              {
-                userData.userLoggedIn &&
+              {userData.userLoggedIn && (
                 <Link
-                    href="https://trade.fyers.in/"
-                    className="bg-[#436af5] text-white px-4 py-2 hover:bg-[#3657c8] transition w-full md:w-fit self-center md:self-start"
-                  >
-                        Get Started
+                  href="https://trade.fyers.in/"
+                  className="bg-[#436af5] text-white px-4 py-2 hover:bg-[#3657c8] transition w-full md:w-fit self-center md:self-start"
+                >
+                  Get Started
                 </Link>
-              }
+              )}
             </div>
 
-            {!userData.userLoggedIn && !verified && !otpScreen && validMobileNumber(phone) &&(
+            {!userData.userLoggedIn && !verified && !otpScreen && validMobileNumber(phone) && (
               <Turnstile
                 sitekey="0x4AAAAAAAX-ITdP-oek6KZb"
                 theme="light"
@@ -152,9 +143,7 @@ export default function Banner({ seo }) {
         <div className="absolute bottom-[-169px] md:bottom-[-145px] left-0 right-0 mx-auto flex items-center justify-evenly rounded-[32px] text-white min-h-[148px] max-w-[1180px] bg-[#2b449e] bg-[url('/images/usb-bk.png')] bg-cover bg-center">
           <div className="md:flex justify-evenly md:space-x-0">
             <div className="fys-usbp px-8 py-2 text-[12px] leading-[20px] md:text-[20px] md:leading-[26px] md:pr-16 md:px-16  border-r border-white">
-              <span className="block text-[18px] leading-[24px] font-bold md:text-[32px] md:leading-[38px]">
-                9L
-              </span>
+              <span className="block text-[18px] leading-[24px] font-bold md:text-[32px] md:leading-[38px]">9L</span>
               Customers
             </div>
             <div className="fys-usbp px-8 py-2 text-[12px] leading-[20px] md:text-[20px] md:leading-[26px] md:pr-16 md:px-16  border-r border-white">
@@ -167,20 +156,10 @@ export default function Banner({ seo }) {
 
           <div className="md:flex items-center gap-4 md:gap-10 mt-2 md:mt-0 py-[1.438rem]">
             <div>
-              <img
-                src="/images/best-broker.png"
-                alt="Best Broker"
-                className="max-w-[120px] md:max-w-none"
-              />
+              <img src="/images/best-broker.png" alt="Best Broker" className="max-w-[120px] md:max-w-none" />
             </div>
             <div className="text-[12px] leading-[20px] mt-2 md:mt-0">
-              By{" "}
-              <img
-                src="/images/tv.svg"
-                alt="Trading View"
-                className="inline-block ml-2"
-              />{" "}
-              Trading View
+              By <img src="/images/tv.svg" alt="Trading View" className="inline-block ml-2" /> Trading View
             </div>
           </div>
         </div>

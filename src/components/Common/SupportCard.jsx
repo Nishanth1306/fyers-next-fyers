@@ -1,5 +1,5 @@
 import React from "react";
-import { AccountIcon, TradeOnCall, PartnerSupport, CustomerSupport, ApiSupport } from "../../data/contact-us.js"
+import { AccountIcon, TradeOnCall, PartnerSupport, CustomerSupport, ApiSupport } from "../../data/contact-us.js";
 
 const iconMap = {
   clock: AccountIcon,
@@ -22,7 +22,7 @@ export const SupportCard = ({ card, isLast }) => {
       } border-[#C8C8CC] flex flex-row items-start gap-2 md:gap-[8px]`}
     >
       {/* Icon */}
-      <div className="flex-shrink-0 flex items-center justify-center bg-white border border-gray-200 w-[32px] h-[32px] py-[2.72px] px-[2.73px]">
+      <div className="flex-shrink-0 flex items-center justify-center bg-white w-[32px] h-[32px] py-[2.72px] px-[2.73px]">
         {IconComponent && <IconComponent className="w-4 h-4 text-gray-700" />}
       </div>
 

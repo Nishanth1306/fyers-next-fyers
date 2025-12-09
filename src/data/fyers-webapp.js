@@ -124,7 +124,7 @@ export const featuresForInvestors1 = {
   features: [
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/fundamental-analysis.webp",
-      featureImageStyles: "object-cover lg:object-fit md:object-[15%] lg:object-center",
+      featureImageStyles: "object-cover object-left lg:object-fit md:object-[15%] lg:object-center",
       featureTitle: "Fundamental Analysis",
       featureDescription:
         "Evaluate companies deeply with 25+ years of financials, ratios, results data and detailed SWOT analysis for the company in your focus.",
@@ -147,7 +147,7 @@ export const featuresForInvestors1 = {
     },
     {
       featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/fyers-webapp-i1-Advanced-charts.webp",
-      featureImageStyles: "object-cover lg:object-fit md:object-[15%] lg:object-center",
+      featureImageStyles: "object-cover object-left lg:object-fit md:object-[15%] lg:object-center",
       featureTitle: "Advanced Charts with 25+ Years Data",
       featureDescription: "Analyse long-term trends with historical charts and indicators.",
       featureLink: "/advanced-charts",

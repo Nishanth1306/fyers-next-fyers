@@ -9,7 +9,7 @@ import FyersCTA from "@/components/Common/FyersCTA";
 import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";
 import Button from "@/components/Common/Button";
-import signUpImage from "@/assets/images/learn/youtube/youtube-fill.svg"
+import signUpImage from "@/assets/images/learn/youtube/youtube-fill.svg";
 const videos = [
   {
     title: "House of Trading",
@@ -46,8 +46,8 @@ export default function YoutubePage() {
       <PageIntro
         imageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/youtube-bk.webp"}
         mobileImageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/youtube-mobile-bk.webp"}
-        title="Your Gateway to Knowledge"
-        description="On the FYERS YouTube channels, access videos on analysis, strategies, and tools - curated by FYERS to help you trade and invest smarter every day."
+        title="Your gateway to knowledge"
+        description="On the FYERS YouTube channels, access videos on analysis, strategies and tools. Curated by our team to help you trade and invest smarter every day."
         buttons={[
           {
             text: "Sign Up",
@@ -68,17 +68,12 @@ export default function YoutubePage() {
         descWidth="max-w-[450px]"
       />
 
-
-      <section className="px-[20px] lg:px-[64px] md:px-[72px] py-[20px] md:py-[64px]">
-        <div className="flex flex-col gap-[24px] md:gap-[48px] items-start">
+      <section className="px-[20px] md:px-[40px] lg:px-[64px] py-[20px] md:py-[64px]">
+        <div className="flex flex-col gap-[24px] lg:gap-[48px] items-start">
           <div className="flex flex-col gap-[24px] md:gap-[32px]">
-            <h3 className="text-[#070708] text-[36px] md:text-[64px] font-plus-jakarta font-semibold leading-[40px] md:leading-[72px] -tracking-[0.35px] md:-tracking-[0.8px]">
+            <h3 className="text-[#070708] text-[36px] md:text-[48px] lg:text-[64px] font-plus-jakarta font-semibold leading-[40px] md:leading-[72px] -tracking-[0.35px] md:-tracking-[0.8px]">
               Subscribe to learning
             </h3>
-            {/* <p className="text-[#020202] font-manrope text-[18px] font-normal leading-[26px]">
-              On the FYERS YouTube channels, access videos on analysis, strategies and tools - curated by FYERS to help
-              you trade and invest smarter every day.
-            </p> */}
           </div>
           <div className="flex flex-col gap-[40px] overflow-hidden md:gap-[48px] w-full">
             {videos.map(({ title, description, invert, imageSrc, imageAlt, href }) => (
@@ -95,25 +90,20 @@ export default function YoutubePage() {
           </div>
         </div>
       </section>
-      <section className="sm:px-[24px] sm:py-[24px] py-[24px] bg-[linear-gradient(292deg,rgba(246,247,249,0)_8.15%,#DEDEDE_41.43%)]">
-        <div className="items-center justify-center">
-          <div className="flex flex-col items-center justify-center">
-            <h3 className="text-[#070708] text-[24px] md:text-[64px] font-plus-jakarta text-center font-semibold leading-[40px] md:leading-[72px] -tracking-[0.35px] md:-tracking-[0.8px]">
-              FYERS School of Stocks
-            </h3>
 
-            <div className="md:py-[40px] pt-[16px]">
-              <Button
-                text="Learn More"
-                imageAlt=""
-                imageWidth={17}
-                imageHeight={17}
-                href="https://fyers.in/school-of-stocks"
-                className="bg-[#182BFF] text-[#F2F4FB] items-center py-[8px] px-[14px] text-[16px]"
-              />
-            </div>
-          </div>
-        </div>
+      <section className="flex p-[24px] lg:py-10 lg:px-6 flex-col items-center gap-[16px] lg:gap-[40px] self-stretch bg-[linear-gradient(292deg,rgba(246,247,249,0)_8.15%,#DEDEDE_41.43%)]">
+        <h3 className="text-center font-plus-jakarta text-[24px] lg:text-[64px] font-semibold leading-[32px] lg:leading-[72px] -tracking-[0.1px] lg:-tracking-[0.8px] text-[#070708]">
+          FYERS School of Stocks
+        </h3>
+
+        <Button
+          text="Learn More"
+          imageAlt=""
+          imageWidth={17}
+          imageHeight={17}
+          href="https://fyers.in/school-of-stocks"
+          className="w-fit bg-[#182BFF] text-[#F2F4FB] items-center py-[8px] px-[14px] text-[14px]"
+        />
       </section>
 
       <FyersCTA />

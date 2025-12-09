@@ -151,7 +151,7 @@ export const TradeOnCall = ({ className }) => (
 );
 
 export const PartnerSupport = ({ className }) => (
-  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -159,7 +159,7 @@ export const PartnerSupport = ({ className }) => (
       fill="#666666"
     />
     <mask
-      id="mask0_4622_649"
+      id="mask0_4783_649"
       style={{ maskType: "luminance" }}
       maskUnits="userSpaceOnUse"
       x="0"
@@ -174,7 +174,7 @@ export const PartnerSupport = ({ className }) => (
         fill="white"
       />
     </mask>
-    <g mask="url(#mask0_4622_649)">
+    <g mask="url(#mask0_4783_649)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

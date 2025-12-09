@@ -154,9 +154,9 @@ export default function ShoolOfStocks() {
 
       <section>
         <div className="pt-[20px] md:pt-[40px] pb-[20px] px-[20px] lg:px-[80px] flex flex-col md:flex-row items-start md:items-center justify-between gap-[12px] lg:gap-0 self-stretch">
-          <h1 className="w-fit font-plus-jakarta text-[24px] md:text-[36px] lg:text-[48px] font-semibold leading-[32px] lg:leading-[56px] -tracking-[0.1px] lg:-tracking-[0.64px]">
+          <h2 className="w-fit font-plus-jakarta text-[24px] md:text-[36px] lg:text-[48px] font-semibold leading-[32px] lg:leading-[56px] -tracking-[0.1px] lg:-tracking-[0.64px]">
             Modules
-          </h1>
+          </h2>
 
           <SosModulesSearch />
         </div>

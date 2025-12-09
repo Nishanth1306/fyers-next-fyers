@@ -21,7 +21,7 @@ export default function contactUs() {
         description="From feedback to queries - we are here to help."
         buttons={[
           {
-            text: "Sign up",
+            text: "Sign Up",
             className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] md:py-[12px] px-[24px]",
             href: "https://signup.fyers.in/",
           },
@@ -38,9 +38,9 @@ export default function contactUs() {
       <SupportCardsSection />
 
       <div className="py-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
-        <h1 className="px-[20px] md:px-10 lg:px-[80px] font-plus-jakarta font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px] md:leading-[72px] -tracking-[0.8px]">
+        <h3 className="px-[20px] md:px-10 lg:px-[80px] font-plus-jakarta font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px] md:leading-[72px] -tracking-[0.8px]">
           Escalation matrix
-        </h1>
+        </h3>
 
         <ContactTable contactData={contactData} />
       </div>
@@ -48,22 +48,25 @@ export default function contactUs() {
       <div className="px-4 md:px-10 lg:px-[80px]">
         <div className="bg-black p-[32px] mb-[32px]">
           <div className="font-plus-jakarta text-[36px] font-semibold items-start text-[#F5FF0A] gap-[32px]">
-            <h1>Important note</h1>
+            <h2>Important note</h2>
           </div>
           <div className="text-[#F0F0FA] font-manrope text-[18px] overflow-hidden">
-            <h1>
+            <p>
               In absence of a response/complaint not addressed to your satisfaction, you may lodge a complaint with SEBI
-              at https://scores.sebi.gov.in/ or Exchange at https://investorhelpline.nseindia.com/NICEPLUS Please quote
-              your Service Ticket/Complaint Ref No. while raising your complaint at SEBI SCORES/Exchange portal.
-            </h1>
+              at https://scores.sebi.gov.in/ or Exchange at https://investorhelpline.nseindia.com/NICEPLUS
+            </p>
+            <p>
+              Please quote your Service Ticket/Complaint Ref No. while raising your complaint at SEBI SCORES/Exchange
+              portal.
+            </p>
           </div>
 
           <div className="text-[#F0F0FA] font-manrope mt-4">
-            <h1 className="font-bold">SMART ORDER</h1>
-            <h1>
+            <h3 className="font-bold">SMART ORDER</h3>
+            <p>
               In accordance with SEBI circular dated July 31, 2023, w.e.f August 16, 2023, all disputes against Trading
               Members shall be filed on the ODR Portal. For link to ODR portal is https://smartodr.in/login
-            </h1>
+            </p>
           </div>
         </div>
       </div>
@@ -73,19 +76,18 @@ export default function contactUs() {
       </div>
 
       <section className="pt-[12px] md:pt-[36px] lg:pt-[64px] pb-[12px] md:pb-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
-        <h1 className="font-plus-jakarta px-4 md:px-10 lg:px-[80px] font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px]">
+        <h3 className="font-plus-jakarta px-4 md:px-10 lg:px-[80px] font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px]">
           Our coordinates
-        </h1>
+        </h3>
 
         <div className="px-4 md:px-10 lg:px-[80px]">
-          <h1 className="font-plus-jakarta text-[24px] font-semibold">Address</h1>
-          <h1 className="font-manrope text-[18px] max-w-[480px]">
+          <h3 className="font-plus-jakarta text-[24px] font-semibold">Address</h3>
+          <p className="font-manrope text-[18px] max-w-[480px]">
             901 and 902, 9th Floor, A Wing, Brigade Magnum, Amruthahalli, Kodigehalli Gate, Hebbal, Bengaluru - 560092
-          </h1>
+          </p>
         </div>
 
         <Map />
-
       </section>
 
       <FyersCTA />

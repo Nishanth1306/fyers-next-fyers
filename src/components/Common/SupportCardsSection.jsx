@@ -5,9 +5,9 @@ import { supportData } from "@/data/contact-us";
 export const SupportCardsSection = ({ data = supportData }) => {
   return (
     <div className="w-full flex flex-col gap-[24px] lg:gap-[32px] backdrop-blur-sm pt-[24px] pb-[12px] md:pt-[52px] lg:pt-[64px] md:pb-[32px]">
-      <h1 className="px-5 md:px-10 lg:px-[80px] font-plus-jakarta md:text-[48px] lg:text-[64px] text-[36px] font-semibold text-[#131319] leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px]">
+      <h2 className="px-5 md:px-10 lg:px-[80px] font-plus-jakarta md:text-[48px] lg:text-[64px] text-[36px] font-semibold text-[#131319] leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px]">
         {data.title}
-      </h1>
+      </h2>
 
       <div>
         <div className="w-full border-t border-[#C8C8CC]">
