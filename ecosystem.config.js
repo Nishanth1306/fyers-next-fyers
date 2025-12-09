@@ -6,7 +6,7 @@ module.exports = {
       args: "run start",            // npm script to execute
       env: {
         NODE_ENV: "production",     // Environment
-        PORT: 4001 ,
+        PORT: 4002 ,
       }
     }
   ]
