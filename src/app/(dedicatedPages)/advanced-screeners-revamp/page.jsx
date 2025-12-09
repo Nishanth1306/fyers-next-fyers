@@ -5,7 +5,7 @@ import Feature from "@/components/fyers-webapp/Feature";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import { feature1, feature2 } from "@/data/dedicated-pages/advancedScreeners";
-import Group2 from "/public/images/advanced-option-chains/search-eye-line.svg";
+import Group2 from "@/assets/images/advanced-option-chains/search-eye-line.svg";
 
 export default function AdvancedScreenersPage() {
   return (

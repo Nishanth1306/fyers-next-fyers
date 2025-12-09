@@ -2,7 +2,7 @@ import { leadersData } from "@/data/about-us";
 import Leader from "./Leader";
 import { Fragment } from "react";
 import SectionHeader from "../Common/SectionHeader";
-import ArrowImage from "/public/images/arrow-right.svg";
+import ArrowImage from "@/assets/images/arrow-right.svg";
 
 export default function LeaderShip() {
   return (

@@ -5,7 +5,7 @@ import Feature from "@/components/fyers-webapp/Feature";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import { extraFeatures, feature } from "@/data/dedicated-pages/mtf";
-import MutualFundImage from "/public/images/Group2.svg";
+import MutualFundImage from "@/assets/images/Group2.svg";
 import ColumnFeaturesSection from "@/components/Common/ColumnFeaturesSection";
 
 export default function MTFPage() {

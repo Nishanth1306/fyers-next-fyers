@@ -1,11 +1,11 @@
 import PageIntro from "@/components/Common/PageIntro";
 import BankingCard from "@/components/Pricing/BankingCard";
-import CalculatorFill from "/public/images/Pricing/calculator-line.svg";
-import ArrowRight from "/public/images/arrow-right.svg";
+import CalculatorFill from "@/assets/images/Pricing/calculator-line.svg";
+import ArrowRight from "@/assets/images/arrow-right.svg";
 import AboutHighlightSection from "@/components/Common/AboutHighlightSection";
 import FyersCTA from "@/components/Common/FyersCTA";
 import Button from "@/components/Common/Button";
-import ArrowImg from "/public/images/arrow-right.svg";
+import ArrowImg from "@/assets/images/arrow-right.svg";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 

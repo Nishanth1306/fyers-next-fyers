@@ -1,5 +1,5 @@
-import Feature1 from "/public/images/futures-options/pencil-ruler-2-line.svg";
-import Feature2 from "/public/images/advanced-charts/flow-chart.svg";
+import Feature1 from "@/assets/images/futures-options/pencil-ruler-2-line.svg";
+import Feature2 from "@/assets/images/advanced-charts/flow-chart.svg";
 
 export const features1 = {
   mobileImageHeight: "min-h-[470px]",

@@ -6,7 +6,7 @@ import Feature from "@/components/fyers-webapp/Feature";
 import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";
 import TradingViewBanner from "@/components/trading-view/TradingViewBanner";
-import DownloadBlueImage from "/public/images/download-blue.svg";
+import DownloadBlueImage from "@/assets/images/download-blue.svg";
 
 export default function TradingViewPage() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import PricingImage from "/public/images/IndexPage/pricing-info.png";
+// import PricingImage from "@/assets/images/IndexPage/pricing-info.png";
 
 const pricingDetails = [
   {

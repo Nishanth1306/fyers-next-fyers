@@ -5,8 +5,8 @@ import { timelineData } from "@/data/about-us";
 import SectionHeader from "../Common/SectionHeader";
 import TimelineSlot from "./TimelineSlot";
 import Image from "next/image";
-import RightArrowSVG from "/public/images/arrow-right-s-line-black.svg";
-import LeftArrowSVG from "/public/images/arrow-left-s-line-black.svg";
+import RightArrowSVG from "@/assets/images/arrow-right-s-line-black.svg";
+import LeftArrowSVG from "@/assets/images/arrow-left-s-line-black.svg";
 
 export default function Timeline() {
   const [activeIndex, setActiveIndex] = useState(0);

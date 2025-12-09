@@ -23,7 +23,7 @@ export default function AboutHighlightSection({
 }) {
   return (
     <section className={`bg-[#131319] border-t-[0.5px] border-[#C8C8CC] ${className}`}>
-      <div className={`${dynamicGrid}`}>
+      <div className={`${dynamicGrid} custom-container mx-auto`}>
         <div className={`flex flex-col ${dynamicGaps} pt-[40px] md:py-[36px] lg:py-[64px]`}>
           {aboutShortTitle && (
             <h2 className="text-[#F0F0FA] font-plus-jakarta font-semibold text-[20px] leading-[24px] tracking-[0px]">

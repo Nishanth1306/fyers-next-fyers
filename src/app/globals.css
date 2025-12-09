@@ -166,3 +166,42 @@
     }
   }
 }
+
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .custom-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-container {
+    max-width: 1215px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .custom-container {
+    max-width: 1536px;
+  }
+}

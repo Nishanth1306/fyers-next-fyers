@@ -24,19 +24,19 @@ export default function FyersOnePage() {
           description="Trade with confidence on a robust desktop platform designed with advanced analytical tools to elevate your market edge."
           buttons={[
             {
-              text: "Download",
-              className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] px-[12px] md:p-[12px]",
-              href: "https://workdrive.zohopublic.in/writer/open/j5tr61b97f18f769942779135acc672525710",
-            },
-            {
-              // imageSrc: NextButton,
               text: "Access Platform",
               className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] px-[12px] md:p-[12px]",
               invert: true,
               imageHeight: 20,
               imageWidth: 20,
-              href: "https://workdrive.zohopublic.in/writer/open/j5tr6d4f6ac2b433a4031a8543f883d28030b",
-            }
+              href: "https://signup.fyers.in/",
+            },
+            {
+              text: "Download",
+              className: "bg-[#182BFF] text-[#F2F4FB] py-[8px] px-[12px] md:p-[12px]",
+              href: "https://workdrive.zohopublic.in/writer/open/j5tr61b97f18f769942779135acc672525710",
+            },
+            
           ]}
         align="left"
         linkPrefix="Not a FYERS User?"

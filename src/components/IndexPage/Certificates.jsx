@@ -1,5 +1,5 @@
 import Image from "next/image";
-import carrerImage from "/public/images/IndexPage/carrer.png";
+import carrerImage from "@/assets/images/IndexPage/carrer.png";
 
 const Certificates = () => {
   return (

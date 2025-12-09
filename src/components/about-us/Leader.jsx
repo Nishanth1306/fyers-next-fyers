@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "../Common/Button";
-import TwitterImage from "/public/images/twitter-x-fill.svg";
-import LinkdinImage from "/public/images/linkedin-fill.svg";
+import TwitterImage from "@/assets/images/twitter-x-fill.svg";
+import LinkdinImage from "@/assets/images/linkedin-fill.svg";
 
 export default function Leader({ imageSrc, name, desc, site, linkedInURL, twitterURL }) {
   return (

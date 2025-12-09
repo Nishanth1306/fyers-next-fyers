@@ -1,7 +1,7 @@
-import Feature1 from "/public/images/scalper-terminal/timer-flash-line.svg";
-import Feature2 from "/public/images/scalper-terminal/cursor-line.svg";
-import Feature3 from "/public/images/scalper-terminal/keyboard-box-fill.svg";
-import Feature4 from "/public/images/scalper-terminal/search-eye-line.svg";
+import Feature1 from "@/assets/images/scalper-terminal/timer-flash-line.svg";
+import Feature2 from "@/assets/images/scalper-terminal/cursor-line.svg";
+import Feature3 from "@/assets/images/scalper-terminal/keyboard-box-fill.svg";
+import Feature4 from "@/assets/images/scalper-terminal/search-eye-line.svg";
 
 export const feature = {
   mobileImageHeight: "min-h-[240px]",

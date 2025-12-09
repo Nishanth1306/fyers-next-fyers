@@ -1,8 +1,8 @@
-import Feature1 from "/public/images/futures-options/feature-1.svg"
-import Feature2 from "/public/images/futures-options/funds-box-line.svg"
-import Feature3 from "/public/images/futures-options/briefcase-line.svg"
-import Feature4 from "/public/images/futures-options/pencil-ruler-2-line.svg"
-import Feature5 from "/public/images/futures-options/scan-line.svg"
+import Feature1 from "@/assets/images/futures-options/feature-1.svg"
+import Feature2 from "@/assets/images/futures-options/funds-box-line.svg"
+import Feature3 from "@/assets/images/futures-options/briefcase-line.svg"
+import Feature4 from "@/assets/images/futures-options/pencil-ruler-2-line.svg"
+import Feature5 from "@/assets/images/futures-options/scan-line.svg"
 
 export const features = [
   {

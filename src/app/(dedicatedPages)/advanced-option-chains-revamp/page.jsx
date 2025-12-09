@@ -5,7 +5,7 @@ import Feature from "@/components/fyers-webapp/Feature";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import { feature1, feature2 } from "@/data/dedicated-pages/advancedOptionChains";
-import Group2Image from "/public/images/Group2.svg";
+import Group2Image from "@/assets/images/Group2.svg";
 
 export default function AdvancedOptionChains() {
   return (

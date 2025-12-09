@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Button from "../Common/Button";
 import { zeroPlanItems } from "@/data/pricing";
-import ArrowIcon from "/public/images/arrow-top-right-corner.svg";
+import ArrowIcon from "@/assets/images/arrow-top-right-corner.svg";
 
 export default function BankingCard() {
   return (

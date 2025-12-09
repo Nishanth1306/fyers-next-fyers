@@ -10,7 +10,7 @@ export default function ContactTable({ contactData }) {
       <div className="flex flex-col items-start w-full" style={{ minWidth: "1200px" }}>
         {/* Headers */}
         <div className="flex flex-col items-start w-full border-y border-[#C8C8CC]">
-          <div className="flex items-start content-start w-full px-[20px] lg:px-[80px]">
+          <div className="flex items-start content-start w-full px-[20px] md:px-10 lg:px-[80px]">
             {contactData.headers.map((header, index) => (
               <div
                 key={header.label}
@@ -31,7 +31,7 @@ export default function ContactTable({ contactData }) {
         <div className="flex flex-col items-start w-full">
           {contactData.rows.map((row, rowIndex) => (
             <div key={rowIndex} className="flex items-start content-start w-full border-b border-[#C8C8CC]">
-              <div className="flex items-stretch content-start w-full px-[20px] lg:px-[80px] flex-1">
+              <div className="flex items-stretch content-start w-full px-[20px] md:px-10 lg:px-[80px] flex-1">
                 {contactData.headers.map((header, colIndex) => (
                   <div
                     key={colIndex}

@@ -1,8 +1,8 @@
-import Feature2 from "/public/images/fia/feature2.svg";
-import Feature1 from "/public/images/fia/feature1.svg";
-import Feature3 from "/public/images/fia/feature3.svg";
-import Feature4 from "/public/images/fia/feature4.svg";
-import Feature5 from "/public/images/fia/feature5.svg";
+import Feature2 from "@/assets/images/fia/feature2.svg";
+import Feature1 from "@/assets/images/fia/feature1.svg";
+import Feature3 from "@/assets/images/fia/feature3.svg";
+import Feature4 from "@/assets/images/fia/feature4.svg";
+import Feature5 from "@/assets/images/fia/feature5.svg";
 
 export const features1 = {
   mobileImageHeight: "min-h-[205px]",

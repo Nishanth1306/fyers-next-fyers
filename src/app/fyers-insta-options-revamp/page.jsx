@@ -4,7 +4,7 @@ import Feature from "@/components/fyers-webapp/Feature";
 import Footer from "@/components/IndexPage/Footer";
 import NavBar from "@/components/IndexPage/NavBar";
 import { features1, features2 } from "@/data/fyers-insta-options";
-import DownloadBlueImage from "/public/images/download-blue.svg";
+import DownloadBlueImage from "@/assets/images/download-blue.svg";
 
 export default function FyersInstaOptions() {
   return (

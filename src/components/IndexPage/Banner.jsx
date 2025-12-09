@@ -4,7 +4,13 @@ import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const Banner = ({ heading, tagline, bannerScroll, tickerEnabled = false, tickerWords = [] }) => {
+const Banner = ({
+  heading,
+  tagline,
+  bannerScroll,
+  tickerEnabled = false,
+  tickerWords = [],
+}) => {
   const [index, setIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const words = heading.trim().split(" ");
@@ -93,7 +99,9 @@ const Banner = ({ heading, tagline, bannerScroll, tickerEnabled = false, tickerW
               <span
                 className="relative inline-block align-top"
                 style={{
-                  minWidth: `${Math.max(...tickerWords.map((w) => w.length))}ch`,
+                  minWidth: `${Math.max(
+                    ...tickerWords.map((w) => w.length)
+                  )}ch`,
                 }}
               >
                 <AnimatePresence mode="wait">
@@ -125,7 +133,13 @@ const Banner = ({ heading, tagline, bannerScroll, tickerEnabled = false, tickerW
             className="text-[16px] md:text-[18px] py-[8px] px-[12px] md:p-[12px] text-white font-medium bg-[#182BFF] items-center w-fit flex gap-2"
           >
             Sign up now
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
               <path
                 d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
                 fill="#F0F0FA"
@@ -136,7 +150,10 @@ const Banner = ({ heading, tagline, bannerScroll, tickerEnabled = false, tickerW
 
         <div className="text-[12px] text-[#F2F4FB] z-1">
           Already have an account?{" "}
-          <a href="https://login.fyers.in/?cb=https://fyers.in/web" className="text-[#F5FD09] cursor-pointer">
+          <a
+            href="https://login.fyers.in/?cb=https://fyers.in/web"
+            className="text-[#F5FD09] cursor-pointer"
+          >
             Login
           </a>
         </div>
@@ -163,23 +180,32 @@ const Banner = ({ heading, tagline, bannerScroll, tickerEnabled = false, tickerW
         >
           {isMobile
             ? // Mobile: Triple the items for infinite scroll
-              [...bannerScroll, ...bannerScroll, ...bannerScroll].map((value, index) => (
-                <Link href={value.redirectUrl || ""} key={`${value.name}-${index}`}>
-                  <div className="flex gap-1 items-center justify-center border-r border-[#666] min-w-[220px] px-2.5 py-1.5 whitespace-nowrap">
-                    {value.image}
-                    <p className="text-white">{value.name}</p>
-                  </div>
-                </Link>
-              ))
+              [...bannerScroll, ...bannerScroll, ...bannerScroll].map(
+                (value, index) => (
+                  <Link
+                    href={value.redirectUrl || ""}
+                    key={`${value.name}-${index}`}
+                  >
+                    <div className="flex gap-1 items-center justify-center border-r border-[#666] min-w-[220px] px-2.5 py-1.5 whitespace-nowrap">
+                      <div>{value.image}</div>
+                      <p className="text-white">{value.name}</p>
+                    </div>
+                  </Link>
+                )
+              )
             : // Desktop: Flex items that fill the width equally
               bannerScroll.map((value, index) => (
-                <Link href={value.redirectUrl || ""} key={`${value.name}-${index}`} className="flex-1">
+                <Link
+                  href={value.redirectUrl || ""}
+                  key={`${value.name}-${index}`}
+                  className="flex-1"
+                >
                   <div
                     className={`flex gap-1 items-center justify-center border-r ${
                       index === bannerScroll.length - 1 ? "border-none" : ""
                     } border-[#666] px-2.5 py-1.5 h-full whitespace-nowrap`}
                   >
-                    {value.image}
+                    <div>{value.image}</div>
                     <p className="text-white">{value.name}</p>
                   </div>
                 </Link>

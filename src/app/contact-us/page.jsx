@@ -1,7 +1,6 @@
 import NavBar from "@/components/IndexPage/NavBar";
 import PageIntro from "@/components/Common/PageIntro";
 import { SupportCardsSection } from "@/components/Common/SupportCardsSection";
-import TableSection from "@/components/Common/TableSection";
 import { contactData } from "@/data/contact-us";
 import { contactData2 } from "@/data/contact-us";
 import Image from "next/image";
@@ -31,21 +30,21 @@ export default function contactUs() {
         linkText={"View open roles"}
         linkHref={"https://recruit.fyers.in/jobs/Careers"}
         align="left"
-        contentWidth="md:w-[742px]"
-        descWidth="md:w-[280px]"
+        contentWidth="md:w-[500px] lg:w-[742px]"
+        descWidth="md:w-[270px] lg:w-[280px]"
       />
 
       <SupportCardsSection />
 
-      <div className="py-[32px] flex flex-col gap-[24px] md:gap-[32px]">
-        <h1 className="px-[20px] md:px-[80px] font-plus-jakarta font-semibold text-[36px] md:text-[64px] leading-[40px] md:leading-[72px] -tracking-[0.8px]">
+      <div className="py-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
+        <h1 className="px-[20px] md:px-10 lg:px-[80px] font-plus-jakarta font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px] md:leading-[72px] -tracking-[0.8px]">
           Escalation matrix
         </h1>
 
         <ContactTable contactData={contactData} />
       </div>
 
-      <div className="px-4 md:px-[80px]">
+      <div className="px-4 md:px-10 lg:px-[80px]">
         <div className="bg-black p-[32px] mb-[32px]">
           <div className="font-plus-jakarta text-[36px] font-semibold items-start text-[#F5FF0A] gap-[32px]">
             <h1>Important note</h1>
@@ -72,8 +71,10 @@ export default function contactUs() {
         <ContactTable contactData={contactData2} />
       </div>
 
-      <section className="px-4 md:px-[80px] pt-[12px] md:pt-[64px] pb-[12px] md:pb-[32px] flex flex-col gap-[24px] md:gap-[32px]">
-        <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[64px] leading-[40px]">Our coordinates</h1>
+      <section className="px-4 md:px-10 lg:px-[80px] pt-[12px] md:pt-[36px] lg:pt-[64px] pb-[12px] md:pb-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
+        <h1 className="font-plus-jakarta font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px]">
+          Our coordinates
+        </h1>
 
         <div className="">
           <h1 className="font-plus-jakarta text-[24px] font-semibold">Address</h1>
@@ -85,7 +86,8 @@ export default function contactUs() {
         <div className="hidden md:block w-full overflow-hidden">
           <div className="h-[420px] w-full relative">
             <Image
-              src="/images/contact-us/map.png"
+              unoptimized
+              src="https://assets.fyers.in/Marcom_Avatar/Images/maps.webp"
               alt="Contact Us Map"
               fill
               className="object-cover object-left"
@@ -97,7 +99,8 @@ export default function contactUs() {
         <div className="block md:hidden w-full overflow-hidden">
           <div className="h-[420px] w-full relative">
             <Image
-              src="/images/media/maps-mobile.png"
+              unoptimized
+              src="https://assets.fyers.in/Marcom_Avatar/Images/maps-mobile.webp"
               alt="Contact Us Map"
               fill
               className="object-cover object-left"
