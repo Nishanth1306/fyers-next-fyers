@@ -1,39 +1,95 @@
 "use client";
 import { useEffect, useState } from "react";
 import DropDown from "./DropDown";
-import { mobileNavBarLinks } from "@/data/header";
-import Link from "next/link";
 import { useUser } from "@/contexts/UserContext";
 import NewUserNavBar from "../Common/NewUserNavBar";
+import MobileNavBarDropdown from "../Common/MobileNavbarDropdown";
+import { mobileNavBarLinksPrototype } from "@/data/header";
+import {
+  learn,
+  learnLinks,
+  more,
+  moreLinks,
+  offerings,
+  offeringsLinks,
+  products,
+  productsLinks,
+} from "@/data/mobileNavbar";
+import { useRouter } from "next/navigation";
 import { logoutUser } from "@/utils/browserHelper";
+
+const mobileNavbarOptions = {
+  products: {
+    text: "Explore all our products & trade precisely",
+    products: products,
+    links: productsLinks,
+  },
+  offerings: {
+    text: "Our state of the art Offerings ",
+    products: offerings,
+    links: offeringsLinks,
+  },
+  learning: {
+    text: "learn more all about building timeless wealth",
+    products: learn,
+    links: learnLinks,
+  },
+  more: {
+    text: "More from fyers",
+    products: more,
+    links: moreLinks,
+  },
+};
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
+  const [menuOpen, setMenuOpen] = useState({
+    products: false,
+    offerings: false,
+    learning: false,
+    more: false,
+  });
+
+  const handleMenuOpen = (key, href) => {
+    if (href) {
+      router.push(href);
+      return;
+    }
+
+    if (key in menuOpen) {
+      setMenuOpen((prev) => {
+        // If it's already open, close all
+        if (prev[key]) {
+          return Object.fromEntries(Object.keys(prev).map((k) => [k, false]));
+        }
+
+        // Otherwise open the clicked one and close others
+        return Object.fromEntries(Object.keys(prev).map((k) => [k, k === key]));
+      });
+    }
+  };
+
   const userData = useUser();
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen]);
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "unset";
+  //   }
+  //   return () => {
+  //     document.body.style.overflow = "unset";
+  //   };
+  // }, [isOpen]);
 
   return (
     <nav className="bg-[#182BFF] md:px-10 lg:px-20 relative">
       <div className="flex flex-row justify-between h-[72px] p-[16px_24px] md:py-[24px] md:px-[0]">
         <div className="flex items-center">
           <a href="/" aria-label="fyers-logo">
-            <svg
-              width="129"
-              height="28"
-              viewBox="0 0 129 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="129" height="28" viewBox="0 0 129 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_3445_5477)">
                 <path
                   d="M15.8522 0V26.8571L12.3386 21.0162V12.3894H7.41539L5.10416 8.58818L5.06616 8.43976H12.2773C12.2818 8.43976 12.3386 8.38197 12.3386 8.3774V5.11375H2.92121C2.00645 3.59168 1.16644 2.0243 0.277822 0.486429C0.21572 0.37875 0.121751 0.145513 0 0.124726V0H15.8522Z"
@@ -82,10 +138,7 @@ const NavBar = () => {
 
         <div className="hidden xl:flex items-center">
           {userData.userLoggedIn ? (
-            <NewUserNavBar
-              userName={userData.userName}
-              userId={userData.userId}
-            />
+            <NewUserNavBar userName={userData.userName} userId={userData.userId} />
           ) : (
             <>
               <div className="flex gap-4 items-center">
@@ -113,105 +166,187 @@ const NavBar = () => {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="hamburger-menu"
           >
-            <svg
-              className="w-8 h-8"
-              fill="none"
-              stroke="#F2F4FB"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+            <svg className="w-8 h-8" fill="none" stroke="#F2F4FB" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
       </div>
       {isOpen && (
-        <div
-          id="mobile-menu"
-          className="text-[18px] gap-4 font-medium items-center absolute w-full left-0 flex-col flex bg-[#101010] text-center py-[72px] min-h-[100vh] xl:hidden z-3"
-        >
-          {mobileNavBarLinks.map((item, index) => (
-            <Link href={item["redirect-url"]} key={index}>
-              <div className="">
-                <div className="flex items-center justify-between text-[18px] p-3 uppercase text-white no-underline gap-[4px]">
-                  <div className="font-[500] px-[4px] cursor-pointer leading-[24px] tracking-[-0.24px] font-manrope not-italic text-[#F0F0FA]">
-                    {item.name}
-                  </div>
-                  {item.arrowPresent && (
-                    <div className="w-[24px] h-[24px] flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="13"
-                        height="13"
-                        viewBox="0 0 13 13"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.0208 3.41421L1.41421 12.0208L0 10.6066L8.60659 2H1.02082V0H12.0208V11H10.0208V3.41421Z"
-                          fill="#F0F0FA"
-                        />
-                      </svg>
-                    </div>
-                  )}
-                </div>
+        <div id="mobile-menu" className="w-full min-h-[85vh] bg-[#F0F0FA]">
+          <div className="py-[72px] flex flex-col items-center gap-[10px] self-stretch min-h-[95%]">
+            <div className="flex flex-col items-center justify-between gap-[64px] flex-[1_0_0]">
+              <div className="flex flex-col items-center gap-[16px]">
+                {mobileNavBarLinksPrototype.map((item, index) => (
+                  <span className="flex flex-col items-center justify-center" key={index}>
+                    <button
+                      onClick={() => handleMenuOpen(item.name.toLowerCase(), item.href)}
+                      className="flex items-center justify-center p-3 gap-1"
+                    >
+                      <span className="flex items-center justify-center px-1">
+                        <span className="font-manrope text-[16px] font-medium leading-[24px] -tracking-[0.24px] text-[#131319]">
+                          {item.name}
+                        </span>
+                      </span>
+                      {item.arrowPresent && (
+                        <span className="w-[24px] h-[24px]">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            className={`transition-transform duration-200 ${
+                              menuOpen[item.name.toLowerCase()] ? "rotate-180" : ""
+                            }`}
+                          >
+                            <path
+                              d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"
+                              fill="#131319"
+                            />
+                          </svg>
+                        </span>
+                      )}
+                    </button>
+
+                    {menuOpen[item.name.toLowerCase()] && (
+                      <MobileNavBarDropdown
+                        isLearning={item.name.toLowerCase() === "learning"}
+                        text={mobileNavbarOptions[item.name.toLowerCase()].text}
+                        products={mobileNavbarOptions[item.name.toLowerCase()].products}
+                        links={mobileNavbarOptions[item.name.toLowerCase()].links}
+                      />
+                    )}
+                  </span>
+                ))}
               </div>
-            </Link>
-          ))}
-          {userData.userLoggedIn ? (
-            <>
-            <div className="flex w-[40%] my-0 mx-auto bg-white p-3 py-[8px] gap-1 text-[14px] items-center justify-center " onClick={logoutUser}>
-              <img
-                src="https://assets.fyers.in/images/global-header/icon-logout.svg"
-                alt="logout-svg"
-              />
-              <span className="text-black font-medium text-center  text-[14px]">Logout</span>
+              {userData.userLoggedIn ? (
+                <a
+                  onClick={logoutUser}
+                  className="flex items-center justify-center p-3 gap-1 bg-[#E0EBFF] w-[240px] border border-[#182BFF]"
+                >
+                  <img src="https://assets.fyers.in/images/global-header/icon-logout.svg" alt="logout-svg" />
+                  <span className="px-1 font-manrope text-[16px] font-medium leading-[24px] -tracking-[0.24px] text-[#182BFF]">
+                    Logout
+                  </span>
+                </a>
+              ) : (
+                <div className="flex flex-col items-start gap-[16px]">
+                  <a
+                    href="https://login.fyers.in/?cb=https://fyers.in/web"
+                    className="flex items-center justify-center p-3 gap-1 bg-[#182BFF] w-[240px]"
+                  >
+                    <span className="px-1 font-manrope text-[16px] font-medium leading-[24px] -tracking-[0.24px] text-[#F0F0FA]">
+                      Login
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M10 11V8L15 12L10 16V13H1V11H10ZM2.4578 15H4.58152C5.76829 17.9318 8.64262 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C8.64262 4 5.76829 6.06817 4.58152 9H2.4578C3.73207 4.94289 7.52236 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C7.52236 22 3.73207 19.0571 2.4578 15Z"
+                        fill="#F0F0FA"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://signup.fyers.in/"
+                    className="flex items-center justify-center p-3 gap-1 bg-[#E0EBFF] w-[240px] border border-[#182BFF]"
+                  >
+                    <span className="px-1 font-manrope text-[16px] font-medium leading-[24px] -tracking-[0.24px] text-[#182BFF]">
+                      Sign Up
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12.0009 17C15.6633 17 18.8659 18.5751 20.608 20.9247L18.766 21.796C17.3482 20.1157 14.8483 19 12.0009 19C9.15346 19 6.6535 20.1157 5.23577 21.796L3.39453 20.9238C5.13673 18.5747 8.33894 17 12.0009 17ZM12.0009 2C14.7623 2 17.0009 4.23858 17.0009 7V10C17.0009 12.6888 14.8786 14.8818 12.2178 14.9954L12.0009 15C9.23945 15 7.00087 12.7614 7.00087 10V7C7.00087 4.31125 9.12318 2.11818 11.784 2.00462L12.0009 2ZM12.0009 4C10.4032 4 9.09721 5.24892 9.00596 6.82373L9.00087 7V10C9.00087 11.6569 10.344 13 12.0009 13C13.5986 13 14.9045 11.7511 14.9958 10.1763L15.0009 10V7C15.0009 5.34315 13.6577 4 12.0009 4Z"
+                        fill="#182BFF"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              )}
             </div>
-            </>
-          ) : (
-            <>
-              <a
-                href="https://login.fyers.in/?cb=https://fyers.in/web"
-                className="flex w-8/12 my-0 mx-auto items-center justify-center bg-[#182BFF] gap-1 text-[14px] text-[#F2F4FB] p-3 font-medium text-center "
-              >
-                Login
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M10 11V8L15 12L10 16V13H1V11H10ZM2.4578 15H4.58152C5.76829 17.9318 8.64262 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C8.64262 4 5.76829 6.06817 4.58152 9H2.4578C3.73207 4.94289 7.52236 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C7.52236 22 3.73207 19.0571 2.4578 15Z"
-                    fill="#F2F4FB"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://signup.fyers.in/"
-                className="flex w-8/12 my-0 mx-auto mb-4 items-center justify-center text-[14px] gap-1 text-[black]  p-3 bg-[#F5FD09] font-medium text-center"
-              >
-                Sign Up
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M12.0009 17C15.6633 17 18.8659 18.5751 20.608 20.9247L18.766 21.796C17.3482 20.1157 14.8483 19 12.0009 19C9.15346 19 6.6535 20.1157 5.23577 21.796L3.39453 20.9238C5.13673 18.5747 8.33894 17 12.0009 17ZM12.0009 2C14.7623 2 17.0009 4.23858 17.0009 7V10C17.0009 12.6888 14.8786 14.8818 12.2178 14.9954L12.0009 15C9.23945 15 7.00087 12.7614 7.00087 10V7C7.00087 4.31125 9.12318 2.11818 11.784 2.00462L12.0009 2ZM12.0009 4C10.4032 4 9.09721 5.24892 9.00596 6.82373L9.00087 7V10C9.00087 11.6569 10.344 13 12.0009 13C13.5986 13 14.9045 11.7511 14.9958 10.1763L15.0009 10V7C15.0009 5.34315 13.6577 4 12.0009 4Z"
-                    fill="#131319"
-                  />
-                </svg>
-              </a>
-            </>
-          )}
+          </div>
         </div>
+        // <div
+        //   id="mobile-menu"
+        //   className="text-[18px] gap-4 font-medium items-center absolute w-full left-0 flex-col flex bg-[#101010] text-center py-[72px] min-h-[100vh] xl:hidden z-3"
+        // >
+        //   {mobileNavBarLinks.map((item, index) => (
+        //     <Link href={item["redirect-url"]} key={index}>
+        //       <div className="">
+        //         <div className="flex items-center justify-between text-[18px] p-3 uppercase text-white no-underline gap-[4px]">
+        //           <div className="font-[500] px-[4px] cursor-pointer leading-[24px] tracking-[-0.24px] font-manrope not-italic text-[#F0F0FA]">
+        //             {item.name}
+        //           </div>
+        //           {item.arrowPresent && (
+        //             <div className="w-[24px] h-[24px] flex items-center justify-center">
+        //               <svg
+        //                 xmlns="http://www.w3.org/2000/svg"
+        //                 width="13"
+        //                 height="13"
+        //                 viewBox="0 0 13 13"
+        //                 fill="none"
+        //               >
+        //                 <path
+        //                   d="M10.0208 3.41421L1.41421 12.0208L0 10.6066L8.60659 2H1.02082V0H12.0208V11H10.0208V3.41421Z"
+        //                   fill="#F0F0FA"
+        //                 />
+        //               </svg>
+        //             </div>
+        //           )}
+        //         </div>
+        //       </div>
+        //     </Link>
+        //   ))}
+        //   {userData.userLoggedIn ? (
+        //     <>
+        //     <div className="flex w-[40%] my-0 mx-auto bg-white p-3 py-[8px] gap-1 text-[14px] items-center justify-center " onClick={logoutUser}>
+        //       <img
+        //         src="https://assets.fyers.in/images/global-header/icon-logout.svg"
+        //         alt="logout-svg"
+        //       />
+        //       <span className="text-black font-medium text-center  text-[14px]">Logout</span>
+        //     </div>
+        //     </>
+        //   ) : (
+        //     <>
+        //       <a
+        //         href="https://login.fyers.in/?cb=https://fyers.in/web"
+        //         className="flex w-8/12 my-0 mx-auto items-center justify-center bg-[#182BFF] gap-1 text-[14px] text-[#F2F4FB] p-3 font-medium text-center "
+        //       >
+        //         Login
+        //         <svg
+        //           xmlns="http://www.w3.org/2000/svg"
+        //           width="24"
+        //           height="24"
+        //           viewBox="0 0 24 24"
+        //           fill="none"
+        //         >
+        //           <path
+        //             d="M10 11V8L15 12L10 16V13H1V11H10ZM2.4578 15H4.58152C5.76829 17.9318 8.64262 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C8.64262 4 5.76829 6.06817 4.58152 9H2.4578C3.73207 4.94289 7.52236 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C7.52236 22 3.73207 19.0571 2.4578 15Z"
+        //             fill="#F2F4FB"
+        //           />
+        //         </svg>
+        //       </a>
+        //       <a
+        //         href="https://signup.fyers.in/"
+        //         className="flex w-8/12 my-0 mx-auto mb-4 items-center justify-center text-[14px] gap-1 text-[black]  p-3 bg-[#F5FD09] font-medium text-center"
+        //       >
+        //         Sign Up
+        //         <svg
+        //           xmlns="http://www.w3.org/2000/svg"
+        //           width="24"
+        //           height="24"
+        //           viewBox="0 0 24 24"
+        //           fill="none"
+        //         >
+        //           <path
+        //             d="M12.0009 17C15.6633 17 18.8659 18.5751 20.608 20.9247L18.766 21.796C17.3482 20.1157 14.8483 19 12.0009 19C9.15346 19 6.6535 20.1157 5.23577 21.796L3.39453 20.9238C5.13673 18.5747 8.33894 17 12.0009 17ZM12.0009 2C14.7623 2 17.0009 4.23858 17.0009 7V10C17.0009 12.6888 14.8786 14.8818 12.2178 14.9954L12.0009 15C9.23945 15 7.00087 12.7614 7.00087 10V7C7.00087 4.31125 9.12318 2.11818 11.784 2.00462L12.0009 2ZM12.0009 4C10.4032 4 9.09721 5.24892 9.00596 6.82373L9.00087 7V10C9.00087 11.6569 10.344 13 12.0009 13C13.5986 13 14.9045 11.7511 14.9958 10.1763L15.0009 10V7C15.0009 5.34315 13.6577 4 12.0009 4Z"
+        //             fill="#131319"
+        //           />
+        //         </svg>
+        //       </a>
+        //     </>
+        //   )}
+        // </div>
       )}
     </nav>
   );
