@@ -679,3 +679,11 @@ export const mobileNavBarLinks = [
   { name: "Support", "redirect-url": "https://support.fyers.in/portal/en/home" },
   { name: "Community", "redirect-url": "https://fyers.in/community/" },
 ];
+
+export const mobileNavBarLinksPrototype = [
+  { name: "Products", arrowPresent: true },
+  { name: "Offerings", arrowPresent: true },
+  { name: "Learning", arrowPresent: true },
+  { name: "About Us", href: "https://fyers.in/about" },
+  { name: "More", arrowPresent: true },
+];
