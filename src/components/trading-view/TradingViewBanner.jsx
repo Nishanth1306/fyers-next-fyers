@@ -17,7 +17,7 @@ const TradingViewBanner = () => {
 
       <div className="bg-[#131319] border-[#C8C8CC] py-[24px] md:py-[40px] px-[16px] md:px-[72px] flex flex-col gap-[24px] md:gap-[40px]">
         {/* Achievements */}
-        <div className="flex flex-row md:items-center md:justify-between gap-[24px]">
+        <div className="flex flex-row md:items-center md:justify-between custom-container 2xl:w-full 2xl:px-[72px] gap-[24px]">
           <Achievement text="Newcomer of the Year 2023" />
           <Achievement text="Best Broker in South Asia 2024" />
         </div>

@@ -3,7 +3,6 @@ import PageIntro from "@/components/Common/PageIntro";
 import { SupportCardsSection } from "@/components/Common/SupportCardsSection";
 import { contactData } from "@/data/contact-us";
 import { contactData2 } from "@/data/contact-us";
-import Image from "next/image";
 import FyersCTA from "@/components/Common/FyersCTA";
 import Footer from "@/components/IndexPage/Footer";
 import ContactTable from "@/components/media/contact-us/ContactTable";
@@ -38,14 +37,14 @@ export default function contactUs() {
       <SupportCardsSection />
 
       <div className="py-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
-        <h3 className="px-[20px] md:px-10 lg:px-[80px] font-plus-jakarta font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px] md:leading-[72px] -tracking-[0.8px]">
+        <h3 className="px-[20px] md:px-10 lg:px-[80px] custom-container 2xl:w-full font-plus-jakarta font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px] md:leading-[72px] -tracking-[0.8px]">
           Escalation matrix
         </h3>
 
         <ContactTable contactData={contactData} />
       </div>
 
-      <div className="px-4 md:px-10 lg:px-[80px]">
+      <div className="px-4 md:px-10 lg:px-[80px] custom-container">
         <div className="bg-black p-[32px] mb-[32px]">
           <div className="font-plus-jakarta text-[36px] font-semibold items-start text-[#F5FF0A] gap-[32px]">
             <h2>Important note</h2>
@@ -76,11 +75,11 @@ export default function contactUs() {
       </div>
 
       <section className="pt-[12px] md:pt-[36px] lg:pt-[64px] pb-[12px] md:pb-[32px] flex flex-col gap-[24px] lg:gap-[32px]">
-        <h3 className="font-plus-jakarta px-4 md:px-10 lg:px-[80px] font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px]">
+        <h3 className="font-plus-jakarta px-4 md:px-10 lg:px-[80px] custom-container 2xl:w-full font-semibold text-[36px] md:text-[48px] lg:text-[64px] leading-[40px]">
           Our coordinates
         </h3>
 
-        <div className="px-4 md:px-10 lg:px-[80px]">
+        <div className="px-4 md:px-10 lg:px-[80px] custom-container 2xl:w-full">
           <h3 className="font-plus-jakarta text-[24px] font-semibold">Address</h3>
           <p className="font-manrope text-[18px] max-w-[480px]">
             901 and 902, 9th Floor, A Wing, Brigade Magnum, Amruthahalli, Kodigehalli Gate, Hebbal, Bengaluru - 560092

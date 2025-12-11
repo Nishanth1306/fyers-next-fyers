@@ -10,7 +10,7 @@ const ColumnFeaturesSection = ({ feature, isHeading = true }) => {
       }`}
     >
       {isHeading && (
-        <div className="px-5 md:px-10 lg:px-20">
+        <div className="px-5 md:px-10 lg:px-20 custom-container 2xl:w-full">
           <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[72px] -tracking-[0.1px] md:-tracking-[0.8px]">
             What’s more
           </h2>
@@ -43,7 +43,7 @@ const ColumnFeaturesSection = ({ feature, isHeading = true }) => {
           })}
         </div>
         {/* Desktop: Grid layout with 2 columns */}
-        <div className="hidden md:block md:px-10 lg:px-20">
+        <div className="hidden md:block md:px-10 lg:px-20 custom-container">
           <div className="grid grid-cols-2 divide-y divide-[#C5C6CA] ">
             {feature.map(({ iconSrc, iconAlt, title, description }, index) => {
               const isLast = index === feature.length - 1;

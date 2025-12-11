@@ -21,7 +21,8 @@ export default function FyersNextPage() {
           {
             // imageSrc: NextButton,
             text: "Access Platform",
-            className:"hidden md:block bg-[#B8CEFF] text-[#182BFF] border border-[#182BFF] py-[6px] px-[10px] md:p-[12px] cursor-pointer",
+            className:
+              "hidden md:block bg-[#B8CEFF] text-[#182BFF] border border-[#182BFF] py-[6px] px-[10px] md:p-[12px] cursor-pointer",
             invert: true,
             imageHeight: 20,
             imageWidth: 20,
@@ -35,7 +36,7 @@ export default function FyersNextPage() {
             imageHeight: 20,
             imageWidth: 20,
             href: "https://signup.fyers.in/",
-          }
+          },
         ]}
         linkPrefix="Not a FYERS User?"
         linkText="Sign up"
@@ -46,7 +47,7 @@ export default function FyersNextPage() {
       <InfoSection />
 
       <div className="flex flex-col gap-[32px] md:gap-[32px] py-[40px] md:py-[64px]">
-        <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px]">
+        <h3 className="px-4 md:px-10 lg:px-20 custom-container 2xl:w-full font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[-0.1px] md:-tracking-[0.64px]">
           Why choose FYERS Next?
         </h3>
         <FeatureSection feature={extraFeatures} isHeading={false} />

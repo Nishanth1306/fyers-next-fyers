@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col items-start bg-[#131319]">
-      <div className="custom-container mx-auto py-6 px-4 md:p-[40px] lg:p-16">
+      <div className="custom-container py-6 px-4 md:p-[40px] lg:p-16">
         <div className="w-full fy-ftop flex flex-wrap lg:flex-nowrap justify-between items-center p-2 lg:p-0">
           <div className="text-white inline-flex items-center text-[14px] leading-[32px] font-semibold">
             <Image

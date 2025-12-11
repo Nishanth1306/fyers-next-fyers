@@ -90,7 +90,7 @@ export const featuresForTraders2 = {
       featureLink: "/smart-orders",
     },
     {
-      // featureImage: "/images/web-app/pf-m.png",
+      featureImage: "https://assets.fyers.in/Marcom_Avatar/Images/fyers-webapp-journel.webp",
       featureTitle: "Journal",
       featureDescription: "Track every trade, review performance and refine your strategy with FYERS Journal.",
     },

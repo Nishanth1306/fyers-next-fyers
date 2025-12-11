@@ -8,7 +8,7 @@ const Map = () => {
         height="450"
         allowFullScreen=""
         loading="lazy"
-        className="w-full px-4 md:px-10 lg:px-[80px]"
+        className="w-full px-4 md:px-10 lg:px-[80px] custom-container"
       ></iframe>
     </div>
   );

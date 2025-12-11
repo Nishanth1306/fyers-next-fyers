@@ -18,14 +18,14 @@ export default function InfoSection() {
 
           {/* Description */}
           <p className="font-manrope text-[18px] md:text-[20px] font-normal leading-[26px] tracking-[-0.32px] text-[#C8C8CC] text-start md:text-center">
-            Lightning-fast execution for accelerated trading and investing.
+          Lightning-fast execution for accelerated trading and investing.
           </p>
         </div>
       </div>
 
       {/* Border Box Section (full 90vw with top, bottom, left, right) */}
       <div className="md:border-y border-[#666666]">
-        <div className="px-[20px] md:px-[40px] lg:px-[80px]">
+        <div className="px-[20px] md:px-[40px] lg:px-[80px] custom-container">
           <div className="flex flex-row h-full border-x border-y md:border-y-0 border-[#666666]">
             {features.map((item, i) => (
               <div

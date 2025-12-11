@@ -5,7 +5,7 @@ import DownloadImage from "@/assets/images/download-line.svg";
 export default function FyersCTA() {
   return (
     <div className="bg-[#131319] py-[24px] border-b border-[#979798]">
-      <div className="px-4 md:px-10 lg:px-20 flex flex-col md:flex-row md:items-center md:justify-between gap-[24px] custom-container mx-auto">
+      <div className="px-4 md:px-10 lg:px-20 flex flex-col md:flex-row md:items-center md:justify-between gap-[24px] custom-container">
         {/* Text Block */}
         <div className="text-white flex flex-col gap-[16px] max-w-[700px]">
           <h2 className="text-[48px] md:text-[64px] font-plus-jakarta font-semibold text-[#F5FD09] leading-[56px] md:leading-[72px] -tracking-[0.64px] md:-tracking-[0.8px]">
@@ -22,7 +22,7 @@ export default function FyersCTA() {
 
         {/* Buttons */}
       </div>
-      <div className="flex gap-4 mt-6 md:mt-0 md:self-end md:justify-end px-4 md:px-10 lg:px-20 custom-container mx-auto">
+      <div className="flex gap-4 mt-6 md:mt-0 md:self-end md:justify-end px-4 md:px-10 lg:px-20 custom-container">
         <Link
           href="https://fyers.onelink.me/cj1P/9pfepauj"
           target="_blank"
