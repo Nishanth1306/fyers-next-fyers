@@ -36,7 +36,7 @@ Your AI-powered <br /> smarter, sharper <br /> market Co-Pilot"
         />
 
         <div className="flex flex-col gap-[24px] md:gap-[28px] pt-[40px] md:pt-[64px]">
-          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+          <h3 className="px-4 md:px-10 lg:px-20  font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px] custom-container 2xl:w-full">
             Why FIA?
           </h3>
           <Feature feature={features1} isTwoCols />
@@ -47,7 +47,7 @@ Your AI-powered <br /> smarter, sharper <br /> market Co-Pilot"
         <Banner />
 
         <div className="flex flex-col gap-[24px] md:gap-[28px] py-[40px] md:py-[40px]">
-          <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-[24px] px-5 md:px-10 lg:px-20">
+          <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-[24px] px-5 md:px-10 lg:px-20 custom-container 2xl:w-full">
             <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               The all-new FYERS MCP
             </h3>

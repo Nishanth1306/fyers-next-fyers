@@ -38,7 +38,7 @@ export default function CommodityTradingPage() {
         />
 
         <section className="flex flex-col gap-[16px] md:gap-[32px]">
-          <div className="px-4 md:px-10 lg:px-20 pt-[32px] md:pt-[48px]">
+          <div className="px-4 md:px-10 lg:px-20 pt-[32px] md:pt-[48px] custom-container 2xl:w-full">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Our robust platform
             </h2>
@@ -47,7 +47,7 @@ export default function CommodityTradingPage() {
         </section>
 
         <section className="pt-[40px] md:pt-[64px] flex flex-col gap-[12px] md:gap-[28px]">
-          <h3 className="font-plus-jakarta px-5 md:px-10 lg:px-20  font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[40px] md:leading-[56px] -tracking-[0.35px] md:-tracking-[0.64px]">
+          <h3 className="font-plus-jakarta px-5 md:px-10 lg:px-20 custom-container 2xl:w-full font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[40px] md:leading-[56px] -tracking-[0.35px] md:-tracking-[0.64px]">
             Why trade commodities on FYERS?
           </h3>
           <Feature feature={extraFeatures} />

@@ -51,7 +51,7 @@ const IPOPage = () => {
         />
 
         <section className="flex flex-col gap-[24px] md:gap-[26px] lg:gap-[32px] pt-[40px] md:pt-[64px]">
-          <div className="px-4 md:px-10 lg:px-20">
+          <div className="px-4 md:px-10 lg:px-20 custom-container 2xl:w-full">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Why IPOs?
             </h2>
@@ -61,7 +61,7 @@ const IPOPage = () => {
         </section>
 
         <section className="py-[40px] md:py-[52px] lg:py-[64px] flex flex-col gap-[12px] md:gap-[28px]">
-          <div className="px-5 md:px-10 lg:px-20">
+          <div className="px-5 md:px-10 lg:px-20 custom-container 2xl:w-full">
             <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Why IPO on FYERS?
             </h3>

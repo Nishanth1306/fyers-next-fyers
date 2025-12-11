@@ -3,8 +3,9 @@ import Women from "@/assets/images/learn/community/women.png";
 
 export default function CommunityFeatures({ features }) {
   return (
-    <section className="flex flex-col items-start self-stretch border-y border-[#C8C8CC] px-[20px] md:px-10 lg:px-[80px]">
+    <section className="flex flex-col items-start self-stretch border-y border-[#C8C8CC]">
       {/* Mobile: Image first */}
+      <div className="custom-container 2xl:w-full  px-[20px] md:px-10 lg:px-[80px]">
       <div className="flex lg:hidden w-full relative h-[400px] md:h-[737px]">
         <Image src={Women} alt="" fill className="object-cover" />
       </div>
@@ -27,6 +28,7 @@ export default function CommunityFeatures({ features }) {
         <div className="hidden lg:flex items-center justify-center lg:h-[737px] relative w-full self-stretch">
           <Image src={Women} alt="" fill className="object-cover" />
         </div>
+      </div>
       </div>
     </section>
   );

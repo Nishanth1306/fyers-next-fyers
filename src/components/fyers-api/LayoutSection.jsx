@@ -7,7 +7,7 @@ import ShoppingCart from "@/assets/images/fyers-api/shopping-cart-2-line.svg";
 export default function FyersAPISection() {
   return (
     <div className="w-full md:h-[400px] lg:h-[430px] mx-auto bg-[#131319] px-5 md:px-[40px] lg:px-[80px] py-8 lg:py-16">
-      <div className="flex flex-col md:flex-row gap-8 md:gap-[60px] items-start md:h-[272px]">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-[60px] items-start md:h-[272px] custom-container 2xl:px-[80px]">
         {/* Left Section - Image */}
         <div className="w-full md:w-[250px] lg:w-[402px] h-auto md:h-[272px] md:flex-shrink-0">
           <Image

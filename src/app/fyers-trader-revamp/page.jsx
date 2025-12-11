@@ -79,7 +79,7 @@ export default function FyersTraderPage() {
           </div>
 
           <div className="md:border-y border-[#666666] w-full">
-            <div className="px-4 md:px-10 lg:px-20 flex flex-row">
+            <div className="px-4 md:px-10 lg:px-20 flex flex-row custom-container">
               {stats.map(({ value, label }) => (
                 <Stats key={label} value={value} label={label} />
               ))}
@@ -88,20 +88,17 @@ export default function FyersTraderPage() {
         </section>
 
         <section className="pt-[24px] md:pt-[64px] flex flex-col gap-[20px] md:gap-[24px]">
-          <div className="px-4 md:px-10 lg:px-20">
-            <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
-              What's special about FYERS Trader?
-            </h3>
-          </div>
+          <h3 className="px-4 md:px-10 lg:px-20 custom-container 2xl:w-full font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+            What's special about FYERS Trader?
+          </h3>
+
           <Feature feature={features1} />
         </section>
 
         <section className="py-[24px] md:py-[64px] flex flex-col gap-[20px] md:gap-[24px]">
-          <div className="px-4 md:px-10 lg:px-20">
-            <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
-              What else do we offer?
-            </h3>
-          </div>
+          <h3 className="px-4 md:px-10 lg:px-20 custom-container 2xl:w-full font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+            What else do we offer?
+          </h3>
           <Feature feature={features2} />
         </section>
 

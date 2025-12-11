@@ -42,7 +42,7 @@ export default function PledgePage() {
         />
 
         <div className="flex flex-col gap-[24px] md:gap-[26px] lg:gap-[28px] py-[40px] md:py-[40px]">
-          <h3 className="px-4 md:px-10 lg:px-20 font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
+          <h3 className="px-4 md:px-10 lg:px-20 font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px] custom-container 2xl:w-full">
             Why choose FYERS?
           </h3>
           <Feature feature={features} isTwoCols />

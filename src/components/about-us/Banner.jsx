@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section className="md:py-[64px] md:px-[40px] lg:px-[80px] p-4 flex flex-col gap-[16px] self-stretch border-b border-[#C8C8CC]">
-      <div className="flex flex-col gap-[48px]">
+    <section className="flex flex-col gap-[16px] self-stretch border-b border-[#C8C8CC]">
+      <div className="flex flex-col gap-[48px] md:py-[64px] md:px-[40px] lg:px-[80px] p-4 custom-container">
         <div className="relative h-[407px] md:h-[537px]">
           <Image
             unoptimized

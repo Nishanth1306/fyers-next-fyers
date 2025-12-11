@@ -1,6 +1,4 @@
 import PageIntro from "@/components/Common/PageIntro";
-import YoutubePageintro from "@/assets/images/learn/youtube/youtube-pageintro.png";
-import YoutubePageintroMobile from "@/assets/images/learn/youtube/youtube-pageintro-mobile.png";
 import Video from "@/components/learn/youtube/Video";
 import HouseOfTrading from "@/assets/images/learn/youtube/house-of-trading.png";
 import Analysis from "@/assets/images/learn/youtube/analysis.png";
@@ -10,6 +8,7 @@ import NavBar from "@/components/IndexPage/NavBar";
 import Footer from "@/components/IndexPage/Footer";
 import Button from "@/components/Common/Button";
 import signUpImage from "@/assets/images/learn/youtube/youtube-fill.svg";
+
 const videos = [
   {
     title: "House of Trading",
@@ -46,7 +45,7 @@ export default function YoutubePage() {
       <PageIntro
         imageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/youtube-bk.webp"}
         mobileImageSrc={"https://assets.fyers.in/Marcom_Avatar/Images/youtube-mobile-bk.webp"}
-        title="Your gateway to knowledge"
+        title="Your Gateway to Knowledge"
         description="On the FYERS YouTube channels, access videos on analysis, strategies and tools. Curated by our team to help you trade and invest smarter every day."
         buttons={[
           {
@@ -68,7 +67,7 @@ export default function YoutubePage() {
         descWidth="max-w-[450px]"
       />
 
-      <section className="px-[20px] md:px-[40px] lg:px-[64px] py-[20px] md:py-[64px]">
+      <section className="px-[20px] md:px-[40px] lg:px-[64px] custom-container py-[20px] md:py-[64px]">
         <div className="flex flex-col gap-[24px] lg:gap-[48px] items-start">
           <div className="flex flex-col gap-[24px] md:gap-[32px]">
             <h3 className="text-[#070708] text-[36px] md:text-[48px] lg:text-[64px] font-plus-jakarta font-semibold leading-[40px] md:leading-[72px] -tracking-[0.35px] md:-tracking-[0.8px]">

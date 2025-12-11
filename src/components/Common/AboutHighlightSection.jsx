@@ -72,7 +72,7 @@ export default function AboutHighlightSection({
           )}
         </div>
 
-        <div className={`relative w-full h-[190px] md:${imageContainerStyles}`}>
+        <div className={`relative w-full h-[290px] md:h-[190px] md:${imageContainerStyles}`}>
           <Image
             unoptimized
             src={imageSrc}

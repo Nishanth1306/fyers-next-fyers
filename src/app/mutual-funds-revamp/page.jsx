@@ -52,7 +52,7 @@ const MutualFundsPage = () => {
         />
 
         <section className="flex flex-col gap-[16px] md:gap-[24px] lg:gap-[32px] pt-[24px] md:pt-[48px] lg:pt-[64px]">
-          <div className="px-4 md:px-10 lg:px-20">
+          <div className="px-4 md:px-10 lg:px-20 custom-container 2xl:w-full">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Why mutual funds?
             </h2>
@@ -62,7 +62,7 @@ const MutualFundsPage = () => {
         </section>
 
         <section className="py-[40px] md:py-[52px] lg:py-[64px] flex flex-col gap-[12px] md:gap-[20px] lg:gap-[28px]">
-          <div className="px-5 md:px-10 lg:px-20">
+          <div className="px-5 md:px-10 lg:px-20 custom-container 2xl:w-full">
             <h3 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[36px] lg:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Why mutual funds on FYERS?
             </h3>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const FiaFeature = ({ features }) => {
   return (
     <div className="w-full border-y border-[#C8C8CC]">
-      <div className="px-[20px] md:px-10 lg:px-[80px] flex flex-col md:flex-row justify-center">
+      <div className="px-[20px] md:px-10 lg:px-[80px] custom-container 2xl:w-full flex flex-col md:flex-row justify-center">
         {/* Left Image */}
         <div className="relative w-full h-[209px] md:h-[310px] md:flex-1 lg:h-[509px] flex-shrink-0 border-b md:border-b-0 md:border-r border-[#C8C8CC]">
           <Image

@@ -9,7 +9,7 @@ export default function BankingCard() {
   return (
     <div className="relative w-full py-[20px] lg:py-[72px] flex flex-col gap-[20px] overflow-x-hidden">
       {/* Header Section */}
-      <div className="px-[24px] md:px-[40px] lg:px-[80px] text-left md:justify-between items-start ">
+      <div className="px-[24px] md:px-[40px] lg:px-[80px] custom-container 2xl:w-full text-left md:justify-between items-start">
         <h2 className="font-plus-jakarta font-semibold text-[16px] md:text-[20px] leading-[24px] text-[#666666]">
           Best-in-class pricing
         </h2>
@@ -58,14 +58,14 @@ export default function BankingCard() {
               0.03%
             </p>
             <h2 className="font-plus-jakarta font-semibold text-[18px] leading-[24px] tracking-[-0.24px] text-[#131319]">
-              Equity Intraday - Upto  ₹20
+              Equity Intraday - Upto ₹20
             </h2>
           </div>
         </div>
       </div>
 
       <div className="relative w-full border-t border-b border-[#C8C8CC] flex justify-center  md:mt-0">
-        <div className="w-full px-[24px] md:px-[40px] lg:px-[80px]">
+        <div className="w-full px-[24px] md:px-[40px] lg:px-[80px] custom-container">
           <div className="w-full border-l border-r border-[#C8C8CC]">
             <div className="flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-1/2 order-1 md:order-2 border-b md:border-0 border-[#C8C8CC] relative h-[380px] md:h-auto">
@@ -102,7 +102,7 @@ export default function BankingCard() {
                       0.03%
                     </p>
                     <h2 className="font-plus-jakarta font-semibold text-[24px] leading-[32px] tracking-[-0.1px] text-[#131319]">
-                      Equity Intraday - Upto  ₹20
+                      Equity Intraday - Upto ₹20
                     </h2>
                   </div>
                 </div>

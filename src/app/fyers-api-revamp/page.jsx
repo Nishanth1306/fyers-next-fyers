@@ -52,7 +52,7 @@ export default function FyersApiPage() {
 
         {/* Section 1 - Get access to all */}
         <section className="flex flex-col gap-[20px] md:gap-[32px] py-[24px] md:py-[64px]">
-          <div className="px-4 md:px-10 lg:px-20">
+          <div className="px-4 md:px-10 lg:px-20 custom-container 2xl:w-full">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               Get access to all
             </h2>
@@ -66,7 +66,7 @@ export default function FyersApiPage() {
 
         {/* Section 3 - Loved by */}
         <section className="flex flex-col gap-[20px] md:gap-[32px] py-[24px] md:py-[64px]">
-          <div className="px-4 md:px-10 lg:px-20">
+          <div className="px-4 md:px-10 lg:px-20 custom-container 2xl:w-full">
             <h2 className="font-plus-jakarta font-semibold text-[#131319] text-[24px] md:text-[48px] leading-[32px] md:leading-[56px] -tracking-[0.1px] md:-tracking-[0.64px]">
               FYERS API is loved by
             </h2>

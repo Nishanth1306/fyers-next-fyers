@@ -15,7 +15,7 @@ export default function SectionHeader({
   imageStyles,
 }) {
   return (
-    <div className="px-4 py-[24px] md:px-10 lg:px-20  md:py-[72px] gap-[16px]">
+    <div className="px-4 py-[24px] md:px-10 lg:px-20 custom-container md:py-[72px] gap-[16px]">
       <div className="text-left">
         <h2 className="text-[#676768] pb-[16px] font-plus-jakarta font-semibold text-[14px] md:text-[20px] leading-[20px] md:leading-[24px] tracking-[0.8px] md:tracking-[1.2px]">
           {sectionHeading}

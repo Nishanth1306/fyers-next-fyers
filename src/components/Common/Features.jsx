@@ -29,7 +29,7 @@ export default function Features({
               rowIndex > 0 ? "mt-6 md:mt-8" : ""
             }`}
           >
-            <div className="md:px-[40px] lg:px-[72px] flex justify-center">
+            <div className="custom-container md:px-[40px] lg:px-[72px] flex justify-center">
               <div
                 className={`w-full ${
                   featuresPerRow === 2

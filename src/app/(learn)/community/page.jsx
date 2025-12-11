@@ -103,7 +103,7 @@ export default function CommunityPage() {
         </div>
 
         {/* Desktop: Grid layout */}
-        <div className="hidden md:block px-4 md:px-10 lg:px-20">
+        <div className="hidden md:block px-4 md:px-10 lg:px-20 custom-container">
           <div className="grid grid-cols-4 divide-y">
             {features.map(({ iconSrc, iconAlt, title, description, href }, index) => (
               <FeatureLayout
@@ -125,8 +125,8 @@ export default function CommunityPage() {
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-[#C5C6CA]" />
       </section>
 
-      <section className="flex flex-col items-start gap-[24px] lg:gap-[32px] py-[24px] md:py-[48px] lg:py-[64px]">
-        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] md:px-[40px] lg:px-[80px]">
+      <section className="flex flex-col gap-[24px] lg:gap-[32px] py-[24px] md:py-[48px] lg:py-[64px]">
+        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] md:px-[40px] lg:px-[80px] custom-container 2xl:w-full">
           Why join FYERS Community?
         </h2>
 
@@ -134,17 +134,17 @@ export default function CommunityPage() {
       </section>
 
       <section className="flex flex-col items-start gap-[24px] lg:gap-[32px] py-[24px] lg:py-[32px]">
-        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] md:px-[40px] lg:px-[80px]">
+        <h2 className="font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] text-[#070708] px-[20px] md:px-[40px] lg:px-[80px] custom-container 2xl:w-full">
           What's in it for members?
         </h2>
         <CommunityFeatures features={extraFeatures2} />
       </section>
 
       <section className="flex py-[40px] flex-col items-center gap-[40px] self-stretch border-t border-[#666666] bg-[#131319]">
-        <div className="flex flex-col lg:flex-row px-[20px] md:px-10 lg:px-[80px] justify-center items-start gap-[24px] self-stretch">
+        <div className="flex flex-col lg:flex-row px-[20px] md:px-10 lg:px-[80px] justify-center items-start gap-[24px] self-stretch custom-container 2xl:w-full">
           <div className="flex flex-col items-start gap-[24px] flex-grow flex-shrink-0 basis-0">
             <div className="flex flex-col items-start gap-[8px] self-stretch">
-              <h3 className="text-[#F0F0FA] font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px]">
+              <h3 className="text-[#F0F0FA] font-plus-jakarta text-[36px] lg:text-[64px] font-semibold leading-[40px] lg:leading-[72px] -tracking-[0.35px] lg:-tracking-[0.8px] ">
                 Who should join?
               </h3>
             </div>
@@ -169,7 +169,8 @@ export default function CommunityPage() {
           />
         </div>
 
-        <div className="flex px-[20px] md:px-10 lg:px-[80px] items-start gap-[32px] self-stretch border-y border-[#666666]">
+        <div className="flex items-start gap-[32px] self-stretch border-y border-[#666666]">
+          <div className="custom-container 2xl:w-full px-[20px] md:px-10 lg:px-[80px]">
           <div className="flex flex-col lg:flex-row items-center flex-grow shrink-0 basis-0 border-r border-[#666666]">
             {stats.map((stat, index) => (
               <div
@@ -183,6 +184,7 @@ export default function CommunityPage() {
                 </p>
               </div>
             ))}
+          </div>
           </div>
         </div>
       </section>
