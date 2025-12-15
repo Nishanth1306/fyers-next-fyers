@@ -7,7 +7,7 @@ const CrossPlatform = async () => {
 
   return (
     <div className="fy-cross-platform bg-[#131319]">
-      <div className=" py-6 px-4 lg:px-[80px] lg:py-[72px]">
+      <div className=" py-6 px-4 lg:px-[80px] lg:py-[72px] custom-container">
         <div className="font-plus text-[14px] lg:text-[20px] mb-2 font-semibold leading-[24px] tracking-[1.2px] text-[#666]">
           Cross-device trading that follows you
         </div>

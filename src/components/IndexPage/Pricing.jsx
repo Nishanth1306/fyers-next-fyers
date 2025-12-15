@@ -67,7 +67,7 @@ const pricingDetails = [
 const Pricing = () => {
   return (
     <div className="py-[24px] lg:py-[72px]">
-      <div className="flex flex-col px-4 md:px-[40px] lg:px-20">
+      <div className="flex flex-col px-4 md:px-[40px] lg:px-20 custom-container">
         <div className="text-[16px] md:text-[20px] font-semibold leading-[24px] mb-2 text-[#676768]">Pricing</div>
         <div className="flex flex-col md:flex-row md:justify-between md:items-center">
           <div className="font-plus-jakarta text-[40px] leading-[52px] md:max-w-[500px] lg:max-w-[714px] mb-6 tracking-[0.54px] lg:text-[64px] font-bold md:font-[600] md:leading-[60px] lg:leading-[72px]">
@@ -89,28 +89,30 @@ const Pricing = () => {
           </a>
         </div>
       </div>
-      <div className="border-t border-b border-[#C8C8CC] md:px-[40px] lg:px-20 flex flex-col-reverse md:flex-row">
-        <div className="px-4 md:px-0 w-full">
-          {pricingDetails.map((detail, idx) => (
-            <div
-              key={idx}
-              className={`p-4 flex gap-4 items-center border border-[#C8C8CC] ${
-                idx === 0 ? "md:border-t-0" : ""
-              } border-b-0 md:h-[113px]`}
-            >
-              <div className="">{detail.image}</div>
-              <div className="text-[16px] lg:text-[24px] font-semibold tracking-[0.18px]">{detail.description}</div>
-            </div>
-          ))}
+      <div className="border-t border-b border-[#C8C8CC]">
+        <div className="md:px-[40px] lg:px-20 custom-container flex flex-col-reverse md:flex-row">
+          <div className="px-4 md:px-0 md:w-6/12 flex flex-col">
+            {pricingDetails.map((detail, idx) => (
+              <div
+                key={idx}
+                className={`p-4 flex flex-1 gap-4 items-center border border-[#C8C8CC] ${
+                  idx === 0 ? "md:border-t-0" : ""
+                } border-b-0 md:min-h-[113px]`}
+              >
+                <div className="">{detail.image}</div>
+                <div className="text-[16px] lg:text-[24px] font-semibold tracking-[0.18px]">{detail.description}</div>
+              </div>
+            ))}
+          </div>
+          <Image
+            unoptimized
+            src={"https://assets.fyers.in/Marcom_Avatar/Images/home-woman.webp"}
+            width={427}
+            height={452}
+            alt="pricing-logo"
+            className="px-4 md:px-0 w-full md:w-6/12"
+          />
         </div>
-        <Image
-          unoptimized
-          src={"https://assets.fyers.in/Marcom_Avatar/Images/home-woman.webp"}
-          width={427}
-          height={452}
-          alt="pricing-logo"
-          className="px-4 md:px-0 w-full"
-        />
       </div>
     </div>
   );

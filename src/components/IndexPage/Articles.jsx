@@ -4,7 +4,7 @@ import Image from "next/image";
 const Articles = async ({ articles }) => {
   return (
     <div className="fy-articles mt-[24px] lg:mt-[72px]">
-      <div className="justify-between items-center px-4 md:flex md:px-20 md:mb-4">
+      <div className="justify-between items-center px-4 md:flex md:px-20 custom-container md:mb-4">
         <div className="mb-6 md:mb-0 w-full hidden md:flex justify-end">
           <a
             href="https://fyers.in/media/"
@@ -23,7 +23,7 @@ const Articles = async ({ articles }) => {
         </div>
       </div>
       <div className="fy-acwrapper border-t border-[#C8C8CC] px-4 md:px-0">
-        <div className="flex flex-wrap lg:flex-nowrap md:px-[40px] lg:px-[72px]">
+        <div className="flex flex-wrap lg:flex-nowrap md:px-[40px] lg:px-[72px] custom-container">
           {articles.map((value, idx) => (
             <div
               className={`fy-acard border-l border-r border-b border-[#C8C8CC] flex py-10 md:py-6 px-6 w-full

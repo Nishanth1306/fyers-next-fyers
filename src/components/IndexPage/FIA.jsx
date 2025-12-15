@@ -6,8 +6,8 @@ const FIA = async () => {
 
   return (
     <>
-      <div className="fy-fia bg-[#131319] pt-[24px] px-[16px] pb-[24px] md:pb-[0] md:px-[40px] lg:px-[80px] lg:py-[72px]">
-        <div className="">
+      <div className="fy-fia bg-[#131319] pt-[24px] pb-[24px] md:pb-[0] lg:py-[72px]">
+        <div className="px-[16px] md:px-[40px] lg:px-[80px] custom-container">
           <div className="text-[14px] md:text-[20px] pb-4 font-semibold leading-[24px] tracking-[1.2px] uppercase text-[#676768]">
             AI
           </div>
@@ -20,7 +20,10 @@ const FIA = async () => {
           <div className="flex justify-between items-end flex-wrap lg:flex-nowrap md:gap-[24px] lg:gap-0 md:pb-[24px] lg:pb-0">
             <div className="text-[14px] lg:text-[18px] text-[#CACACA] max-w-[80%] md:max-w-[70%] lg:max-w-[80%]">
               <p>
-                FIA is a complete AI-powered assistant. It monitors markets in real-time, spots patterns, analyses news and builds tailored screeners for stocks, F&O and commodities. FIA also analyses your portfolio with precision. Go beyond surface-level data with powerful insights built for pro-traders and investors, just like you.
+                FIA is a complete AI-powered assistant. It monitors markets in real-time, spots patterns, analyses news
+                and builds tailored screeners for stocks, F&O and commodities. FIA also analyses your portfolio with
+                precision. Go beyond surface-level data with powerful insights built for pro-traders and investors, just
+                like you.
               </p>
             </div>
             <div className="flex flex-1 mt-[24px] lg:mt-0 lg:justify-end">
@@ -30,13 +33,7 @@ const FIA = async () => {
               >
                 See How FIA Works{" "}
                 <span className="mx-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                       fill="#F2F4FB"

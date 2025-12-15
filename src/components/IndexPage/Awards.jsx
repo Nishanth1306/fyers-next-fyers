@@ -2,13 +2,20 @@ import Image from "next/image";
 
 const Awards = () => {
   return (
-    <div className="fy-awards mx-[16px] md:mx-auto">
+    <div className="fy-awards mx-[16px] md:mx-auto custom-container">
       <div className="bg-[#131319] p-6 lg:mx-[72px] md:px-[40px] lg:px-[72px] md:py-[32px] items-center  border border-[#979798]">
         <div className="flex items-center justify-between">
           <div className="w-full sm:w-auto text-center lg:text-left">
             <div className="justify-center lg:justify-start">
               <div className="flex gap-2 w-8/12 md:w-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="24" className="w-[21px] md:w-[44px]" viewBox="0 0 44 24" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="24"
+                  className="w-[21px] md:w-[44px]"
+                  viewBox="0 0 44 24"
+                  fill="none"
+                >
                   <path
                     d="M0.114746 8.97457H10.4278V23.8883H18.4469V8.97457V1.9158V0.974121H0.114746V8.97457Z"
                     fill="#F0F0FA"
@@ -19,7 +26,14 @@ const Awards = () => {
                     fill="#F0F0FA"
                   />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="186" height="30" className="w-[94px] md:w-[186px]" viewBox="0 0 186 30" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="186"
+                  height="30"
+                  className="w-[94px] md:w-[186px]"
+                  viewBox="0 0 186 30"
+                  fill="none"
+                >
                   <path
                     d="M6.02025 22.8874V4.1792H0.243164V0.587224H15.8084V4.1792H10.1211V22.8874H6.02025Z"
                     fill="#F0F0FA"
