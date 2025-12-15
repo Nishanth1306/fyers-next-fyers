@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-start bg-[#131319]">
       <div className="custom-container py-6 px-4 md:p-[40px] lg:p-16">
-        <div className="w-full fy-ftop flex flex-wrap lg:flex-nowrap justify-between items-center p-2 lg:p-0">
+        <div className="w-full fy-ftop flex flex-col items-start md:flex-row flex-wrap lg:flex-nowrap justify-between lg:items-center p-2 lg:p-0">
           <div className="text-white inline-flex items-center text-[14px] leading-[32px] font-semibold">
             <Image
               src={FooterLogo}
@@ -41,7 +41,7 @@ const Footer = () => {
               Unlock your next level with FYERS.
             </p>
           </div>
-          <div className="fy-social-links grid grid-cols-5 md:inline-flex gap-4 lg:gap-[8px] my-6 lg:my-0 justify-between flex-1 lg:flex-0">
+          <div className="fy-social-links w-full grid grid-cols-5 md:inline-flex gap-4 lg:gap-[8px] my-6 lg:my-0 justify-between flex-1 lg:flex-0">
             {socialLinks.map((link, index) => (
               <a
                 href={link.href}

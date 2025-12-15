@@ -16,7 +16,7 @@ const Edge = ({ products }) => {
   }, []);
   return (
     <div className="mt-[36px] mb-6 md:mt-0 md:py-[72px] ">
-      <div className="px-[16px] pt-[48px] md:pt-[0] md:px-[40px] lg:px-[80px]">
+      <div className="px-[16px] pt-[48px] md:pt-[0] md:px-[40px] lg:px-[80px] custom-container">
         <div className="font-plus not-italic text-[14px] md:text-[20px] font-semibold leading-[24px] uppercase text-[#676768]">
           TRADE LIKE A PRO WITH
         </div>

@@ -168,7 +168,7 @@ const Banner = ({
             unoptimized
             width={439}
             height={497}
-            className="absolute bottom-0 min-w-[370px] md:min-w-[439px]"
+            className="absolute bottom-0 min-w-[350px] md:min-w-[439px]"
           />
         </div>
 
